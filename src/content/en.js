@@ -5,8 +5,8 @@ export const en = {
   otherLang: 'es',
   otherLangLabel: 'Español',
   otherLangPath: '/es',
-  siteName: 'LASA Foundation Medical Camp',
-  shortName: 'LASA Medical Camp',
+  siteName: 'Lasa Medical Foundation Inc.',
+  shortName: 'Lasa Medical Foundation',
   motto: 'Love All, Serve All — Help Ever, Hurt Never',
   paths: {
     home: '/en',
@@ -24,9 +24,9 @@ export const en = {
     { id: 'schedule', label: 'Schedule', to: '/en/schedule' },
   ],
   splash: {
-    title: 'LASA Foundation Medical Camp',
+    title: 'Lasa Medical Foundation Inc.',
     mission:
-      'The LASA Foundation Medical Camp provides free primary medical care for low-income people who do not have health insurance.',
+      'The Lasa Medical Foundation Inc. provides free primary medical care for low-income people who do not have health insurance.',
     hoursTitle: 'Clinic Hours',
     hours: [
       { label: 'Remote by Phone', value: 'To be confirmed' },
@@ -37,6 +37,7 @@ export const en = {
     scheduleAltLink: 'Horario',
     scheduleAltPath: '/es/horario',
     phoneLabel: 'Phone',
+    faxLabel: 'Fax',
     drivingTitle: 'Driving Address',
     mailingTitle: 'Mailing Address',
     emailTitle: 'Email Addresses',
@@ -54,11 +55,11 @@ export const en = {
     scrollHint: 'Scroll down',
     motto: 'Love All, Serve All — Help Ever, Hurt Never',
     intro:
-      'The LASA Foundation Medical Camp provides free primary medical care for low-income people who do not have health insurance.',
+      'The Lasa Medical Foundation Inc. provides free primary medical care for low-income people who do not have health insurance.',
     paragraphs: [
       'We provide non-emergency care for both acute and chronic medical conditions. The clinic is staffed by volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and other support staff.',
       '"Love All, Serve All | Help Ever, Hurt Never" summarizes the operational principles of our clinic. We are grateful for the chance to provide free medical care to those in need.',
-      'LASA Foundation Inc. is a 501(c)(3) nonprofit organization. To keep expenses as low as possible, we do not have any salaried employees at the medical camp. Everyone who works at this clinic does so as a non-paid volunteer.',
+      'Lasa Medical Foundation Inc. is a 501(c)(3) nonprofit organization. To keep expenses as low as possible, we do not have any salaried employees at the medical clinic. Everyone who works at this clinic does so as a non-paid volunteer.',
       'Many of the wonderful volunteers who work at our clinic come from the local community that we serve. Highly skilled medical professionals — physicians, nurse practitioners, physician assistants, registered nurses, and physical therapists — volunteer their time alongside community members who share LASA’s commitment to Love All, Serve All.',
     ],
   },
@@ -67,13 +68,13 @@ export const en = {
     paragraphs: [
       'Much of the assistance we need to operate the Clinic is provided by the physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and all the other support staff who volunteer their time to serve the patients who come to our clinic. We know that the Clinic will be supported by people who of their own accord are moved to provide assistance.',
       'We appreciate all the generosity of our volunteers as well as the many private and institutional donors who make this work possible.',
-      'If you would like to help the LASA Foundation Medical Camp in some way, you can contact us at info@lasane.org.',
+      'If you would like to help the Lasa Medical Foundation Inc. in some way, you can contact us at info@lasane.org.',
     ],
   },
   services: {
     title: 'Services',
     intro:
-      'The LASA Foundation Medical Camp provides non-urgent and non-emergency primary care services for uninsured individuals who cannot afford the cost of medical care. Remote visits by phone or video and in-person on-site visits are offered according to the clinic schedule. Physical therapy, optometry, mental health, and dental referral support may be available on selected clinic days. Please see the clinic schedule for details.',
+      'The Lasa Medical Foundation Inc. provides non-urgent and non-emergency primary care services for uninsured individuals who cannot afford the cost of medical care. Remote visits by phone or video and in-person on-site visits are offered according to the clinic schedule. Physical therapy, optometry, mental health, and dental referral support may be available on selected clinic days. Please see the clinic schedule for details.',
     treatTitle: 'Examples of some conditions that we treat',
     treat: [
       'Diabetes',
@@ -104,12 +105,12 @@ export const en = {
     ],
     eligibility: [
       'Individuals seeking to establish care will need to complete our financial pre-screening process over the phone to determine they meet the eligibility criteria for the Clinic. For those who walk in, the financial eligibility screening will be done at the Clinic. Upon being qualified to be seen at the clinic, and depending on the urgency of your condition as well as the number of clinicians available, you may be seen the same day or scheduled for an appointment in the future. Follow-up visits will be done by appointment only.',
-      'Legal residency in the USA is not a prerequisite to getting care at the LASA Foundation Medical Camp.',
+      'Legal residency in the USA is not a prerequisite to getting care at the Lasa Medical Foundation Inc.',
     ],
   },
   location: {
     title: 'Location',
-    clinicName: 'LASA Foundation Medical Camp',
+    clinicName: 'Lasa Medical Foundation Inc.',
     drivingTitle: 'Driving Address',
     mailingTitle: 'Mailing Address',
     phoneLabel: 'Phone',
@@ -162,6 +163,6 @@ export const en = {
   footer: {
     tagline:
       'A charitable organization dedicated to community service based on Truth, Non-violence, Peace, Love, and Right Conduct.',
-    rights: 'LASA Foundation Inc. All rights reserved.',
+    rights: 'Lasa Medical Foundation Inc. All rights reserved.',
   },
 };

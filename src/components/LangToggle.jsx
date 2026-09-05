@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function LangToggle({ lang, otherLabel, otherPath, className = '' }) {
   return (
     <div
-      className={`inline-flex items-center gap-0.5 rounded-full border border-lasa-200 bg-white/90 p-1 text-[11px] font-semibold uppercase tracking-widest ${className}`}
+      className={`inline-flex items-center gap-0.5 rounded-full border border-lasa-200 bg-white/90 p-1 text-xs font-semibold uppercase tracking-widest ${className}`}
     >
       {lang === 'en' ? (
         <span className="rounded-full bg-lasa-600 px-3 py-1.5 text-white">EN</span>

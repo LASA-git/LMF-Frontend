@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import LangToggle from './LangToggle';
+import LogoWordmark from './LogoWordmark';
 import { getAlternateLangPath } from '../utils/langPaths';
 
 export default function Header({ content, showSections = false }) {
@@ -29,37 +30,28 @@ export default function Header({ content, showSections = false }) {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 w-full max-w-[100%] overflow-x-clip transition-all duration-300 ${
         scrolled
           ? 'bg-white/[0.97] shadow-[0_4px_24px_rgba(30,58,52,0.1)] backdrop-blur-md'
           : 'bg-white'
       }`}
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:h-24 sm:px-6 lg:px-10">
-        <Link to={content.paths.home} className="flex min-w-0 items-center gap-2 sm:gap-3">
+      <div className="mx-auto flex h-28 w-full max-w-[96rem] items-center gap-4 overflow-x-clip px-5 sm:h-32 sm:gap-5 sm:px-8 lg:px-12 xl:px-16">
+        <Link to={content.paths.home} className="flex min-w-0 shrink-0 items-center gap-3 sm:gap-4">
           <img
             src="/finallogo.png"
-            alt="LASA Foundation"
-            className="h-12 w-auto flex-shrink-0 sm:h-16"
+            alt="Lasa Medical Foundation Inc."
+            className="h-16 w-auto shrink-0 sm:h-20"
           />
-          <div className="min-w-0">
-            <img
-              src="/write.jpeg"
-              alt="Love All, Serve All"
-              className="h-7 w-auto max-w-[38vw] object-contain sm:h-9 sm:max-w-none"
-            />
-            <p className="mt-0.5 truncate text-[10px] font-semibold uppercase tracking-[0.16em] text-lasa-500 sm:text-xs">
-              {content.shortName}
-            </p>
-          </div>
+          <LogoWordmark compact className="min-w-0 max-w-[18rem] text-left sm:max-w-[22rem]" />
         </Link>
 
-        <nav className="hidden items-center gap-1 xl:flex">
+        <nav className="ml-auto hidden min-w-0 max-w-full items-center justify-end gap-1 overflow-x-auto overscroll-x-contain lg:flex">
           {sectionLinks.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
-              className="rounded-full px-3 py-2 text-xs font-semibold uppercase tracking-wider text-lasa-600 transition hover:bg-lasa-50 hover:text-lasa-700"
+              className="shrink-0 whitespace-nowrap rounded-full px-3 py-2.5 text-xs font-semibold uppercase tracking-wide text-lasa-600 transition hover:bg-lasa-50 hover:text-lasa-700 xl:px-3.5 xl:text-sm"
             >
               {item.label}
             </a>
@@ -69,7 +61,7 @@ export default function Header({ content, showSections = false }) {
               key={item.id}
               to={item.to}
               className={({ isActive }) =>
-                `rounded-full px-3 py-2 text-xs font-semibold uppercase tracking-wider transition hover:bg-lasa-50 hover:text-lasa-700 ${
+                `shrink-0 whitespace-nowrap rounded-full px-3 py-2.5 text-xs font-semibold uppercase tracking-wide transition hover:bg-lasa-50 hover:text-lasa-700 xl:px-3.5 xl:text-sm ${
                   isActive ? 'bg-lasa-100 text-lasa-700' : 'text-lasa-600'
                 }`
               }
@@ -81,11 +73,11 @@ export default function Header({ content, showSections = false }) {
             lang={content.lang}
             otherLabel={content.otherLangLabel}
             otherPath={otherPath}
-            className="ml-2"
+            className="ml-1 shrink-0"
           />
         </nav>
 
-        <div className="flex items-center gap-2 xl:hidden">
+        <div className="ml-auto flex shrink-0 items-center gap-2 lg:hidden">
           <LangToggle
             lang={content.lang}
             otherLabel={content.otherLangLabel}
@@ -111,8 +103,8 @@ export default function Header({ content, showSections = false }) {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-lasa-200 bg-white xl:hidden">
-          <div className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4 sm:px-6">
+        <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-lasa-200 bg-white lg:hidden">
+          <div className="mx-auto flex max-w-[96rem] flex-col gap-1 px-4 py-4 sm:px-6">
             {sectionLinks.map((item) => (
               <a
                 key={item.id}

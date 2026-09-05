@@ -5,8 +5,8 @@ export const es = {
   otherLang: 'en',
   otherLangLabel: 'English',
   otherLangPath: '/en',
-  siteName: 'Clínica Médica LASA Foundation',
-  shortName: 'Clínica Médica LASA',
+  siteName: 'Lasa Medical Foundation Inc.',
+  shortName: 'Lasa Medical Foundation',
   motto: 'Ama a todos, Sirve a todos — Ayuda siempre, Nunca lastimes',
   paths: {
     home: '/es',
@@ -24,9 +24,9 @@ export const es = {
     { id: 'schedule', label: 'Horario', to: '/es/horario' },
   ],
   splash: {
-    title: 'Clínica Médica LASA Foundation',
+    title: 'Lasa Medical Foundation Inc.',
     mission:
-      'La Clínica Médica LASA Foundation brinda atención médica primaria gratuita para personas de bajos ingresos que no tienen seguro médico.',
+      'Lasa Medical Foundation Inc. brinda atención médica primaria gratuita para personas de bajos ingresos que no tienen seguro médico.',
     hoursTitle: 'Horario de la clínica',
     hours: [
       { label: 'Remoto por teléfono', value: 'Por confirmar' },
@@ -37,6 +37,7 @@ export const es = {
     scheduleAltLink: 'Schedule',
     scheduleAltPath: '/en/schedule',
     phoneLabel: 'Teléfono',
+    faxLabel: 'Fax',
     drivingTitle: 'Dirección',
     mailingTitle: 'Dirección postal',
     emailTitle: 'Correos electrónicos',
@@ -50,15 +51,15 @@ export const es = {
   },
   clinic: {
     heroKicker: 'La Clínica',
-    heroTitle: 'Clínica médica gratuita LASA',
+    heroTitle: 'La Clínica',
     scrollHint: 'Desplácese hacia abajo',
     motto: 'Ama a todos, Sirve a todos — Ayuda siempre, Nunca lastimes',
     intro:
-      'La Clínica Médica LASA Foundation brinda atención médica primaria gratuita para personas de bajos ingresos que no tienen seguro médico.',
+      'Lasa Medical Foundation Inc. brinda atención médica primaria gratuita para personas de bajos ingresos que no tienen seguro médico.',
     paragraphs: [
       'Brindamos atención que no es de emergencia para afecciones médicas agudas y crónicas. La clínica cuenta con médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y otro personal de apoyo.',
       '"Amar a todos, servir a todos | Ayudar siempre, nunca lastimar" resume los principios operativos de nuestra clínica. Estamos agradecidos por la oportunidad de brindar atención médica gratuita a quienes la necesitan.',
-      'LASA Foundation Inc. es una organización sin fines de lucro 501(c)(3). Para mantener los gastos lo más bajos posible, no tenemos empleados asalariados en la clínica médica. Todos los que trabajan en esta clínica lo hacen como voluntarios no remunerados.',
+      'Lasa Medical Foundation Inc. es una organización sin fines de lucro 501(c)(3). Para mantener los gastos lo más bajos posible, no tenemos empleados asalariados en la clínica médica. Todos los que trabajan en esta clínica lo hacen como voluntarios no remunerados.',
       'Muchos de los maravillosos voluntarios que trabajan en nuestra clínica provienen de la comunidad local a la que servimos. Profesionales médicos altamente calificados — médicos, enfermeras practicantes, asistentes médicos, enfermeras registradas y fisioterapeutas — ofrecen su tiempo junto a miembros de la comunidad que comparten el compromiso de LASA de Amar a todos, Servir a todos.',
     ],
   },
@@ -67,13 +68,13 @@ export const es = {
     paragraphs: [
       'Gran parte de la asistencia que necesitamos para operar la Clínica la brindan los médicos, las enfermeras practicantes, los asistentes médicos, las enfermeras tituladas, los fisioterapeutas y todo el resto del personal de apoyo, que ofrecen su tiempo como voluntarios para atender a los pacientes que acuden a nuestra clínica. Sabemos que la Clínica contará con el apoyo de personas que por su propia voluntad se movilizan para brindar asistencia.',
       'Agradecemos toda la generosidad de todos nuestros voluntarios, así como de los numerosos donantes privados e institucionales que hacen posible este trabajo.',
-      'Si desea ayudar a la Clínica Médica LASA Foundation de alguna manera, puede contactarnos en info@lasane.org.',
+      'Si desea ayudar a Lasa Medical Foundation Inc. de alguna manera, puede contactarnos en info@lasane.org.',
     ],
   },
   services: {
     title: 'Servicios',
     intro:
-      'La Clínica Médica LASA Foundation brinda servicios de atención primaria que no son de urgencia ni de emergencia para personas sin seguro que no pueden pagar el costo de la atención médica. Ofrecemos visitas remotas por teléfono o video y visitas presenciales según el horario de la clínica. Los servicios de fisioterapia, optometría, salud mental y referencias dentales pueden estar disponibles en días seleccionados. Consulte el horario de la clínica para obtener más detalles.',
+      'Lasa Medical Foundation Inc. brinda servicios de atención primaria que no son de urgencia ni de emergencia para personas sin seguro que no pueden pagar el costo de la atención médica. Ofrecemos visitas remotas por teléfono o video y visitas presenciales según el horario de la clínica. Los servicios de fisioterapia, optometría, salud mental y referencias dentales pueden estar disponibles en días seleccionados. Consulte el horario de la clínica para obtener más detalles.',
     treatTitle: 'Ejemplos de algunas condiciones que tratamos',
     treat: [
       'Diabetes',
@@ -104,12 +105,12 @@ export const es = {
     ],
     eligibility: [
       'Las personas que deseen establecer atención deberán completar nuestro proceso de preselección financiera por teléfono para determinar que cumplen con los criterios de elegibilidad para la Clínica. Para quienes acudan sin cita previa, la evaluación de elegibilidad financiera se realizará en la Clínica. Una vez calificado para ser atendido, y dependiendo de la urgencia de su afección así como de la cantidad de clínicos disponibles, es posible que lo atiendan el mismo día o le programen una cita en el futuro. Las visitas de seguimiento se realizarán únicamente con cita previa.',
-      'La residencia legal en los EE. UU. no es un requisito previo para recibir atención en la Clínica Médica LASA Foundation.',
+      'La residencia legal en los EE. UU. no es un requisito previo para recibir atención en Lasa Medical Foundation Inc.',
     ],
   },
   location: {
     title: 'Ubicación',
-    clinicName: 'Clínica Médica LASA Foundation',
+    clinicName: 'Lasa Medical Foundation Inc.',
     drivingTitle: 'Dirección',
     mailingTitle: 'Dirección postal',
     phoneLabel: 'Teléfono',
@@ -163,6 +164,6 @@ export const es = {
   footer: {
     tagline:
       'Una organización benéfica dedicada al servicio comunitario basada en la Verdad, la No violencia, la Paz, el Amor y la Recta Conducta.',
-    rights: 'LASA Foundation Inc. Todos los derechos reservados.',
+    rights: 'Lasa Medical Foundation Inc. Todos los derechos reservados.',
   },
 };
