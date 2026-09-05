@@ -8,7 +8,7 @@ import ScrollReveal from '../components/ScrollReveal';
 
 function Section({ id, children, className = '' }) {
   return (
-    <section id={id} className={`scroll-mt-32 sm:scroll-mt-36 ${className}`}>
+    <section id={id} className={`scroll-mt-24 sm:scroll-mt-28 lg:scroll-mt-32 xl:scroll-mt-36 ${className}`}>
       {children}
     </section>
   );
@@ -22,7 +22,7 @@ export default function ClinicPage({ lang }) {
     <div className="min-h-screen max-w-[100%] overflow-x-clip">
       <Header content={content} />
 
-      <main className="pt-28 sm:pt-32">
+      <main className="pt-20 sm:pt-24 lg:pt-28 xl:pt-32">
         <Section id="clinic" className="relative overflow-hidden">
           <div className="pointer-events-none absolute inset-x-0 top-0 h-[28rem] bg-[radial-gradient(circle_at_14%_18%,rgba(134,160,125,0.28),transparent_44%),radial-gradient(circle_at_86%_10%,rgba(79,122,106,0.22),transparent_48%)]" />
 
