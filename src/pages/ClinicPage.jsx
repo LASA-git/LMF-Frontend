@@ -20,7 +20,7 @@ export default function ClinicPage({ lang }) {
 
   return (
     <div className="min-h-screen max-w-[100%] overflow-x-clip">
-      <Header content={content} showSections />
+      <Header content={content} />
 
       <main className="pt-28 sm:pt-32">
         <Section id="clinic" className="relative overflow-hidden">

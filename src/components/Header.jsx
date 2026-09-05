@@ -4,11 +4,12 @@ import LangToggle from './LangToggle';
 import LogoWordmark from './LogoWordmark';
 import { getAlternateLangPath } from '../utils/langPaths';
 
-export default function Header({ content, showSections = false }) {
+export default function Header({ content }) {
   const { pathname } = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const otherPath = getAlternateLangPath(pathname, content.otherLang);
+  const onClinicHome = pathname === content.paths.home;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -23,10 +24,14 @@ export default function Header({ content, showSections = false }) {
     };
   }, [mobileOpen]);
 
-  const sectionLinks = showSections
-    ? content.nav.filter((item) => !item.to)
-    : [];
+  const sectionLinks = content.nav.filter((item) => !item.to);
   const pageLinks = content.nav.filter((item) => item.to);
+
+  const sectionHref = (id) =>
+    onClinicHome ? `#${id}` : `${content.paths.home}#${id}`;
+
+  const linkClass =
+    'shrink-0 whitespace-nowrap rounded-full px-3 py-2.5 text-xs font-semibold uppercase tracking-wide text-lasa-600 transition hover:bg-lasa-50 hover:text-lasa-700 xl:px-3.5 xl:text-sm';
 
   return (
     <header
@@ -48,22 +53,16 @@ export default function Header({ content, showSections = false }) {
 
         <nav className="ml-auto hidden min-w-0 max-w-full items-center justify-end gap-1 overflow-x-auto overscroll-x-contain lg:flex">
           {sectionLinks.map((item) => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
-              className="shrink-0 whitespace-nowrap rounded-full px-3 py-2.5 text-xs font-semibold uppercase tracking-wide text-lasa-600 transition hover:bg-lasa-50 hover:text-lasa-700 xl:px-3.5 xl:text-sm"
-            >
+            <Link key={item.id} to={sectionHref(item.id)} className={linkClass}>
               {item.label}
-            </a>
+            </Link>
           ))}
           {pageLinks.map((item) => (
             <NavLink
               key={item.id}
               to={item.to}
               className={({ isActive }) =>
-                `shrink-0 whitespace-nowrap rounded-full px-3 py-2.5 text-xs font-semibold uppercase tracking-wide transition hover:bg-lasa-50 hover:text-lasa-700 xl:px-3.5 xl:text-sm ${
-                  isActive ? 'bg-lasa-100 text-lasa-700' : 'text-lasa-600'
-                }`
+                `${linkClass} ${isActive ? 'bg-lasa-100 text-lasa-700' : ''}`
               }
             >
               {item.label}
@@ -106,14 +105,14 @@ export default function Header({ content, showSections = false }) {
         <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-lasa-200 bg-white lg:hidden">
           <div className="mx-auto flex max-w-[96rem] flex-col gap-1 px-4 py-4 sm:px-6">
             {sectionLinks.map((item) => (
-              <a
+              <Link
                 key={item.id}
-                href={`#${item.id}`}
+                to={sectionHref(item.id)}
                 onClick={() => setMobileOpen(false)}
                 className="rounded-xl px-3 py-3 text-sm font-semibold text-lasa-700 hover:bg-lasa-50"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             {pageLinks.map((item) => (
               <Link

@@ -5,15 +5,27 @@ export default function RouteScrollToTop() {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    if (hash) {
-      const id = hash.replace('#', '');
+    if (!hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+      return;
+    }
+
+    const id = hash.replace('#', '');
+    let tries = 0;
+
+    const scrollToHash = () => {
       const el = document.getElementById(id);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         return;
       }
-    }
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+      tries += 1;
+      if (tries < 20) {
+        window.requestAnimationFrame(scrollToHash);
+      }
+    };
+
+    scrollToHash();
   }, [pathname, hash]);
 
   return null;
