@@ -5,8 +5,8 @@ export const es = {
   otherLang: 'en',
   otherLangLabel: 'English',
   otherLangPath: '/en',
-  siteName: 'Lasa Medical Foundation Inc.',
-  shortName: 'Lasa Medical Foundation',
+  siteName: 'LASA Medical Foundation',
+  shortName: 'LASA Medical Foundation',
   motto: 'Ama a todos, Sirve a todos — Ayuda siempre, Nunca lastimes',
   paths: {
     home: '/es',
@@ -24,9 +24,9 @@ export const es = {
     { id: 'schedule', label: 'Horario', to: '/es/horario' },
   ],
   splash: {
-    title: 'Lasa Medical Foundation Inc.',
+    title: 'LASA Medical Foundation',
     mission:
-      'Lasa Medical Foundation Inc. brinda atención médica primaria gratuita para personas de bajos ingresos que no tienen seguro médico.',
+      'LASA Medical Foundation brinda atención médica primaria gratuita para personas de bajos ingresos que no tienen seguro médico.',
     hoursTitle: 'Horario de la clínica',
     hours: [
       { label: 'Remoto por teléfono', value: 'Por confirmar' },
@@ -55,7 +55,7 @@ export const es = {
     scrollHint: 'Desplácese hacia abajo',
     motto: 'Ama a todos, Sirve a todos — Ayuda siempre, Nunca lastimes',
     intro:
-      'Lasa Medical Foundation Inc. brinda atención médica primaria gratuita para personas de bajos ingresos que no tienen seguro médico.',
+      'LASA Medical Foundation brinda atención médica primaria gratuita para personas de bajos ingresos que no tienen seguro médico.',
     paragraphs: [
       'Brindamos atención que no es de emergencia para afecciones médicas agudas y crónicas. La clínica cuenta con médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y otro personal de apoyo.',
       '"Amar a todos, servir a todos | Ayudar siempre, nunca lastimar" resume los principios operativos de nuestra clínica. Estamos agradecidos por la oportunidad de brindar atención médica gratuita a quienes la necesitan.',
@@ -110,7 +110,7 @@ export const es = {
   },
   location: {
     title: 'Ubicación',
-    clinicName: 'Lasa Medical Foundation Inc.',
+    clinicName: 'LASA Medical Foundation',
     drivingTitle: 'Dirección',
     mailingTitle: 'Dirección postal',
     phoneLabel: 'Teléfono',

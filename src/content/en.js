@@ -5,8 +5,8 @@ export const en = {
   otherLang: 'es',
   otherLangLabel: 'Español',
   otherLangPath: '/es',
-  siteName: 'Lasa Medical Foundation Inc.',
-  shortName: 'Lasa Medical Foundation',
+  siteName: 'LASA Medical Foundation',
+  shortName: 'LASA Medical Foundation',
   motto: 'Love All, Serve All — Help Ever, Hurt Never',
   paths: {
     home: '/en',
@@ -24,9 +24,9 @@ export const en = {
     { id: 'schedule', label: 'Schedule', to: '/en/schedule' },
   ],
   splash: {
-    title: 'Lasa Medical Foundation Inc.',
+    title: 'LASA Medical Foundation',
     mission:
-      'The Lasa Medical Foundation Inc. provides free primary medical care for low-income people who do not have health insurance.',
+      'The LASA Medical Foundation provides free primary medical care for low-income people who do not have health insurance.',
     hoursTitle: 'Clinic Hours',
     hours: [
       { label: 'Remote by Phone', value: 'To be confirmed' },
@@ -55,7 +55,7 @@ export const en = {
     scrollHint: 'Scroll down',
     motto: 'Love All, Serve All — Help Ever, Hurt Never',
     intro:
-      'The Lasa Medical Foundation Inc. provides free primary medical care for low-income people who do not have health insurance.',
+      'The LASA Medical Foundation provides free primary medical care for low-income people who do not have health insurance.',
     paragraphs: [
       'We provide non-emergency care for both acute and chronic medical conditions. The clinic is staffed by volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and other support staff.',
       '"Love All, Serve All | Help Ever, Hurt Never" summarizes the operational principles of our clinic. We are grateful for the chance to provide free medical care to those in need.',
@@ -110,7 +110,7 @@ export const en = {
   },
   location: {
     title: 'Location',
-    clinicName: 'Lasa Medical Foundation Inc.',
+    clinicName: 'LASA Medical Foundation',
     drivingTitle: 'Driving Address',
     mailingTitle: 'Mailing Address',
     phoneLabel: 'Phone',
