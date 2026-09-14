@@ -10,7 +10,11 @@ export default function Footer({ content }) {
       <div className="mx-auto grid max-w-[96rem] gap-10 px-5 sm:px-8 lg:grid-cols-3 lg:gap-16 lg:px-12 xl:px-16">
         <div>
           <Link to={content.paths.home} className="inline-flex items-center gap-3">
-            <img src="/finallogo.png" alt="Lasa Medical Foundation Inc." className="h-16 w-auto sm:h-20" />
+            <img
+              src="/lasa-crest.png"
+              alt="LASA Medical Foundation Inc."
+              className="h-16 w-auto sm:h-20"
+            />
             <LogoWordmark compact className="text-left" />
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-lasa-500">

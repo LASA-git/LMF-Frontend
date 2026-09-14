@@ -52,9 +52,9 @@ export default function Header({ content }) {
           onClick={() => setMobileOpen(false)}
         >
           <img
-            src="/finallogo.png"
-            alt="Lasa Medical Foundation Inc."
-            className="h-16 w-auto shrink-0 sm:h-20 lg:h-24 xl:h-28"
+            src="/lasa-crest.png"
+            alt="LASA Medical Foundation Inc."
+            className="h-16 w-auto shrink-0 sm:h-20 lg:h-24 xl:h-[7.25rem]"
           />
           <LogoWordmark
             compact

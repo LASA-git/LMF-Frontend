@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import { CONTACT } from '../constants/contact';
 import { getContent } from '../content';
-import LogoWordmark from '../components/LogoWordmark';
-import MedicalMark from '../components/MedicalMark';
 
 function InfoBox({ title, children }) {
   return (
@@ -24,17 +22,11 @@ export default function Splash() {
     <div className="min-h-screen max-w-[100%] overflow-x-clip bg-[linear-gradient(180deg,#EEF2EA_0%,#F7F8F4_38%,#F7F8F4_100%)]">
       <main className="mx-auto w-full max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
         <div className="mx-auto flex w-full max-w-[24rem] flex-col items-center rounded-2xl border border-lasa-200 bg-white p-6 shadow-[0_24px_48px_-20px_rgba(30,58,52,0.35)] sm:max-w-[28rem] sm:p-8">
-          <div className="flex w-full items-center justify-center gap-3 sm:gap-5">
-            <img
-              src="/finallogo.png"
-              alt=""
-              aria-hidden="true"
-              className="h-24 w-auto sm:h-32"
-            />
-            <span className="h-24 w-px self-center bg-lasa-200 sm:h-32" aria-hidden="true" />
-            <MedicalMark className="h-24 sm:h-32" title="" />
-          </div>
-          <LogoWordmark className="mt-5 w-full text-center" />
+          <img
+            src="/lasa-crest.png"
+            alt="LASA Medical Foundation Inc. — Love All Serve All"
+            className="h-40 w-auto sm:h-48"
+          />
         </div>
 
         <h1 className="mt-10 text-center font-display text-4xl text-lasa-700 sm:text-5xl">
