@@ -11,15 +11,12 @@ export default function SchedulePage({ lang }) {
   return (
     <div className="min-h-screen max-w-[100%] overflow-x-clip">
       <Header content={content} />
-      <main className="pt-20 sm:pt-24 lg:pt-28 xl:pt-32">
+      <main className="pt-24 sm:pt-28 lg:pt-32 xl:pt-36">
         <section className="relative overflow-hidden border-b border-lasa-200 bg-gradient-to-b from-lasa-100/95 to-lasa-50/90">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(134,160,125,0.24),transparent_46%)]" />
           <div className="relative mx-auto max-w-[72rem] px-4 py-16 sm:px-6 sm:py-24">
             <ScrollReveal>
-              <p className="reading-kicker text-sm font-semibold uppercase text-lasa-500">
-                {page.title}
-              </p>
-              <h1 className="reading-title mt-3 font-display text-5xl text-lasa-700 sm:text-7xl">
+              <h1 className="reading-title font-display text-5xl text-lasa-700 sm:text-7xl">
                 {page.title}
               </h1>
             </ScrollReveal>

@@ -8,7 +8,7 @@ import ScrollReveal from '../components/ScrollReveal';
 
 function Section({ id, children, className = '' }) {
   return (
-    <section id={id} className={`scroll-mt-24 sm:scroll-mt-28 lg:scroll-mt-32 xl:scroll-mt-36 ${className}`}>
+    <section id={id} className={`scroll-mt-28 sm:scroll-mt-32 lg:scroll-mt-36 xl:scroll-mt-40 ${className}`}>
       {children}
     </section>
   );
@@ -22,22 +22,16 @@ export default function ClinicPage({ lang }) {
     <div className="min-h-screen max-w-[100%] overflow-x-clip">
       <Header content={content} />
 
-      <main className="pt-20 sm:pt-24 lg:pt-28 xl:pt-32">
+      <main className="pt-24 sm:pt-28 lg:pt-32 xl:pt-36">
         <Section id="clinic" className="relative overflow-hidden">
           <div className="pointer-events-none absolute inset-x-0 top-0 h-[28rem] bg-[radial-gradient(circle_at_14%_18%,rgba(134,160,125,0.28),transparent_44%),radial-gradient(circle_at_86%_10%,rgba(79,122,106,0.22),transparent_48%)]" />
 
           <div className="relative border-b border-lasa-200 bg-gradient-to-b from-lasa-100/95 to-lasa-50/90">
-            <div className="mx-auto flex min-h-[70vh] w-full max-w-[90rem] flex-col justify-center px-5 py-16 sm:px-8 sm:py-24 lg:px-12">
+            <div className="mx-auto flex w-full max-w-[90rem] flex-col justify-center px-5 py-10 sm:px-8 sm:py-14 lg:px-12">
               <ScrollReveal>
-                <p className="reading-kicker text-sm font-semibold uppercase text-lasa-500">
-                  {clinic.heroKicker}
-                </p>
-                <h1 className="reading-title mt-3 font-display text-5xl text-lasa-700 sm:text-7xl">
+                <h1 className="reading-title font-display text-5xl text-lasa-700 sm:text-7xl">
                   {clinic.heroTitle}
                 </h1>
-                <p className="mt-4 text-base font-semibold uppercase tracking-[0.18em] text-lasa-500">
-                  {clinic.scrollHint}
-                </p>
                 <p className="reading-subtitle mt-8 max-w-4xl text-2xl text-lasa-600 sm:text-3xl">
                   {clinic.motto}
                 </p>
@@ -62,10 +56,7 @@ export default function ClinicPage({ lang }) {
         <Section id="operate" className="border-t border-lasa-200 bg-white/60">
           <div className="mx-auto w-full max-w-[90rem] px-5 py-14 sm:px-8 sm:py-20 lg:px-12">
             <ScrollReveal>
-              <p className="reading-kicker text-sm font-semibold uppercase text-lasa-500">
-                {operate.title}
-              </p>
-              <h2 className="reading-title mt-3 font-display text-4xl text-lasa-700 sm:text-6xl">
+              <h2 className="reading-title font-display text-4xl text-lasa-700 sm:text-6xl">
                 {operate.title}
               </h2>
             </ScrollReveal>
@@ -82,10 +73,7 @@ export default function ClinicPage({ lang }) {
         <Section id="services" className="border-t border-lasa-200">
           <div className="mx-auto w-full max-w-[90rem] px-5 py-14 sm:px-8 sm:py-20 lg:px-12">
             <ScrollReveal>
-              <p className="reading-kicker text-sm font-semibold uppercase text-lasa-500">
-                {services.title}
-              </p>
-              <h2 className="reading-title mt-3 font-display text-4xl text-lasa-700 sm:text-6xl">
+              <h2 className="reading-title font-display text-4xl text-lasa-700 sm:text-6xl">
                 {services.title}
               </h2>
               <p className="reading-copy mt-6 text-lg text-lasa-600 sm:text-xl">
@@ -120,26 +108,13 @@ export default function ClinicPage({ lang }) {
                 </article>
               </ScrollReveal>
             </div>
-
-            <div className="mt-8 space-y-4">
-              {services.eligibility.map((paragraph, index) => (
-                <ScrollReveal key={paragraph.slice(0, 24)} delay={revealDelay(index + 3)}>
-                  <div className="narrative-panel rounded-3xl p-6 sm:p-8">
-                    <p className="reading-copy text-base text-lasa-600 sm:text-lg">{paragraph}</p>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
           </div>
         </Section>
 
         <Section id="location" className="border-t border-lasa-200 bg-white/60">
           <div className="mx-auto w-full max-w-[90rem] px-5 py-14 sm:px-8 sm:py-20 lg:px-12">
             <ScrollReveal>
-              <p className="reading-kicker text-sm font-semibold uppercase text-lasa-500">
-                {location.title}
-              </p>
-              <h2 className="reading-title mt-3 font-display text-4xl text-lasa-700 sm:text-6xl">
+              <h2 className="reading-title font-display text-4xl text-lasa-700 sm:text-6xl">
                 {location.title}
               </h2>
               <p className="mt-4 text-xl font-semibold uppercase tracking-wide text-lasa-600">
@@ -173,9 +148,13 @@ export default function ClinicPage({ lang }) {
                   <div>
                     <p className="font-semibold text-lasa-700">
                       {location.phoneLabel}:{' '}
-                      <a href={CONTACT.phoneHref} className="font-medium text-lasa-600 hover:text-lasa-700">
-                        {CONTACT.phoneLabel}
-                      </a>
+                      {CONTACT.phoneHref ? (
+                        <a href={CONTACT.phoneHref} className="font-medium text-lasa-600 hover:text-lasa-700">
+                          {CONTACT.phoneLabel}
+                        </a>
+                      ) : (
+                        <span className="font-medium text-lasa-600">{CONTACT.phoneLabel}</span>
+                      )}
                     </p>
                   </div>
                 </div>
@@ -228,10 +207,7 @@ export default function ClinicPage({ lang }) {
         <Section id="contact" className="border-t border-lasa-200">
           <div className="mx-auto w-full max-w-[90rem] px-5 py-14 sm:px-8 sm:py-20 lg:px-12">
             <ScrollReveal>
-              <p className="reading-kicker text-sm font-semibold uppercase text-lasa-500">
-                {contact.title}
-              </p>
-              <h2 className="reading-title mt-3 font-display text-4xl text-lasa-700 sm:text-6xl">
+              <h2 className="reading-title font-display text-4xl text-lasa-700 sm:text-6xl">
                 {contact.title}
               </h2>
             </ScrollReveal>
@@ -246,9 +222,13 @@ export default function ClinicPage({ lang }) {
               <p className="reading-copy text-base text-lasa-600 sm:text-lg">{contact.body}</p>
               <p className="mt-6 text-base sm:text-lg">
                 <span className="font-semibold text-lasa-700">{content.splash.phoneLabel}: </span>
-                <a href={CONTACT.phoneHref} className="text-lasa-600 hover:text-lasa-700">
-                  {CONTACT.phoneLabel}
-                </a>
+                {CONTACT.phoneHref ? (
+                  <a href={CONTACT.phoneHref} className="text-lasa-600 hover:text-lasa-700">
+                    {CONTACT.phoneLabel}
+                  </a>
+                ) : (
+                  <span className="text-lasa-600">{CONTACT.phoneLabel}</span>
+                )}
               </p>
             </ScrollReveal>
 
@@ -273,10 +253,7 @@ export default function ClinicPage({ lang }) {
         <Section id="privacy-teaser" className="border-t border-lasa-200 bg-white/60">
           <div className="mx-auto w-full max-w-[90rem] px-5 py-14 sm:px-8 sm:py-20 lg:px-12">
             <ScrollReveal>
-              <p className="reading-kicker text-sm font-semibold uppercase text-lasa-500">
-                {privacyTeaser.title}
-              </p>
-              <h2 className="reading-title mt-3 font-display text-4xl text-lasa-700 sm:text-6xl">
+              <h2 className="reading-title font-display text-4xl text-lasa-700 sm:text-6xl">
                 {privacyTeaser.title}
               </h2>
             </ScrollReveal>

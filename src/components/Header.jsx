@@ -45,16 +45,16 @@ export default function Header({ content }) {
           : 'bg-white'
       }`}
     >
-      <div className="mx-auto flex h-20 w-full max-w-[96rem] items-center gap-3 px-4 sm:h-24 sm:gap-4 sm:px-6 lg:h-28 lg:px-12 xl:h-32 xl:px-16">
+      <div className="mx-auto flex h-24 w-full max-w-[96rem] items-center gap-3 px-4 sm:h-28 sm:gap-4 sm:px-6 lg:h-32 lg:px-12 xl:h-36 xl:px-16">
         <Link
           to={content.paths.home}
-          className="flex min-w-0 flex-1 items-center gap-2 sm:gap-3"
+          className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4"
           onClick={() => setMobileOpen(false)}
         >
           <img
             src="/finallogo.png"
             alt="Lasa Medical Foundation Inc."
-            className="h-12 w-auto shrink-0 sm:h-14 lg:h-16 xl:h-20"
+            className="h-16 w-auto shrink-0 sm:h-20 lg:h-24 xl:h-28"
           />
           <LogoWordmark
             compact

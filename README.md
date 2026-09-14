@@ -28,4 +28,4 @@ npm run preview
 | `/en/privacy` | English privacy notice |
 | `/es/privacidad` | Spanish privacy notice |
 
-Contact details are sourced from LASA Foundation (`40 Old Ferry Road, Lowell, MA`, `info@lasane.org`).
+Contact details are sourced from LASA Medical Foundation (`40 Old Ferry Road, Lowell, MA`, `info@lasamedical.org`).

@@ -73,9 +73,13 @@ export default function Splash() {
 
             <p className="mt-3 text-base text-lasa-700 sm:text-lg">
               <span className="font-bold">{splash.phoneLabel}:</span>{' '}
-              <a href={CONTACT.phoneHref} className="hover:text-lasa-500">
-                {CONTACT.phoneLabel}
-              </a>
+              {CONTACT.phoneHref ? (
+                <a href={CONTACT.phoneHref} className="hover:text-lasa-500">
+                  {CONTACT.phoneLabel}
+                </a>
+              ) : (
+                <span>{CONTACT.phoneLabel}</span>
+              )}
               {CONTACT.faxLabel ? (
                 <>
                   <span className="mx-1.5 text-lasa-300">|</span>

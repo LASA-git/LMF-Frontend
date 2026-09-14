@@ -55,9 +55,13 @@ export default function Footer({ content }) {
               {CONTACT.addressLine2}
             </li>
             <li>
-              <a href={CONTACT.phoneHref} className="hover:text-lasa-700">
-                {CONTACT.phoneLabel}
-              </a>
+              {CONTACT.phoneHref ? (
+                <a href={CONTACT.phoneHref} className="hover:text-lasa-700">
+                  {CONTACT.phoneLabel}
+                </a>
+              ) : (
+                <span>{CONTACT.phoneLabel}</span>
+              )}
             </li>
             <li>
               <a href={CONTACT.emailHref} className="hover:text-lasa-700">

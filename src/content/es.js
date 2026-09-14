@@ -1,4 +1,5 @@
 import { CONTACT } from '../constants/contact';
+import { privacyPageEs } from './privacyNoticeEs';
 
 export const es = {
   lang: 'es',
@@ -7,7 +8,7 @@ export const es = {
   otherLangPath: '/en',
   siteName: 'LASA Medical Foundation',
   shortName: 'LASA Medical Foundation',
-  motto: 'Ama a todos, Sirve a todos — Ayuda siempre, Nunca lastimes',
+  motto: 'Ama a todos, Sirve a todos',
   paths: {
     home: '/es',
     schedule: '/es/horario',
@@ -20,7 +21,6 @@ export const es = {
     { id: 'services', label: 'Servicios' },
     { id: 'location', label: 'Ubicación' },
     { id: 'contact', label: 'Contacto' },
-    { id: 'privacy', label: 'Privacidad', to: '/es/privacidad' },
     { id: 'schedule', label: 'Horario', to: '/es/horario' },
   ],
   splash: {
@@ -50,15 +50,13 @@ export const es = {
     enterSpanish: 'Oprima aquí para español',
   },
   clinic: {
-    heroKicker: 'La Clínica',
     heroTitle: 'La Clínica',
-    scrollHint: 'Desplácese hacia abajo',
-    motto: 'Ama a todos, Sirve a todos — Ayuda siempre, Nunca lastimes',
+    motto: 'Ama a todos, Sirve a todos',
     intro:
       'LASA Medical Foundation brinda atención médica primaria gratuita para personas de bajos ingresos que no tienen seguro médico.',
     paragraphs: [
       'Brindamos atención que no es de emergencia para afecciones médicas agudas y crónicas. La clínica cuenta con médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y otro personal de apoyo.',
-      '"Amar a todos, servir a todos | Ayudar siempre, nunca lastimar" resume los principios operativos de nuestra clínica. Estamos agradecidos por la oportunidad de brindar atención médica gratuita a quienes la necesitan.',
+      '"Amar a todos, servir a todos" resume los principios operativos de nuestra clínica. Estamos agradecidos por la oportunidad de brindar atención médica gratuita a quienes la necesitan.',
       'Lasa Medical Foundation Inc. es una organización sin fines de lucro 501(c)(3). Para mantener los gastos lo más bajos posible, no tenemos empleados asalariados en la clínica médica. Todos los que trabajan en esta clínica lo hacen como voluntarios no remunerados.',
       'Muchos de los maravillosos voluntarios que trabajan en nuestra clínica provienen de la comunidad local a la que servimos. Profesionales médicos altamente calificados — médicos, enfermeras practicantes, asistentes médicos, enfermeras registradas y fisioterapeutas — ofrecen su tiempo junto a miembros de la comunidad que comparten el compromiso de LASA de Amar a todos, Servir a todos.',
     ],
@@ -68,7 +66,7 @@ export const es = {
     paragraphs: [
       'Gran parte de la asistencia que necesitamos para operar la Clínica la brindan los médicos, las enfermeras practicantes, los asistentes médicos, las enfermeras tituladas, los fisioterapeutas y todo el resto del personal de apoyo, que ofrecen su tiempo como voluntarios para atender a los pacientes que acuden a nuestra clínica. Sabemos que la Clínica contará con el apoyo de personas que por su propia voluntad se movilizan para brindar asistencia.',
       'Agradecemos toda la generosidad de todos nuestros voluntarios, así como de los numerosos donantes privados e institucionales que hacen posible este trabajo.',
-      'Si desea ayudar a Lasa Medical Foundation Inc. de alguna manera, puede contactarnos en info@lasane.org.',
+      'Si desea ayudar a Lasa Medical Foundation Inc. de alguna manera, puede contactarnos en info@lasamedical.org.',
     ],
   },
   services: {
@@ -103,10 +101,6 @@ export const es = {
       'ETS / ITS — remita a estos pacientes a Planned Parenthood o al Departamento de Salud del condado',
       'Detección de ETS',
     ],
-    eligibility: [
-      'Las personas que deseen establecer atención deberán completar nuestro proceso de preselección financiera por teléfono para determinar que cumplen con los criterios de elegibilidad para la Clínica. Para quienes acudan sin cita previa, la evaluación de elegibilidad financiera se realizará en la Clínica. Una vez calificado para ser atendido, y dependiendo de la urgencia de su afección así como de la cantidad de clínicos disponibles, es posible que lo atiendan el mismo día o le programen una cita en el futuro. Las visitas de seguimiento se realizarán únicamente con cita previa.',
-      'La residencia legal en los EE. UU. no es un requisito previo para recibir atención en Lasa Medical Foundation Inc.',
-    ],
   },
   location: {
     title: 'Ubicación',
@@ -118,8 +112,7 @@ export const es = {
     directionsIntro:
       'Estamos ubicados en 40 Old Ferry Road, Lowell, MA 01854. Use el mapa a continuación para obtener indicaciones paso a paso, o abra la ubicación en Google Maps o Apple Maps.',
     parkingTitle: 'Estacionamiento',
-    parking:
-      'La información sobre estacionamiento en la calle y en el lugar se compartirá con los pacientes antes de los días de clínica.',
+    parking: 'Estacionamiento disponible en el lugar.',
     openMaps: 'Abrir en Google Maps',
     openAppleMaps: 'Abrir en Apple Maps',
   },
@@ -145,16 +138,7 @@ export const es = {
     ],
     cta: 'Prácticas de privacidad',
   },
-  privacyPage: {
-    title: 'Privacidad',
-    paragraphs: [
-      'Su Información Privada de Salud (IPS) es la información de salud que contiene identificación, como su nombre, número de seguro social, u otra información que revela quién es. Por ejemplo, su historial médico es IPS porque contiene su nombre y otros medios de identificación.',
-      'Por ley, debemos proteger la privacidad de su IPS, advertirle de sus derechos y nuestros deberes legales con respecto a su IPS, y advertirle sobre nuestras prácticas de privacidad y seguir el aviso vigente.',
-      'Nos tomamos en serio estas responsabilidades y tomaremos las medidas adecuadas para salvaguardar la privacidad de su IPS. Este aviso describe cómo se puede usar y divulgar la información médica sobre usted y cómo puede obtener acceso a esta información.',
-      'Si tiene preguntas sobre nuestras prácticas de privacidad, contáctenos en info@lasane.org o llame al +1 (978) 710 4012.',
-    ],
-    back: 'Volver a la clínica',
-  },
+  privacyPage: privacyPageEs,
   schedulePage: {
     title: 'Horario',
     placeholder: 'Horario de la clínica próximamente.',
