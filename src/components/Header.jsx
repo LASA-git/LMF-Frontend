@@ -45,21 +45,18 @@ export default function Header({ content }) {
           : 'bg-white'
       }`}
     >
-      <div className="mx-auto flex h-24 w-full max-w-[96rem] items-center gap-3 px-4 sm:h-28 sm:gap-4 sm:px-6 lg:h-32 lg:px-12 xl:h-36 xl:px-16">
+      <div className="mx-auto flex min-h-20 w-full max-w-[96rem] items-center gap-3 px-4 py-2 sm:min-h-28 sm:gap-4 sm:px-6 sm:py-0 lg:min-h-32 lg:px-12 xl:min-h-36 xl:px-16">
         <Link
           to={content.paths.home}
-          className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4"
+          className="mr-auto flex min-w-0 max-w-[calc(100%-3.25rem)] items-center gap-2.5 sm:max-w-none sm:gap-3 lg:gap-4"
           onClick={() => setMobileOpen(false)}
         >
           <img
             src="/lasa-crest.png"
             alt="LASA Medical Foundation Inc."
-            className="h-16 w-auto shrink-0 sm:h-20 lg:h-24 xl:h-[7.25rem]"
+            className="h-12 w-auto shrink-0 sm:h-20 lg:h-24 xl:h-[7.25rem]"
           />
-          <LogoWordmark
-            compact
-            className="min-w-0 text-left [&_p]:truncate sm:[&_p]:overflow-visible"
-          />
+          <LogoWordmark compact className="min-w-0" />
         </Link>
 
         <nav className="ml-auto hidden items-center justify-end gap-1 lg:flex">
