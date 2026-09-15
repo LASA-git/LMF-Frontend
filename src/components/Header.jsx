@@ -54,7 +54,7 @@ export default function Header({ content }) {
           <img
             src="/lasa-crest.png"
             alt="LASA Medical Foundation Inc."
-            className="h-12 w-auto shrink-0 sm:h-20 lg:h-24 xl:h-[7.25rem]"
+            className="h-14 w-auto shrink-0 sm:h-24 lg:h-28 xl:h-32"
           />
           <LogoWordmark compact className="min-w-0" />
         </Link>

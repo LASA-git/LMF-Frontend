@@ -25,7 +25,7 @@ export default function Splash() {
           <img
             src="/lasa-crest.png"
             alt="LASA Medical Foundation Inc. — Love All Serve All"
-            className="h-40 w-auto sm:h-48"
+            className="h-52 w-auto sm:h-64"
           />
         </div>
 
