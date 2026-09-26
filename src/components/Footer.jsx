@@ -7,25 +7,22 @@ export default function Footer({ content }) {
   const links = content.nav.filter((item) => !item.emphasize);
 
   return (
-    <footer className="mt-16 border-t border-lasa-200 bg-white pb-8 pt-12 sm:pt-16">
-      <div className="mx-auto grid max-w-[96rem] grid-cols-1 gap-12 px-5 sm:grid-cols-2 sm:gap-10 sm:px-8 lg:grid-cols-4 lg:items-start lg:gap-x-12 lg:px-12 xl:px-16">
-        <div className="min-w-0 text-center">
-          <Link to={content.paths.home} className="mx-auto flex max-w-[16rem] flex-col items-center gap-3">
+    <footer className="mt-16 border-t border-lasa-200 bg-white pb-10 pt-12 sm:pt-16">
+      <div className="mx-auto grid max-w-[96rem] grid-cols-1 gap-12 px-6 sm:px-8 lg:grid-cols-4 lg:items-start lg:gap-x-12 lg:px-12 xl:px-16">
+        <div className="flex flex-col items-center text-center">
+          <Link to={content.paths.home} className="flex flex-col items-center gap-4">
             <img
               src="/lasa-crest.png"
               alt="LASA Medical Foundation Inc."
-              className="h-16 w-auto shrink-0 sm:h-20"
+              className="h-20 w-auto sm:h-24"
             />
-            <LogoWordmark compact wrap className="w-full text-center" />
+            <LogoWordmark compact wrap className="text-center" />
           </Link>
-          <p className="mx-auto mt-4 max-w-[16rem] text-sm leading-relaxed text-lasa-500">
-            {content.splash.mission}
-          </p>
         </div>
 
-        <div className="min-w-0 text-center sm:text-left">
-          <h3 className="mb-4 text-lg font-bold text-lasa-600">{content.footer.linksTitle}</h3>
-          <ul className="flex flex-col gap-2 text-sm font-medium text-lasa-500">
+        <div>
+          <h3 className="mb-5 text-lg font-bold text-lasa-700">{content.footer.linksTitle}</h3>
+          <ul className="flex flex-col gap-3.5 text-base font-medium text-lasa-500">
             {links.map((item) => (
               <li key={item.id}>
                 <Link to={item.to} className="hover:text-lasa-700">
@@ -46,17 +43,15 @@ export default function Footer({ content }) {
           </ul>
         </div>
 
-        <div className="min-w-0 text-center sm:text-left">
-          <h3 className="mb-4 text-lg font-bold text-lasa-600">{content.contact.title}</h3>
-          <ul className="flex flex-col gap-3 text-sm font-medium text-lasa-500">
+        <div>
+          <h3 className="mb-5 text-lg font-bold text-lasa-700">{content.contact.title}</h3>
+          <ul className="flex flex-col gap-3.5 text-base font-medium text-lasa-500">
             <li>
               {CONTACT.addressLine1}
               <br />
               {CONTACT.addressLine2}
             </li>
-            <li>
-              <span>{CONTACT.phoneLabel}</span>
-            </li>
+            <li>{CONTACT.phoneLabel}</li>
             <li>
               <a href={CONTACT.emailHref} className="hover:text-lasa-700">
                 {CONTACT.emailLabel}
@@ -65,9 +60,9 @@ export default function Footer({ content }) {
           </ul>
         </div>
 
-        <div className="min-w-0 text-center sm:text-left">
-          <h3 className="mb-4 text-lg font-bold text-lasa-600">{content.donate.title}</h3>
-          <p className="mb-5 text-sm leading-relaxed text-lasa-500">{content.footer.donateIntro}</p>
+        <div>
+          <h3 className="mb-5 text-lg font-bold text-lasa-700">{content.donate.title}</h3>
+          <p className="mb-5 text-base leading-relaxed text-lasa-500">{content.footer.donateIntro}</p>
           <Link
             to={content.paths.donate}
             className="inline-flex items-center justify-center rounded-full bg-lasa-700 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white hover:bg-lasa-600"
@@ -77,8 +72,8 @@ export default function Footer({ content }) {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-[96rem] border-t border-lasa-200/60 px-5 pt-6 sm:px-8 lg:px-12 xl:px-16">
-        <p className="text-center text-xs font-medium leading-relaxed text-lasa-500/80 sm:text-left">
+      <div className="mx-auto mt-12 max-w-[96rem] border-t border-lasa-200/60 px-6 pt-6 sm:px-8 lg:px-12 xl:px-16">
+        <p className="text-xs font-medium leading-relaxed text-lasa-500/80">
           Copyright © {year} {content.footer.legal}
         </p>
       </div>
