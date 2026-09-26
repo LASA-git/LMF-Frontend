@@ -50,8 +50,7 @@ export default function PrivacyPage({ lang }) {
     <div className="min-h-screen max-w-[100%] overflow-x-clip">
       <Header content={content} />
       <main className="pt-24 sm:pt-28 lg:pt-32 xl:pt-36">
-        <section className="relative overflow-hidden border-b border-lasa-200 bg-gradient-to-b from-lasa-100/95 to-lasa-50/90">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_82%_18%,rgba(79,122,106,0.22),transparent_48%)]" />
+        <section className="relative overflow-hidden border-b border-slate-200 bg-white">
           <div className="relative mx-auto max-w-[72rem] px-5 py-14 sm:px-8 sm:py-20 lg:px-12">
             <h1 className="reading-title font-display text-4xl text-lasa-700 sm:text-6xl">
               {page.heading}

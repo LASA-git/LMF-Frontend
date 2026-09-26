@@ -9,7 +9,6 @@ export default function Header({ content }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const otherPath = getAlternateLangPath(pathname, content.otherLang);
-  const onClinicHome = pathname === content.paths.home;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -28,21 +27,29 @@ export default function Header({ content }) {
     setMobileOpen(false);
   }, [pathname]);
 
-  const sectionLinks = content.nav.filter((item) => !item.to);
-  const pageLinks = content.nav.filter((item) => item.to);
-
-  const sectionHref = (id) =>
-    onClinicHome ? `#${id}` : `${content.paths.home}#${id}`;
-
   const desktopLinkClass =
-    'shrink-0 whitespace-nowrap rounded-full px-3 py-2.5 text-xs font-semibold uppercase tracking-wide text-lasa-600 transition hover:bg-lasa-50 hover:text-lasa-700 xl:px-3.5 xl:text-sm';
+    'shrink-0 whitespace-nowrap rounded-full px-3 py-2.5 text-xs font-semibold uppercase tracking-wide transition xl:px-3.5 xl:text-sm';
+
+  function navClass(item, isActive, mobile = false) {
+    if (item.emphasize) {
+      return mobile
+        ? 'rounded-xl bg-lasa-700 px-4 py-3.5 text-base font-semibold text-white'
+        : `${desktopLinkClass} bg-lasa-700 text-white hover:bg-lasa-600`;
+    }
+    if (mobile) {
+      return `rounded-xl px-4 py-3.5 text-base font-semibold hover:bg-lasa-50 ${
+        isActive ? 'bg-lasa-100 text-lasa-700' : 'text-lasa-700'
+      }`;
+    }
+    return `${desktopLinkClass} ${
+      isActive ? 'bg-lasa-100 text-lasa-700' : 'text-lasa-600 hover:bg-lasa-50 hover:text-lasa-700'
+    }`;
+  }
 
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 w-full transition-all duration-300 ${
-        scrolled || mobileOpen
-          ? 'bg-white shadow-[0_4px_24px_rgba(30,58,52,0.1)]'
-          : 'bg-white'
+        scrolled || mobileOpen ? 'bg-white shadow-[0_4px_24px_rgba(21,58,98,0.1)]' : 'bg-white'
       }`}
     >
       <div className="mx-auto flex min-h-20 w-full max-w-[96rem] items-center gap-3 px-4 py-2 sm:min-h-28 sm:gap-4 sm:px-6 sm:py-0 lg:min-h-32 lg:px-12 xl:min-h-36 xl:px-16">
@@ -54,24 +61,18 @@ export default function Header({ content }) {
           <img
             src="/lasa-crest.png"
             alt="LASA Medical Foundation Inc."
-            className="h-14 w-auto shrink-0 sm:h-24 lg:h-28 xl:h-32"
+            className="h-14 w-auto shrink-0 sm:h-20 lg:h-24 xl:h-28"
           />
           <LogoWordmark compact className="min-w-0" />
         </Link>
 
         <nav className="ml-auto hidden items-center justify-end gap-1 lg:flex">
-          {sectionLinks.map((item) => (
-            <Link key={item.id} to={sectionHref(item.id)} className={desktopLinkClass}>
-              {item.label}
-            </Link>
-          ))}
-          {pageLinks.map((item) => (
+          {content.nav.map((item) => (
             <NavLink
               key={item.id}
               to={item.to}
-              className={({ isActive }) =>
-                `${desktopLinkClass} ${isActive ? 'bg-lasa-100 text-lasa-700' : ''}`
-              }
+              end={item.to === content.paths.home}
+              className={({ isActive }) => navClass(item, isActive)}
             >
               {item.label}
             </NavLink>
@@ -139,26 +140,13 @@ export default function Header({ content }) {
             </div>
 
             <nav className="mt-5 flex flex-col gap-1">
-              {sectionLinks.map((item) => (
-                <Link
-                  key={item.id}
-                  to={sectionHref(item.id)}
-                  onClick={() => setMobileOpen(false)}
-                  className="rounded-xl px-4 py-3.5 text-base font-semibold text-lasa-700 hover:bg-lasa-50"
-                >
-                  {item.label}
-                </Link>
-              ))}
-              {pageLinks.map((item) => (
+              {content.nav.map((item) => (
                 <NavLink
                   key={item.id}
                   to={item.to}
+                  end={item.to === content.paths.home}
                   onClick={() => setMobileOpen(false)}
-                  className={({ isActive }) =>
-                    `rounded-xl px-4 py-3.5 text-base font-semibold hover:bg-lasa-50 ${
-                      isActive ? 'bg-lasa-100 text-lasa-700' : 'text-lasa-700'
-                    }`
-                  }
+                  className={({ isActive }) => navClass(item, isActive, true)}
                 >
                   {item.label}
                 </NavLink>

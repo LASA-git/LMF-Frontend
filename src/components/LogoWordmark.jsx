@@ -1,6 +1,6 @@
-export default function LogoWordmark({ className = '', compact = false }) {
-  // Original LASA wordmark green sampled from brand artwork
-  const lasaDark = '#18483C';
+export default function LogoWordmark({ className = '', compact = false, wrap = false }) {
+  // Deep navy from the crest banner / brand lockup
+  const lasaDark = '#153A62';
 
   return (
     <div className={className}>
@@ -14,7 +14,7 @@ export default function LogoWordmark({ className = '', compact = false }) {
         <p
           className={`font-sans font-bold ${
             compact
-              ? 'text-[0.8125rem] leading-[1.15] sm:whitespace-nowrap sm:text-base lg:text-lg xl:text-xl'
+              ? `text-[0.8125rem] leading-[1.15] sm:text-base lg:text-lg ${wrap ? 'text-center' : 'sm:whitespace-nowrap xl:text-xl'}`
               : 'whitespace-nowrap text-lg leading-tight sm:text-xl'
           }`}
           style={{ color: lasaDark }}

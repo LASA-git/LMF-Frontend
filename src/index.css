@@ -13,10 +13,9 @@ html {
 
 body {
   @apply font-sans;
-  color: #1E3A34;
-  background-color: #F7F8F4;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Ccircle cx='1.5' cy='1.5' r='1.2' fill='%23D9E4D5'/%3E%3C/svg%3E");
-  background-size: 22px 22px;
+  color: #153A62;
+  background-color: #ffffff;
+  background-image: none;
   width: 100%;
   max-width: 100%;
   overflow-x: clip;
@@ -47,7 +46,7 @@ body {
   inset: 0 auto auto 0;
   height: 3px;
   width: 100%;
-  background: linear-gradient(90deg, rgba(79, 122, 106, 0.92), rgba(185, 200, 176, 0.25));
+  background: linear-gradient(90deg, rgba(40, 103, 164, 0.95), rgba(201, 162, 74, 0.55));
   transform-origin: left;
   transform: scaleX(0.28);
   transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -58,9 +57,9 @@ body {
 }
 
 .narrative-panel {
-  border: 1px solid rgba(217, 228, 213, 0.95);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(247, 248, 244, 0.86));
-  box-shadow: 0 22px 52px -34px rgba(30, 58, 52, 0.5);
+  border: 1px solid rgba(201, 220, 239, 0.95);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(245, 249, 253, 0.9));
+  box-shadow: 0 22px 52px -34px rgba(21, 58, 98, 0.45);
 }
 
 .reading-title {
