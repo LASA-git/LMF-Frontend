@@ -24,7 +24,7 @@ export const es = {
     { id: 'clinic', label: 'Clínica', to: '/es/clinica' },
     { id: 'book', label: 'Reservar', to: '/es/horario' },
     { id: 'contact', label: 'Contáctenos', to: '/es/contacto' },
-    { id: 'donate', label: 'Donar', to: '/es/donar', emphasize: true },
+    { id: 'donate', label: 'Contribuir a LMF', to: '/es/donar', emphasize: true },
   ],
   splash: {
     title: 'LASA Medical Foundation',
@@ -42,7 +42,7 @@ export const es = {
       'LASA Medical Foundation es una organización 501(c)(3) con sede en Massachusetts creada para brindar atención médica gratuita y de bajo costo a personas desatendidas mediante una clínica impulsada por voluntarios. Ningún servicio depende de la capacidad de pago ni del estado de seguro del paciente.',
       'La clínica ofrece atención primaria que no es de emergencia para afecciones agudas y crónicas. Médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y miembros de la comunidad atienden cada día de clínica sin salario, para que el mayor apoyo posible llegue a los pacientes.',
       'Muchos de esos voluntarios provienen de la comunidad de Lowell a la que servimos. “Amar a todos, servir a todos” es nuestro lema y la forma en que opera la clínica: las personas ofrecen su tiempo para que los vecinos tengan un lugar donde recibir atención.',
-      'Agradecemos a cada clínico, colaborador y aliado que mantiene las puertas abiertas. Si desea ayudar, puede escribirnos a info@lasamedical.org o usar la página Donar.',
+      'Agradecemos a cada clínico, colaborador y aliado que mantiene las puertas abiertas. Si desea ayudar, puede escribirnos a info@lasamedical.org o usar la página Contribuir.',
     ],
   },
   team: {
@@ -77,10 +77,29 @@ export const es = {
     scheduleCta: 'Reservar un día de clínica',
   },
   donate: {
-    title: 'Donar',
-    body: 'Su donativo ayuda a que clínicos voluntarios brinden atención gratuita en Lowell. El pago por PayPal se conectará aquí después.',
-    button: 'Donar',
-    comingSoon: 'La redirección a PayPal aún no está configurada. Este botón es un marcador de posición.',
+    title: 'Contribuir a LMF',
+    lede: 'Apoye la clínica con un donativo, su tiempo, suministros o una alianza comunitaria.',
+    button: 'Contribuir',
+    donation: {
+      title: 'Hacer un donativo',
+      body: 'Su donativo ayuda a que clínicos voluntarios brinden atención gratuita en Lowell.',
+      button: 'Donar',
+      note: 'El pago por PayPal se conectará aquí después.',
+    },
+    volunteer: {
+      title: 'Ser voluntario',
+      body: 'Únase a clínicos y miembros de la comunidad en la clínica médica gratuita.',
+      button: 'Voluntariado',
+      note: 'Pronto se conectará aquí un formulario de voluntariado.',
+    },
+    supplies: {
+      title: 'Donar suministros médicos',
+      body: 'Para donar suministros médicos, comuníquese con Vijay Sarathy, administrador de la clínica.',
+    },
+    partner: {
+      title: 'Ser aliado comunitario',
+      body: 'Para ser aliado comunitario, comuníquese con Vijay Sarathy, administrador de la clínica.',
+    },
   },
   clinic: {
     heroTitle: 'La Clínica',
@@ -94,7 +113,7 @@ export const es = {
       { id: 'contact', label: 'Contacto' },
       { id: 'privacy', label: 'Privacidad' },
       { id: 'schedule', label: 'Reservar' },
-      { id: 'donate', label: 'Donar' },
+      { id: 'donate', label: 'Contribuir' },
     ],
     paragraphs: [
       'Brindamos atención que no es de emergencia para afecciones médicas agudas y crónicas. La clínica cuenta con médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y otro personal de apoyo.',
@@ -226,7 +245,7 @@ export const es = {
   },
   footer: {
     linksTitle: 'Enlaces',
-    donateIntro: 'Su donativo ayuda a que clínicos voluntarios brinden atención gratuita en Lowell.',
+    donateIntro: 'Done, sea voluntario, aporte suministros o aliése con la clínica.',
     legal:
       'Lasa Medical Foundation es una organización sin fines de lucro 501(c)(3) reconocida a nivel federal. EIN: 42-2270643',
   },

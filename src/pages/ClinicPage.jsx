@@ -114,7 +114,7 @@ export default function ClinicPage({ lang }) {
       </Section>
 
       <Section id="donate" title={donate.title}>
-        <p className="reading-copy text-lg text-lasa-600">{donate.body}</p>
+        <p className="reading-copy text-lg text-lasa-600">{donate.lede}</p>
         <Link
           to={content.paths.donate}
           className="mt-6 inline-flex rounded-full bg-lasa-700 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white hover:bg-lasa-600"

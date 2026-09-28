@@ -8,6 +8,8 @@ export const CONTACT = {
   faxLabel: '',
   emailHref: 'mailto:info@lasamedical.org',
   emailLabel: 'info@lasamedical.org',
+  paypalDonateUrl: '',
+  volunteerFormUrl: '',
   facebookUrl: 'https://m.facebook.com/loveallserveallne/',
   mapsEmbedUrl: 'https://www.google.com/maps?q=40+Old+Ferry+Road,+Lowell,+MA+01854&output=embed',
   mapsOpenUrl: 'https://maps.app.goo.gl/b16FkqyKXTAioZb37',
