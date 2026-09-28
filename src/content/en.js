@@ -105,7 +105,7 @@ export const en = {
     heroTitle: 'The Clinic',
     motto: 'Love All, Serve All',
     intro:
-      'The LASA Medical Foundation provides free primary medical care for low-income people who do not have health insurance.',
+      'A volunteer-run clinic offering free primary care to people who are uninsured or cannot afford medical care.',
     subnav: [
       { id: 'services', label: 'Services' },
       { id: 'hours', label: 'Hours' },

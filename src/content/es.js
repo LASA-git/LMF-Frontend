@@ -105,7 +105,7 @@ export const es = {
     heroTitle: 'La Clínica',
     motto: 'Ama a todos, Sirve a todos',
     intro:
-      'LASA Medical Foundation brinda atención médica primaria gratuita para personas de bajos ingresos que no tienen seguro médico.',
+      'Una clínica impulsada por voluntarios que ofrece atención primaria gratuita a personas sin seguro o que no pueden pagar la atención médica.',
     subnav: [
       { id: 'services', label: 'Servicios' },
       { id: 'hours', label: 'Horario' },
