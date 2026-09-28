@@ -24,7 +24,7 @@ export const en = {
     { id: 'clinic', label: 'Clinic', to: '/en/clinic' },
     { id: 'book', label: 'Book', to: '/en/schedule' },
     { id: 'contact', label: 'Contact Us', to: '/en/contact' },
-    { id: 'donate', label: 'Contribute to LMF', to: '/en/donate', emphasize: true },
+    { id: 'donate', label: 'Getting Involved', to: '/en/donate', emphasize: true },
   ],
   splash: {
     title: 'LASA Medical Foundation',
@@ -42,7 +42,7 @@ export const en = {
       'LASA Medical Foundation is a Massachusetts-based 501(c)(3) nonprofit organized to provide free and low-cost healthcare to underserved people through a volunteer-driven clinic. No service is contingent on a patient’s ability to pay or insurance status.',
       'The clinic offers non-emergency primary care for acute and chronic conditions. Volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and community members staff each clinic day without salaries, so as much support as possible goes to patient care.',
       'Many of those volunteers come from the Lowell community we serve. “Love All, Serve All” is both our motto and the way the clinic operates: people give their time because they want neighbors to have a place to turn for care.',
-      'We are grateful to every clinician, supporter, and partner who keeps the doors open. If you would like to help, you can contact us at info@lasamedical.org or use the Contribute page.',
+      'We are grateful to every clinician, supporter, and partner who keeps the doors open. If you would like to help, you can contact us at info@lasamedical.org or use the Getting Involved page.',
     ],
   },
   team: {
@@ -77,9 +77,9 @@ export const en = {
     scheduleCta: 'Book a clinic day',
   },
   donate: {
-    title: 'Contribute to LMF',
+    title: 'Getting Involved',
     lede: 'Support the clinic through a gift, your time, supplies, or a community partnership.',
-    button: 'Contribute',
+    button: 'Getting Involved',
     donation: {
       title: 'Make a Donation',
       body: 'Your gift helps volunteer clinicians provide free care in Lowell.',
@@ -113,7 +113,7 @@ export const en = {
       { id: 'contact', label: 'Contact' },
       { id: 'privacy', label: 'Privacy' },
       { id: 'schedule', label: 'Schedule' },
-      { id: 'donate', label: 'Contribute' },
+      { id: 'donate', label: 'Getting Involved' },
     ],
     paragraphs: [
       'We provide non-emergency care for both acute and chronic medical conditions. The clinic is staffed by volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and other support staff.',
