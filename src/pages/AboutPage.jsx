@@ -7,7 +7,7 @@ export default function AboutPage({ lang }) {
   const page = content.about;
 
   return (
-    <SiteLayout content={content} title={page.title} lede={page.lede}>
+    <SiteLayout content={content} title={page.title}>
       <section className="mx-auto w-full max-w-[90rem] space-y-5 px-5 py-12 sm:px-8 sm:py-16 lg:px-12">
         {page.paragraphs.map((paragraph) => (
           <div key={paragraph.slice(0, 32)} className="narrative-panel rounded-3xl p-6 sm:p-8">
