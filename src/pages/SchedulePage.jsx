@@ -9,7 +9,7 @@ export default function SchedulePage({ lang }) {
   return (
     <ScheduleFrame content={content} title={page.title}>
       <div className="narrative-panel rounded-3xl p-8 text-center sm:p-12">
-        <p className="reading-subtitle font-display text-3xl text-lasa-700 sm:text-4xl">{page.comingSoon}</p>
+        <p className="reading-subtitle font-sans text-3xl text-lasa-700 sm:text-4xl">{page.comingSoon}</p>
       </div>
       <Link
         to={content.paths.clinic}

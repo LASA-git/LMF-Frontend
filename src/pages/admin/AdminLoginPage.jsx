@@ -56,7 +56,7 @@ export default function AdminLoginPage() {
 
   return (
     <AdminShell>
-      <h1 className="font-display text-3xl text-lasa-700 sm:text-4xl">Staff sign-in</h1>
+      <h1 className="font-sans text-3xl text-lasa-700 sm:text-4xl">Staff sign-in</h1>
       <p className="mt-3 text-sm leading-relaxed text-lasa-600">
         This page is not linked from the public clinic site. It signs in against {getApiUrl()}.
       </p>

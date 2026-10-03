@@ -6,9 +6,9 @@ import SiteLayout from '../components/SiteLayout';
 
 function Section({ id, title, children }) {
   return (
-    <section id={id} className="scroll-mt-36 border-t border-lasa-200 px-5 py-14 sm:scroll-mt-40 sm:px-8 sm:py-20 lg:px-12">
+    <section id={id} className="scroll-mt-32 border-t border-lasa-200 px-5 py-14 sm:scroll-mt-36 sm:px-8 sm:py-20 lg:px-12">
       <div className="mx-auto w-full max-w-[90rem]">
-        <h2 className="reading-title font-display text-4xl text-lasa-700 sm:text-6xl">{title}</h2>
+        <h2 className="reading-title font-sans text-3xl text-lasa-700 sm:text-4xl">{title}</h2>
         <div className="mt-8">{children}</div>
       </div>
     </section>

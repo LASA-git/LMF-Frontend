@@ -12,6 +12,7 @@ export const en = {
     home: '/en',
     clinic: '/en/clinic',
     team: '/en/team',
+    partners: '/en/partners',
     contact: '/en/contact',
     donate: '/en/donate',
     schedule: '/en/schedule',
@@ -20,11 +21,12 @@ export const en = {
     splash: '/',
   },
   nav: [
-    { id: 'about', label: 'About Us', to: '/en' },
+    { id: 'home', label: 'Home', to: '/en' },
+    { id: 'team', label: 'Our Team', to: '/en/team' },
     { id: 'clinic', label: 'The Clinic', to: '/en/clinic' },
     { id: 'book', label: 'Book Now', to: '/en/schedule' },
-    { id: 'contact', label: 'Contact Us', to: '/en/contact' },
-    { id: 'donate', label: 'Get Involved', to: '/en/donate', emphasize: true },
+    { id: 'partners', label: 'Our Partners', to: '/en/partners' },
+    { id: 'donate', label: 'Getting Involved', to: '/en/donate' },
   ],
   splash: {
     title: 'LASA Medical Foundation',
@@ -35,36 +37,39 @@ export const en = {
     enterSpanish: 'Oprima aquí para español',
   },
   about: {
-    title: 'About Us',
+    title: 'Home',
     lede: 'Love All, Serve All.',
-    teamCta: 'Meet the Team',
+    welcomeKicker: 'Welcome to',
+    welcomeName: 'LASA Medical Foundation',
+    primaryCta: 'Book Now',
+    secondaryCta: 'Getting Involved',
+    teamCta: 'Our Team',
     paragraphs: [
       'LASA Medical Foundation is a Massachusetts-based 501(c)(3) nonprofit organized to provide free and low-cost healthcare to underserved people through a volunteer-driven clinic. No service is contingent on a patient’s ability to pay or insurance status.',
       'The clinic offers non-emergency primary care for acute and chronic conditions. Volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and community members staff each clinic day without salaries, so as much support as possible goes to patient care.',
       'Many of those volunteers come from the Lowell community we serve. “Love All, Serve All” is both our motto and the way the clinic operates: people give their time because they want neighbors to have a place to turn for care.',
-      'We are grateful to every clinician, supporter, and partner who keeps the doors open. If you would like to help, you can contact us at info@lasamedical.org or use the Get Involved page.',
     ],
   },
   team: {
-    title: 'Meet the Team',
+    title: 'Our Team',
     lede: 'The clinic is led by a volunteer board, medical director, and administrator, with visiting clinicians on each clinic day.',
     boardTitle: 'Board Members',
     board: [
       {
-        name: 'Ramesh Razdan',
-        bio: 'A seasoned corporate executive who currently serves as the Chief Information Officer of Bain & Company.',
+        name: 'Dr. Anasuya Gunturi, MD',
+        bio: 'A triple-boarded physician in Internal Medicine, Hematology, and Medical Oncology who serves as the Medical Director of the Cancer Center at Tufts Medicine Lowell General Hospital.',
       },
       {
         name: 'Dr. Suman Koganti, MD',
         bio: 'A board-certified Hepato-Biliary and Pancreatic (HPB) surgeon. He serves as Clinical Assistant Professor of Surgery at Tufts Medical Center and Medical Director of HPB Surgery at Lowell General Hospital.',
       },
       {
-        name: 'Dr. Anasuya Gunturi, MD',
-        bio: 'A triple-boarded physician in Internal Medicine, Hematology, and Medical Oncology who serves as the Medical Director of the Cancer Center at Tufts Medicine Lowell General Hospital.',
-      },
-      {
         name: 'Dr. Swapna Putta, MD',
         bio: 'A board-certified neurologist based in South Weymouth, Massachusetts, who specializes in epilepsy and neurophysiology. She serves as the Director of the EEG laboratory at South Shore Hospital and is affiliated with Mass General Brigham and Brigham and Women’s Hospital.',
+      },
+      {
+        name: 'Ramesh Razdan',
+        bio: 'A seasoned corporate executive who currently serves as the Chief Information Officer of Bain & Company.',
       },
       {
         name: 'Dr. Sanjay Shah, MD',
@@ -84,10 +89,13 @@ export const en = {
         bio: 'A seasoned corporate executive who currently serves as a Senior Advisor with McKinsey & Company.',
       },
     ],
-    thanksTitle: 'With gratitude',
-    thanksIntro: 'We thank our partners for supporting clinic operations.',
-    memberOf: 'We are a member of',
-    back: 'Back to About Us',
+    back: 'Back to Home',
+  },
+  partners: {
+    title: 'Our Partners',
+    lede: 'We thank our partners for supporting clinic operations.',
+    memberTitle: 'Membership',
+    memberIntro: 'We are a member of the National Association of Free & Charitable Clinics.',
   },
   hours: {
     title: 'Hours',
@@ -101,9 +109,9 @@ export const en = {
     scheduleCta: 'Book a clinic day',
   },
   donate: {
-    title: 'Get Involved',
+    title: 'Getting Involved',
     lede: 'Support the clinic through a gift, your time, supplies, or a community partnership.',
-    button: 'Get Involved',
+    button: 'Getting Involved',
     donation: {
       title: 'Make a Donation',
       body: 'Your gift helps volunteer clinicians provide free care in Lowell.',
@@ -137,13 +145,11 @@ export const en = {
       { id: 'contact', label: 'Contact' },
       { id: 'privacy', label: 'Privacy' },
       { id: 'schedule', label: 'Schedule' },
-      { id: 'donate', label: 'Get Involved' },
+      { id: 'donate', label: 'Getting Involved' },
     ],
     paragraphs: [
       'We provide non-emergency care for both acute and chronic medical conditions. The clinic is staffed by volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and other support staff.',
-      '"Love All, Serve All" summarizes the operational principles of our clinic. We are grateful for the chance to provide free medical care to those in need.',
-      'Lasa Medical Foundation Inc. is a 501(c)(3) nonprofit organization. To keep expenses as low as possible, we do not have any salaried employees at the medical clinic. Everyone who works at this clinic does so as a non-paid volunteer.',
-      'Many of the wonderful volunteers who work at our clinic come from the local community that we serve. Highly skilled medical professionals — physicians, nurse practitioners, physician assistants, registered nurses, and physical therapists — volunteer their time alongside community members who share LASA’s commitment to Love All, Serve All.',
+      'Many of the volunteers who work at our clinic come from the local community that we serve. Highly skilled medical professionals — physicians, nurse practitioners, physician assistants, registered nurses, and physical therapists — volunteer their time at the Clinic.',
     ],
   },
   operate: {
@@ -151,7 +157,7 @@ export const en = {
     paragraphs: [
       'Much of the assistance we need to operate the Clinic is provided by the physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and all the other support staff who volunteer their time to serve the patients who come to our clinic. We know that the Clinic will be supported by people who of their own accord are moved to provide assistance.',
       'We appreciate all the generosity of our volunteers as well as the many private and institutional donors who make this work possible.',
-      'If you would like to help the Lasa Medical Foundation Inc. in some way, you can contact us at info@lasamedical.org.',
+      'If you would like to help the LASA Medical Foundation Inc. in some way, you can contact us at info@lasamedical.org.',
     ],
   },
   services: {
@@ -273,6 +279,6 @@ export const en = {
     linksTitle: 'Quick Links',
     donateIntro: 'Give, volunteer, donate supplies, or partner with the clinic.',
     legal:
-      'Lasa Medical Foundation is a federally recognized 501(c)(3) non-profit organization. EIN: 42-2270643',
+      'LASA Medical Foundation is a federally recognized 501(c)(3) non-profit organization. EIN: 42-2270643',
   },
 };

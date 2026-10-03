@@ -27,70 +27,66 @@ export default function Header({ content }) {
     setMobileOpen(false);
   }, [pathname]);
 
-  const desktopLinkClass =
-    'shrink-0 whitespace-nowrap rounded-full px-3 py-2.5 text-xs font-semibold uppercase tracking-wide transition xl:px-3.5 xl:text-sm';
-
-  function navClass(item, isActive, mobile = false) {
-    if (item.emphasize) {
-      return mobile
-        ? 'rounded-xl bg-lasa-700 px-4 py-3.5 text-base font-semibold text-white'
-        : `${desktopLinkClass} bg-lasa-700 text-white hover:bg-lasa-600`;
-    }
+  function navClass(isActive, mobile = false) {
     if (mobile) {
       return `rounded-xl px-4 py-3.5 text-base font-semibold hover:bg-lasa-50 ${
         isActive ? 'bg-lasa-100 text-lasa-700' : 'text-lasa-700'
       }`;
     }
-    return `${desktopLinkClass} ${
-      isActive ? 'bg-lasa-100 text-lasa-700' : 'text-lasa-600 hover:bg-lasa-50 hover:text-lasa-700'
+
+    return `relative whitespace-nowrap px-2.5 py-2 text-[14px] font-semibold tracking-wider transition-all duration-200 2xl:px-4 2xl:text-[16px] ${
+      isActive
+        ? 'font-bold text-lasa-700 after:absolute after:bottom-[-4px] after:left-1/2 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-lasa-700'
+        : 'text-lasa-500 hover:text-lasa-700'
     }`;
   }
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 w-full transition-all duration-300 ${
-        scrolled || mobileOpen ? 'bg-white shadow-[0_4px_24px_rgba(21,58,98,0.1)]' : 'bg-white'
+      className={`fixed inset-x-0 top-0 z-50 w-full bg-white transition-shadow duration-300 ${
+        scrolled || mobileOpen ? 'shadow-[0_4px_24px_rgba(21,58,98,0.08)]' : ''
       }`}
     >
-      <div className="mx-auto flex min-h-20 w-full max-w-[96rem] items-center gap-3 px-4 py-2 sm:min-h-28 sm:gap-4 sm:px-6 sm:py-0 lg:min-h-32 lg:px-12 xl:min-h-36 xl:px-16">
+      <div className="mx-auto flex h-[5.5rem] w-full max-w-[90rem] items-center px-4 sm:h-28 sm:px-6 lg:px-8">
         <Link
           to={content.paths.home}
-          className="mr-auto flex min-w-0 max-w-[calc(100%-3.25rem)] items-center gap-2.5 sm:max-w-none sm:gap-3 lg:gap-4"
+          className="flex min-w-0 items-center gap-3 sm:gap-4 lg:gap-5"
           onClick={() => setMobileOpen(false)}
         >
           <img
             src="/lasa-crest.png"
             alt="LASA Medical Foundation Inc."
-            className="h-14 w-auto shrink-0 sm:h-20 lg:h-24 xl:h-28"
+            className="h-16 w-auto shrink-0 sm:h-[5.25rem] lg:h-24"
           />
           <LogoWordmark compact className="min-w-0" />
         </Link>
 
-        <nav className="ml-auto hidden items-center justify-end gap-1 lg:flex">
+        <nav className="ml-10 hidden shrink-0 items-center gap-0.5 xl:ml-14 xl:flex 2xl:ml-16">
           {content.nav.map((item) => (
             <NavLink
               key={item.id}
               to={item.to}
               end={item.to === content.paths.home}
-              className={({ isActive }) => navClass(item, isActive)}
+              className={({ isActive }) => navClass(isActive)}
             >
               {item.label}
             </NavLink>
           ))}
-          <LangToggle
-            lang={content.lang}
-            otherLabel={content.otherLangLabel}
-            otherPath={otherPath}
-            className="ml-2 shrink-0"
-          />
         </nav>
+
+        <LangToggle
+          lang={content.lang}
+          otherLabel={content.otherLangLabel}
+          otherPath={otherPath}
+          className="ml-auto shrink-0"
+        />
 
         <button
           type="button"
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen((open) => !open)}
-          className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-lasa-200 bg-white text-lasa-700 lg:hidden"
+          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-md text-lasa-500 hover:bg-lasa-100 xl:hidden"
         >
           <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             {mobileOpen ? (
@@ -103,50 +99,16 @@ export default function Header({ content }) {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-lasa-200 bg-white lg:hidden">
-          <div className="mx-auto flex max-h-[calc(100dvh-5rem)] max-w-[96rem] flex-col overflow-y-auto px-4 py-5 sm:px-6">
-            <div className="rounded-2xl border border-lasa-200 bg-lasa-50 p-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-lasa-500">
-                Language / Idioma
-              </p>
-              <div className="mt-3 grid grid-cols-2 gap-2">
-                {content.lang === 'en' ? (
-                  <span className="rounded-xl bg-lasa-700 px-4 py-3 text-center text-sm font-bold uppercase tracking-wide text-white">
-                    English
-                  </span>
-                ) : (
-                  <Link
-                    to={otherPath}
-                    onClick={() => setMobileOpen(false)}
-                    className="rounded-xl border border-lasa-200 bg-white px-4 py-3 text-center text-sm font-bold uppercase tracking-wide text-lasa-700"
-                  >
-                    English
-                  </Link>
-                )}
-                {content.lang === 'es' ? (
-                  <span className="rounded-xl bg-lasa-700 px-4 py-3 text-center text-sm font-bold uppercase tracking-wide text-white">
-                    Español
-                  </span>
-                ) : (
-                  <Link
-                    to={otherPath}
-                    onClick={() => setMobileOpen(false)}
-                    className="rounded-xl border border-lasa-200 bg-white px-4 py-3 text-center text-sm font-bold uppercase tracking-wide text-lasa-700"
-                  >
-                    Español
-                  </Link>
-                )}
-              </div>
-            </div>
-
-            <nav className="mt-5 flex flex-col gap-1">
+        <div className="border-t border-lasa-200 bg-white xl:hidden">
+          <div className="mx-auto flex max-h-[calc(100dvh-5.5rem)] max-w-[90rem] flex-col overflow-y-auto px-4 py-5 sm:px-6">
+            <nav className="flex flex-col gap-1">
               {content.nav.map((item) => (
                 <NavLink
                   key={item.id}
                   to={item.to}
                   end={item.to === content.paths.home}
                   onClick={() => setMobileOpen(false)}
-                  className={({ isActive }) => navClass(item, isActive, true)}
+                  className={({ isActive }) => navClass(isActive, true)}
                 >
                   {item.label}
                 </NavLink>

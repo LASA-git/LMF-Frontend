@@ -1,6 +1,7 @@
 import { CONTACT } from '../constants/contact';
 import { getContent } from '../content';
 import ContactActions from '../components/ContactActions';
+import ContactBlock from '../components/ContactBlock';
 import SiteLayout from '../components/SiteLayout';
 
 function Card({ title, children }) {
@@ -71,6 +72,16 @@ export default function DonatePage({ lang }) {
           <ActionButton href={CONTACT.paypalDonateUrl || undefined}>{page.donation.button}</ActionButton>
           {!CONTACT.paypalDonateUrl ? <p className="mt-3 text-sm text-lasa-500">{page.donation.note}</p> : null}
         </Card>
+
+        <article
+          id="contact"
+          className="narrative-panel scroll-mt-32 overflow-visible rounded-3xl p-6 sm:p-8 lg:col-span-2"
+        >
+          <h2 className="reading-subtitle text-2xl font-semibold text-lasa-700">{content.contact.title}</h2>
+          <div className="mt-4">
+            <ContactBlock content={content} />
+          </div>
+        </article>
       </section>
     </SiteLayout>
   );

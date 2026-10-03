@@ -39,7 +39,7 @@ export default function LocationBlock({ content }) {
           />
         </div>
       </div>
-      <h3 className="reading-subtitle mt-8 text-3xl font-display text-lasa-700">{location.directionsTitle}</h3>
+      <h3 className="reading-subtitle mt-8 text-3xl font-sans text-lasa-700">{location.directionsTitle}</h3>
       <p className="reading-copy mt-4 text-base text-lasa-600 sm:text-lg">{location.directionsIntro}</p>
       <div className="mt-5 flex flex-wrap gap-3">
         <a

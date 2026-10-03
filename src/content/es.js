@@ -12,6 +12,7 @@ export const es = {
     home: '/es',
     clinic: '/es/clinica',
     team: '/es/equipo',
+    partners: '/es/aliados',
     contact: '/es/contacto',
     donate: '/es/donar',
     schedule: '/es/horario',
@@ -20,11 +21,12 @@ export const es = {
     splash: '/',
   },
   nav: [
-    { id: 'about', label: 'Quiénes somos', to: '/es' },
+    { id: 'home', label: 'Inicio', to: '/es' },
+    { id: 'team', label: 'Nuestro equipo', to: '/es/equipo' },
     { id: 'clinic', label: 'La Clínica', to: '/es/clinica' },
     { id: 'book', label: 'Reservar ahora', to: '/es/horario' },
-    { id: 'contact', label: 'Contáctenos', to: '/es/contacto' },
-    { id: 'donate', label: 'Involúcrate', to: '/es/donar', emphasize: true },
+    { id: 'partners', label: 'Nuestros aliados', to: '/es/aliados' },
+    { id: 'donate', label: 'Involúcrate', to: '/es/donar' },
   ],
   splash: {
     title: 'LASA Medical Foundation',
@@ -35,36 +37,39 @@ export const es = {
     enterSpanish: 'Oprima aquí para español',
   },
   about: {
-    title: 'Quiénes somos',
+    title: 'Inicio',
     lede: 'Ama a todos, Sirve a todos.',
-    teamCta: 'Conozca al equipo',
+    welcomeKicker: 'Bienvenido a',
+    welcomeName: 'LASA Medical Foundation',
+    primaryCta: 'Reservar ahora',
+    secondaryCta: 'Involúcrate',
+    teamCta: 'Nuestro equipo',
     paragraphs: [
       'LASA Medical Foundation es una organización 501(c)(3) con sede en Massachusetts creada para brindar atención médica gratuita y de bajo costo a personas desatendidas mediante una clínica impulsada por voluntarios. Ningún servicio depende de la capacidad de pago ni del estado de seguro del paciente.',
       'La clínica ofrece atención primaria que no es de emergencia para afecciones agudas y crónicas. Médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y miembros de la comunidad atienden cada día de clínica sin salario, para que el mayor apoyo posible llegue a los pacientes.',
       'Muchos de esos voluntarios provienen de la comunidad de Lowell a la que servimos. “Amar a todos, servir a todos” es nuestro lema y la forma en que opera la clínica: las personas ofrecen su tiempo para que los vecinos tengan un lugar donde recibir atención.',
-      'Agradecemos a cada clínico, colaborador y aliado que mantiene las puertas abiertas. Si desea ayudar, puede escribirnos a info@lasamedical.org o usar la página Involúcrate.',
     ],
   },
   team: {
-    title: 'Conozca al equipo',
+    title: 'Nuestro equipo',
     lede: 'La clínica está dirigida por una junta voluntaria, un director médico y un administrador, con clínicos visitantes en cada día de consulta.',
     boardTitle: 'Miembros de la Junta',
     board: [
       {
-        name: 'Ramesh Razdan',
-        bio: 'Ejecutivo corporativo con amplia trayectoria que actualmente se desempeña como Director de Información (CIO) de Bain & Company.',
+        name: 'Dr. Anasuya Gunturi, MD',
+        bio: 'Médica con triple certificación en Medicina Interna, Hematología y Oncología Médica. Es directora médica del Centro de Cáncer de Tufts Medicine Lowell General Hospital.',
       },
       {
         name: 'Dr. Suman Koganti, MD',
         bio: 'Cirujano hepatobiliar y pancreático (HPB) certificado. Es profesor clínico asistente de cirugía en Tufts Medical Center y director médico de cirugía HPB en Lowell General Hospital.',
       },
       {
-        name: 'Dr. Anasuya Gunturi, MD',
-        bio: 'Médica con triple certificación en Medicina Interna, Hematología y Oncología Médica. Es directora médica del Centro de Cáncer de Tufts Medicine Lowell General Hospital.',
-      },
-      {
         name: 'Dr. Swapna Putta, MD',
         bio: 'Neuróloga certificada en South Weymouth, Massachusetts, especializada en epilepsia y neurofisiología. Es directora del laboratorio de EEG de South Shore Hospital y está afiliada a Mass General Brigham y Brigham and Women’s Hospital.',
+      },
+      {
+        name: 'Ramesh Razdan',
+        bio: 'Ejecutivo corporativo con amplia trayectoria que actualmente se desempeña como Director de Información (CIO) de Bain & Company.',
       },
       {
         name: 'Dr. Sanjay Shah, MD',
@@ -84,10 +89,13 @@ export const es = {
         bio: 'Ejecutivo corporativo con amplia trayectoria que actualmente se desempeña como asesor sénior en McKinsey & Company.',
       },
     ],
-    thanksTitle: 'Con gratitud',
-    thanksIntro: 'Agradecemos a nuestros aliados por apoyar las operaciones de la clínica.',
-    memberOf: 'Somos miembros de',
-    back: 'Volver a Quiénes somos',
+    back: 'Volver a Inicio',
+  },
+  partners: {
+    title: 'Nuestros aliados',
+    lede: 'Agradecemos a nuestros aliados por apoyar las operaciones de la clínica.',
+    memberTitle: 'Membresía',
+    memberIntro: 'Somos miembros de la National Association of Free & Charitable Clinics.',
   },
   hours: {
     title: 'Horario',
@@ -141,9 +149,7 @@ export const es = {
     ],
     paragraphs: [
       'Brindamos atención que no es de emergencia para afecciones médicas agudas y crónicas. La clínica cuenta con médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y otro personal de apoyo.',
-      '"Amar a todos, servir a todos" resume los principios operativos de nuestra clínica. Estamos agradecidos por la oportunidad de brindar atención médica gratuita a quienes la necesitan.',
-      'Lasa Medical Foundation Inc. es una organización sin fines de lucro 501(c)(3). Para mantener los gastos lo más bajos posible, no tenemos empleados asalariados en la clínica médica. Todos los que trabajan en esta clínica lo hacen como voluntarios no remunerados.',
-      'Muchos de los maravillosos voluntarios que trabajan en nuestra clínica provienen de la comunidad local a la que servimos. Profesionales médicos altamente calificados — médicos, enfermeras practicantes, asistentes médicos, enfermeras registradas y fisioterapeutas — ofrecen su tiempo junto a miembros de la comunidad que comparten el compromiso de LASA de Amar a todos, Servir a todos.',
+      'Muchos de los voluntarios que trabajan en nuestra clínica provienen de la comunidad local a la que servimos. Profesionales médicos altamente calificados — médicos, enfermeras practicantes, asistentes médicos, enfermeras registradas y fisioterapeutas — ofrecen su tiempo en la Clínica.',
     ],
   },
   operate: {
@@ -151,7 +157,7 @@ export const es = {
     paragraphs: [
       'Gran parte de la asistencia que necesitamos para operar la Clínica la brindan los médicos, las enfermeras practicantes, los asistentes médicos, las enfermeras tituladas, los fisioterapeutas y todo el resto del personal de apoyo, que ofrecen su tiempo como voluntarios para atender a los pacientes que acuden a nuestra clínica. Sabemos que la Clínica contará con el apoyo de personas que por su propia voluntad se movilizan para brindar asistencia.',
       'Agradecemos toda la generosidad de todos nuestros voluntarios, así como de los numerosos donantes privados e institucionales que hacen posible este trabajo.',
-      'Si desea ayudar a Lasa Medical Foundation Inc. de alguna manera, puede contactarnos en info@lasamedical.org.',
+      'Si desea ayudar a LASA Medical Foundation Inc. de alguna manera, puede contactarnos en info@lasamedical.org.',
     ],
   },
   services: {
@@ -274,6 +280,6 @@ export const es = {
     linksTitle: 'Enlaces',
     donateIntro: 'Done, sea voluntario, aporte suministros o aliése con la clínica.',
     legal:
-      'Lasa Medical Foundation es una organización sin fines de lucro 501(c)(3) reconocida a nivel federal. EIN: 42-2270643',
+      'LASA Medical Foundation es una organización sin fines de lucro 501(c)(3) reconocida a nivel federal. EIN: 42-2270643',
   },
 };

@@ -10,6 +10,8 @@ export const CONTACT = {
   emailLabel: 'info@lasamedical.org',
   clinicAdminEmailHref: 'mailto:clinicadmin@lasamedical.org',
   clinicAdminEmailLabel: 'clinicadmin@lasamedical.org',
+  medicalDirectorEmailHref: 'mailto:medicaldirector@lasamedical.org',
+  medicalDirectorEmailLabel: 'medicaldirector@lasamedical.org',
   paypalDonateUrl: '',
   volunteerFormUrl: '',
   facebookUrl: 'https://m.facebook.com/loveallserveallne/',

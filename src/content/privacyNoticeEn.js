@@ -9,7 +9,7 @@ export const privacyPageEn = {
   importance:
     'THE PRIVACY OF YOUR HEALTH INFORMATION IS IMPORTANT TO US. WE WILL DO EVERYTHING REQUIRED BY LAW TO PROTECT IT.',
   intro:
-    'In this notice we use the terms “we,” “us,” and “our” and “Lasa Medical Foundation Inc.” to describe Lasa Medical Foundation Inc. We use “PHI” to refer to Protected Health Information.',
+    'In this notice we use the terms “we,” “us,” and “our” and “LASA Medical Foundation Inc.” to describe LASA Medical Foundation Inc. We use “PHI” to refer to Protected Health Information.',
   sections: [
     {
       title: 'I. What is “Protected Health Information?”',
@@ -27,7 +27,7 @@ export const privacyPageEn = {
       bullets: [
         'Hospital, medical, mental health and substance abuse patient records, laboratory results, X-ray reports, pharmacy records and appointment records',
         'Information from patients, for example, through surveys, applications and other forms',
-        'Information about your relationship with Lasa Medical Foundation Inc. such as medical services received and appointment history',
+        'Information about your relationship with LASA Medical Foundation Inc. such as medical services received and appointment history',
       ],
     },
     {
@@ -57,7 +57,7 @@ export const privacyPageEn = {
         {
           title: 'Your right to an accounting of disclosures of PHI',
           paragraphs: [
-            'You may ask us for a list of our disclosures of your PHI. Please write us to request this accounting. The list we give you will include disclosures made in the last six years, unless you request a shorter time or if less than six years have passed since April 14, 2003. You are entitled to one disclosure accounting in any 12-month period at no charge. If you request any additional accountings less than 12 months later, we may charge a fee. An accounting does not include certain disclosures, for example, disclosures to carry out treatment and health care operations; disclosures that occurred prior to April 14, 2003; disclosures for which Lasa Medical Foundation Inc. had a signed authorization; disclosures of your PHI to you; disclosures for notifications for disaster relief purposes; or disclosures to persons involved in your care and/or acting on your behalf.',
+            'You may ask us for a list of our disclosures of your PHI. Please write us to request this accounting. The list we give you will include disclosures made in the last six years, unless you request a shorter time or if less than six years have passed since April 14, 2003. You are entitled to one disclosure accounting in any 12-month period at no charge. If you request any additional accountings less than 12 months later, we may charge a fee. An accounting does not include certain disclosures, for example, disclosures to carry out treatment and health care operations; disclosures that occurred prior to April 14, 2003; disclosures for which LASA Medical Foundation Inc. had a signed authorization; disclosures of your PHI to you; disclosures for notifications for disaster relief purposes; or disclosures to persons involved in your care and/or acting on your behalf.',
           ],
         },
         {
@@ -89,7 +89,7 @@ export const privacyPageEn = {
         {
           title: 'Treatment',
           paragraphs: [
-            'This is the most important use and disclosure of your PHI. For example, our physicians, dentists, nurses, and other health care personnel, including trainees, involved in your care use and disclose your PHI to diagnose your condition and evaluate your health care needs. Our personnel will use and disclose your PHI in order to provide and coordinate the care and services you need: for example, prescriptions, X-rays, and lab work. If you need care from health care providers who are not part of Lasa Medical Foundation Inc., such as community resources to assist with your health care needs, we may disclose your PHI to them.',
+            'This is the most important use and disclosure of your PHI. For example, our physicians, dentists, nurses, and other health care personnel, including trainees, involved in your care use and disclose your PHI to diagnose your condition and evaluate your health care needs. Our personnel will use and disclose your PHI in order to provide and coordinate the care and services you need: for example, prescriptions, X-rays, and lab work. If you need care from health care providers who are not part of LASA Medical Foundation Inc., such as community resources to assist with your health care needs, we may disclose your PHI to them.',
           ],
         },
         {
@@ -185,7 +185,7 @@ export const privacyPageEn = {
         {
           title: 'Marketing',
           paragraphs: [
-            'Lasa Medical Foundation Inc. may use and disclose your PHI to contact you about services or supplies that we can offer you.',
+            'LASA Medical Foundation Inc. may use and disclose your PHI to contact you about services or supplies that we can offer you.',
           ],
         },
         {
@@ -254,13 +254,13 @@ export const privacyPageEn = {
     {
       title: 'VII. Changes to this notice',
       paragraphs: [
-        'We may change this notice and our privacy practices at any time, as long as the change is consistent with state and federal law. Any revised notice will apply both to the PHI we already have about you at the time of the change, and any PHI created or received after the change takes effect. If we make an important change to our privacy practices, we will promptly change this notice and post a new notice at Lasa Medical Foundation Inc. Except for changes required by law, we will not implement an important change to our privacy practices before we revise this notice.',
+        'We may change this notice and our privacy practices at any time, as long as the change is consistent with state and federal law. Any revised notice will apply both to the PHI we already have about you at the time of the change, and any PHI created or received after the change takes effect. If we make an important change to our privacy practices, we will promptly change this notice and post a new notice at LASA Medical Foundation Inc. Except for changes required by law, we will not implement an important change to our privacy practices before we revise this notice.',
       ],
     },
     {
       title: 'VIII. Effective date of this notice',
       paragraphs: [
-        'This notice was originally effective April 14, 2003, and was last reviewed and revised for Lasa Medical Foundation Inc. on September 13, 2026.',
+        'This notice was originally effective April 14, 2003, and was last reviewed and revised for LASA Medical Foundation Inc. on September 13, 2026.',
       ],
     },
   ],

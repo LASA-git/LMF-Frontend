@@ -17,7 +17,7 @@ export default function Splash() {
           />
         </div>
 
-        <h1 className="mt-10 font-display text-4xl text-lasa-700 sm:text-5xl">
+        <h1 className="mt-10 font-sans text-4xl text-lasa-700 sm:text-5xl">
           {splash.title}
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-lasa-600 sm:text-xl">

@@ -17,7 +17,7 @@ function Paragraphs({ paragraphs }) {
 function SectionBlock({ section }) {
   return (
     <article className="narrative-panel rounded-3xl p-6 sm:p-8">
-      <h2 className="font-display text-2xl text-lasa-700 sm:text-3xl">{section.title}</h2>
+      <h2 className="font-sans text-2xl text-lasa-700 sm:text-3xl">{section.title}</h2>
       {section.paragraphs?.length ? (
         <div className="reading-stack mt-4">
           <Paragraphs paragraphs={section.paragraphs} />
@@ -49,10 +49,10 @@ export default function PrivacyPage({ lang }) {
   return (
     <div className="min-h-screen max-w-[100%] overflow-x-clip">
       <Header content={content} />
-      <main className="pt-24 sm:pt-28 lg:pt-32 xl:pt-36">
+      <main className="pt-24 sm:pt-28 lg:pt-32">
         <section className="relative overflow-hidden border-b border-slate-200 bg-white">
-          <div className="relative mx-auto max-w-[72rem] px-5 py-14 sm:px-8 sm:py-20 lg:px-12">
-            <h1 className="reading-title font-display text-4xl text-lasa-700 sm:text-6xl">
+          <div className="relative mx-auto max-w-[72rem] px-5 py-6 sm:px-8 sm:py-8 lg:px-12">
+            <h1 className="reading-title font-sans text-4xl text-lasa-700 sm:text-5xl">
               {page.heading}
             </h1>
             <p className="mt-6 max-w-4xl text-sm font-semibold uppercase leading-relaxed tracking-wide text-lasa-600 sm:text-base">

@@ -4,8 +4,8 @@ import RouteScrollToTop from './components/RouteScrollToTop';
 import Splash from './pages/Splash';
 import AboutPage from './pages/AboutPage';
 import TeamPage from './pages/TeamPage';
+import PartnersPage from './pages/PartnersPage';
 import ClinicPage from './pages/ClinicPage';
-import ContactPage from './pages/ContactPage';
 import DonatePage from './pages/DonatePage';
 import SchedulePage from './pages/SchedulePage';
 import ScheduleEventPage from './pages/ScheduleEventPage';
@@ -37,10 +37,12 @@ export default function App() {
         <Route path="/es" element={<AboutPage lang="es" />} />
         <Route path="/en/team" element={<TeamPage lang="en" />} />
         <Route path="/es/equipo" element={<TeamPage lang="es" />} />
+        <Route path="/en/partners" element={<PartnersPage lang="en" />} />
+        <Route path="/es/aliados" element={<PartnersPage lang="es" />} />
         <Route path="/en/clinic" element={<ClinicPage lang="en" />} />
         <Route path="/es/clinica" element={<ClinicPage lang="es" />} />
-        <Route path="/en/contact" element={<ContactPage lang="en" />} />
-        <Route path="/es/contacto" element={<ContactPage lang="es" />} />
+        <Route path="/en/contact" element={<Navigate to="/en/donate#contact" replace />} />
+        <Route path="/es/contacto" element={<Navigate to="/es/donar#contact" replace />} />
         <Route path="/en/donate" element={<DonatePage lang="en" />} />
         <Route path="/es/donar" element={<DonatePage lang="es" />} />
         <Route path="/en/schedule" element={<SchedulePage lang="en" />} />

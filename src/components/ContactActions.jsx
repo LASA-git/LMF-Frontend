@@ -28,32 +28,73 @@ const pillClass =
 const compactPillClass =
   'inline-flex items-center justify-center gap-2 rounded-full bg-lasa-700 px-4 py-2.5 text-xs font-semibold uppercase tracking-wide text-white hover:bg-lasa-600';
 
+const iconButtonClass =
+  'inline-flex h-10 w-10 items-center justify-center rounded-full bg-lasa-700 text-white hover:bg-lasa-600';
+
 export default function ContactActions({
   emailHref = CONTACT.emailHref,
   emailLabel = CONTACT.emailLabel,
   phoneButton = 'Phone',
   emailButton = 'Email',
   compact = false,
+  iconOnly = false,
+  showPhone = true,
   className,
 }) {
   const [hint, setHint] = useState('');
+
+  if (iconOnly) {
+    return (
+      <div className={className ?? 'mt-4'}>
+        <div className="flex flex-row flex-wrap gap-2">
+          {showPhone ? (
+            <a
+              href={CONTACT.phoneHref}
+              aria-label={CONTACT.phoneLabel}
+              className={iconButtonClass}
+              onMouseEnter={() => setHint(CONTACT.phoneLabel)}
+              onMouseLeave={() => setHint('')}
+              onFocus={() => setHint(CONTACT.phoneLabel)}
+              onBlur={() => setHint('')}
+            >
+              <PhoneIcon />
+            </a>
+          ) : null}
+          <a
+            href={emailHref}
+            aria-label={emailLabel}
+            className={iconButtonClass}
+            onMouseEnter={() => setHint(emailLabel)}
+            onMouseLeave={() => setHint('')}
+            onFocus={() => setHint(emailLabel)}
+            onBlur={() => setHint('')}
+          >
+            <EmailIcon />
+          </a>
+        </div>
+        <p className="mt-3 min-h-6 text-sm font-semibold text-[#153A62]">{hint}</p>
+      </div>
+    );
+  }
 
   if (compact) {
     return (
       <div className={className ?? 'mt-6'}>
         <div className="flex flex-row flex-wrap gap-2">
-          <a
-            href={CONTACT.phoneHref}
-            aria-label={CONTACT.phoneLabel}
-            className={compactPillClass}
-            onMouseEnter={() => setHint(CONTACT.phoneLabel)}
-            onMouseLeave={() => setHint('')}
-            onFocus={() => setHint(CONTACT.phoneLabel)}
-            onBlur={() => setHint('')}
-          >
-            <PhoneIcon />
-            <span>{phoneButton}</span>
-          </a>
+          {showPhone ? (
+            <a
+              href={CONTACT.phoneHref}
+              aria-label={CONTACT.phoneLabel}
+              className={compactPillClass}
+              onMouseEnter={() => setHint(CONTACT.phoneLabel)}
+              onMouseLeave={() => setHint('')}
+              onFocus={() => setHint(CONTACT.phoneLabel)}
+              onBlur={() => setHint('')}
+            >
+              <PhoneIcon />
+              <span>{phoneButton}</span>
+            </a>
+          ) : null}
           <a
             href={emailHref}
             aria-label={emailLabel}

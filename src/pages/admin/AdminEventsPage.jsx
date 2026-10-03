@@ -155,7 +155,7 @@ export default function AdminEventsPage() {
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
-      <h1 className="font-display text-4xl text-lasa-700">Clinic days</h1>
+      <h1 className="font-sans text-4xl text-lasa-700">Clinic days</h1>
       <p className="mt-3 max-w-2xl text-lasa-600">
         Create a dated clinic session with a capacity cap. Published days are what patients will
         eventually book from the schedule page.

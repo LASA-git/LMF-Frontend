@@ -5,17 +5,17 @@ import LogoWordmark from './LogoWordmark';
 
 export default function Footer({ content }) {
   const year = new Date().getFullYear();
-  const links = content.nav.filter((item) => !item.emphasize);
+  const links = content.nav.filter((item) => item.id !== 'donate');
 
   return (
-    <footer className="mt-16 border-t border-lasa-200 bg-white pb-10 pt-12 sm:pt-16">
+    <footer className="mt-8 border-t border-lasa-200 bg-white/90 pb-10 pt-12 sm:pt-16">
       <div className="mx-auto grid max-w-[96rem] grid-cols-1 gap-12 px-6 sm:px-8 lg:grid-cols-4 lg:items-start lg:gap-x-12 lg:px-12 xl:px-16">
         <div className="flex flex-col items-center text-center">
           <Link to={content.paths.home} className="flex flex-col items-center gap-4">
             <img
               src="/lasa-crest.png"
               alt="LASA Medical Foundation Inc."
-              className="h-20 w-auto sm:h-24"
+              className="h-24 w-auto sm:h-28"
             />
             <LogoWordmark compact wrap className="text-center" />
           </Link>
@@ -31,11 +31,6 @@ export default function Footer({ content }) {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link to={content.paths.team} className="hover:text-lasa-700">
-                {content.about.teamCta}
-              </Link>
-            </li>
             <li>
               <Link to={content.paths.privacy} className="hover:text-lasa-700">
                 {content.privacyPage.title}
@@ -53,7 +48,7 @@ export default function Footer({ content }) {
               {CONTACT.addressLine2}
             </li>
             <li>
-              <ContactActions className="flex flex-col gap-3" />
+              <ContactActions iconOnly className="mt-1" />
             </li>
           </ul>
         </div>

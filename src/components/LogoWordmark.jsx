@@ -1,5 +1,4 @@
 export default function LogoWordmark({ className = '', compact = false, wrap = false }) {
-  // Deep navy from the crest banner / brand lockup
   const lasaDark = '#153A62';
 
   return (
@@ -12,14 +11,14 @@ export default function LogoWordmark({ className = '', compact = false, wrap = f
         }
       >
         <p
-          className={`font-sans font-bold ${
+          className={`font-logo font-semibold ${
             compact
               ? `text-[0.8125rem] leading-[1.15] sm:text-base lg:text-lg ${wrap ? 'text-center' : 'sm:whitespace-nowrap xl:text-xl'}`
               : 'whitespace-nowrap text-lg leading-tight sm:text-xl'
           }`}
           style={{ color: lasaDark }}
         >
-          Lasa Medical Foundation Inc.
+          LASA Medical Foundation Inc.
         </p>
         <div
           className={`w-full ${compact ? 'mt-1 h-px' : 'mt-1.5 h-px'}`}
@@ -27,7 +26,7 @@ export default function LogoWordmark({ className = '', compact = false, wrap = f
           aria-hidden="true"
         />
         <p
-          className={`text-center font-sans font-bold uppercase tracking-[0.06em] ${
+          className={`text-center font-logo font-bold uppercase tracking-[0.06em] ${
             compact
               ? 'mt-1 text-[0.65rem] leading-tight sm:text-xs lg:text-sm'
               : 'mt-2 text-sm leading-tight sm:text-base'

@@ -17,8 +17,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Manrope', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
         display: ['"DM Serif Display"', 'serif'],
+        logo: ['Manrope', 'sans-serif'],
       },
     },
   },

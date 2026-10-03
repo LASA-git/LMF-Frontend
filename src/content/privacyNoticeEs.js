@@ -1,6 +1,6 @@
 import { CONTACT } from '../constants/contact';
 
-/** Aviso de privacidad adaptado para Lasa Medical Foundation Inc.; sin sección de pagos. */
+/** Aviso de privacidad adaptado para LASA Medical Foundation Inc.; sin sección de pagos. */
 export const privacyPageEs = {
   title: 'Privacidad',
   heading: 'Aviso de prácticas de privacidad',
@@ -9,7 +9,7 @@ export const privacyPageEs = {
   importance:
     'LA PRIVACIDAD DE SU INFORMACIÓN DE SALUD ES IMPORTANTE PARA NOSOTROS. HAREMOS TODO LO QUE LA LEY REQUIERE PARA PROTEGERLA.',
   intro:
-    'En este aviso usamos los términos “nosotros,” “nos” y “nuestro” y “Lasa Medical Foundation Inc.” para describir a Lasa Medical Foundation Inc. Usamos “IPS” (o “PHI”) para referirnos a la Información Protegida de Salud.',
+    'En este aviso usamos los términos “nosotros,” “nos” y “nuestro” y “LASA Medical Foundation Inc.” para describir a LASA Medical Foundation Inc. Usamos “IPS” (o “PHI”) para referirnos a la Información Protegida de Salud.',
   sections: [
     {
       title: 'I. ¿Qué es la “Información Protegida de Salud?”',
@@ -27,7 +27,7 @@ export const privacyPageEs = {
       bullets: [
         'Registros hospitalarios, médicos, de salud mental y de abuso de sustancias, resultados de laboratorio, informes de radiografías, registros de farmacia y de citas',
         'Información de los pacientes, por ejemplo, a través de encuestas, solicitudes y otros formularios',
-        'Información sobre su relación con Lasa Medical Foundation Inc., como los servicios médicos recibidos y el historial de citas',
+        'Información sobre su relación con LASA Medical Foundation Inc., como los servicios médicos recibidos y el historial de citas',
       ],
     },
     {
@@ -57,7 +57,7 @@ export const privacyPageEs = {
         {
           title: 'Su derecho a una contabilidad de divulgaciones de PHI',
           paragraphs: [
-            'Puede pedirnos una lista de nuestras divulgaciones de su PHI. Escríbanos para solicitar esta contabilidad. La lista incluirá divulgaciones de los últimos seis años, a menos que solicite un período más corto o hayan pasado menos de seis años desde el 14 de abril de 2003. Tiene derecho a una contabilidad de divulgaciones en cualquier período de 12 meses sin cargo. Si solicita cuentas adicionales en menos de 12 meses, podemos cobrar una tarifa. Una contabilidad no incluye ciertas divulgaciones, por ejemplo, las realizadas para llevar a cabo el tratamiento y las operaciones de atención médica; las anteriores al 14 de abril de 2003; aquellas para las que Lasa Medical Foundation Inc. tenía una autorización firmada; divulgaciones de su PHI a usted; notificaciones con fines de ayuda en desastres; o divulgaciones a personas involucradas en su cuidado.',
+            'Puede pedirnos una lista de nuestras divulgaciones de su PHI. Escríbanos para solicitar esta contabilidad. La lista incluirá divulgaciones de los últimos seis años, a menos que solicite un período más corto o hayan pasado menos de seis años desde el 14 de abril de 2003. Tiene derecho a una contabilidad de divulgaciones en cualquier período de 12 meses sin cargo. Si solicita cuentas adicionales en menos de 12 meses, podemos cobrar una tarifa. Una contabilidad no incluye ciertas divulgaciones, por ejemplo, las realizadas para llevar a cabo el tratamiento y las operaciones de atención médica; las anteriores al 14 de abril de 2003; aquellas para las que LASA Medical Foundation Inc. tenía una autorización firmada; divulgaciones de su PHI a usted; notificaciones con fines de ayuda en desastres; o divulgaciones a personas involucradas en su cuidado.',
           ],
         },
         {
@@ -89,7 +89,7 @@ export const privacyPageEs = {
         {
           title: 'Tratamiento',
           paragraphs: [
-            'Este es el uso y la divulgación más importantes de su PHI. Por ejemplo, nuestros médicos, dentistas, enfermeras y otro personal de atención médica, incluidos los aprendices, involucrados en su cuidado usan y divulgan su PHI para diagnosticar su condición y evaluar sus necesidades de atención. Nuestro personal usará y divulgará su PHI para proporcionar y coordinar la atención y los servicios que necesita: por ejemplo, recetas, radiografías y análisis de laboratorio. Si necesita atención de proveedores que no forman parte de Lasa Medical Foundation Inc., podemos divulgarles su PHI.',
+            'Este es el uso y la divulgación más importantes de su PHI. Por ejemplo, nuestros médicos, dentistas, enfermeras y otro personal de atención médica, incluidos los aprendices, involucrados en su cuidado usan y divulgan su PHI para diagnosticar su condición y evaluar sus necesidades de atención. Nuestro personal usará y divulgará su PHI para proporcionar y coordinar la atención y los servicios que necesita: por ejemplo, recetas, radiografías y análisis de laboratorio. Si necesita atención de proveedores que no forman parte de LASA Medical Foundation Inc., podemos divulgarles su PHI.',
           ],
         },
         {
@@ -185,7 +185,7 @@ export const privacyPageEs = {
         {
           title: 'Mercadeo',
           paragraphs: [
-            'Lasa Medical Foundation Inc. puede usar y divulgar su PHI para contactarlo sobre servicios o suministros que podemos ofrecerle.',
+            'LASA Medical Foundation Inc. puede usar y divulgar su PHI para contactarlo sobre servicios o suministros que podemos ofrecerle.',
           ],
         },
         {
@@ -254,13 +254,13 @@ export const privacyPageEs = {
     {
       title: 'VII. Cambios a este aviso',
       paragraphs: [
-        'Podemos cambiar este aviso y nuestras prácticas de privacidad en cualquier momento, siempre que el cambio sea consistente con la ley estatal y federal. Cualquier aviso revisado se aplicará tanto a la PHI que ya tenemos sobre usted en el momento del cambio como a cualquier PHI creada o recibida después de que el cambio entre en vigor. Si hacemos un cambio importante en nuestras prácticas de privacidad, cambiaremos este aviso de inmediato y publicaremos un nuevo aviso en Lasa Medical Foundation Inc.',
+        'Podemos cambiar este aviso y nuestras prácticas de privacidad en cualquier momento, siempre que el cambio sea consistente con la ley estatal y federal. Cualquier aviso revisado se aplicará tanto a la PHI que ya tenemos sobre usted en el momento del cambio como a cualquier PHI creada o recibida después de que el cambio entre en vigor. Si hacemos un cambio importante en nuestras prácticas de privacidad, cambiaremos este aviso de inmediato y publicaremos un nuevo aviso en LASA Medical Foundation Inc.',
       ],
     },
     {
       title: 'VIII. Fecha de vigencia de este aviso',
       paragraphs: [
-        'Este aviso fue originalmente efectivo el 14 de abril de 2003, y fue revisado y adaptado por última vez para Lasa Medical Foundation Inc. el 13 de septiembre de 2026.',
+        'Este aviso fue originalmente efectivo el 14 de abril de 2003, y fue revisado y adaptado por última vez para LASA Medical Foundation Inc. el 13 de septiembre de 2026.',
       ],
     },
   ],
