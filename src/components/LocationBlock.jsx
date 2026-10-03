@@ -1,4 +1,5 @@
 import { CONTACT } from '../constants/contact';
+import ContactActions from './ContactActions';
 
 export default function LocationBlock({ content }) {
   const { location } = content;
@@ -25,9 +26,7 @@ export default function LocationBlock({ content }) {
                 {CONTACT.mailingLine2 || CONTACT.addressLine2}
               </p>
             </div>
-            <p className="font-semibold text-lasa-700">
-              {location.phoneLabel}: <span className="font-medium text-lasa-600">{CONTACT.phoneLabel}</span>
-            </p>
+            <ContactActions className="flex flex-col gap-3" />
           </div>
         </div>
         <div className="min-w-0 overflow-hidden rounded-3xl border border-lasa-200 bg-white shadow-[0_20px_40px_-32px_rgba(21,58,98,0.55)]">

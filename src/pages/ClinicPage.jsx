@@ -47,8 +47,10 @@ export default function ClinicPage({ lang }) {
         <p className="reading-copy text-lg text-lasa-600 sm:text-xl">{services.intro}</p>
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           <article className="narrative-card h-full rounded-3xl border border-lasa-200 bg-white p-6 sm:p-8">
-            <h3 className="reading-subtitle text-2xl font-semibold text-lasa-700">{services.treatTitle}</h3>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-base text-lasa-600">
+            {services.treatTitle ? (
+              <h3 className="reading-subtitle text-2xl font-semibold text-lasa-700">{services.treatTitle}</h3>
+            ) : null}
+            <ul className={`list-disc space-y-2 pl-5 text-base text-lasa-600 ${services.treatTitle ? 'mt-4' : ''}`}>
               {services.treat.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -63,6 +65,7 @@ export default function ClinicPage({ lang }) {
             </ul>
           </article>
         </div>
+        {services.note ? <p className="reading-copy mt-8 text-lg text-lasa-600">{services.note}</p> : null}
       </Section>
 
       <Section id="hours" title={hours.title}>

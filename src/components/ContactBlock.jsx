@@ -1,4 +1,4 @@
-import { CONTACT } from '../constants/contact';
+import ContactActions from './ContactActions';
 
 export default function ContactBlock({ content }) {
   const { contact } = content;
@@ -9,25 +9,8 @@ export default function ContactBlock({ content }) {
         <p className="reading-copy text-base text-lasa-50 sm:text-lg">{contact.emergency}</p>
       </div>
       <p className="reading-copy text-base text-lasa-600 sm:text-lg">{contact.body}</p>
-      <div className="space-y-2 text-base sm:text-lg">
-        <p>
-          <span className="font-semibold text-lasa-700">{content.splash.phoneLabel}: </span>
-          {CONTACT.phoneHref ? (
-            <a href={CONTACT.phoneHref} className="text-lasa-600 hover:text-lasa-700">
-              {CONTACT.phoneLabel}
-            </a>
-          ) : (
-            <span className="text-lasa-600">{CONTACT.phoneLabel}</span>
-          )}
-        </p>
-        <p>
-          <span className="font-semibold text-lasa-700">{contact.emailLabel}: </span>
-          <a href={CONTACT.emailHref} className="text-lasa-600 hover:text-lasa-700">
-            {CONTACT.emailLabel}
-          </a>
-        </p>
-        <p className="text-lasa-600">{contact.inquiryLine}</p>
-      </div>
+      <ContactActions className="flex flex-col gap-3 sm:flex-row sm:flex-wrap" />
+      <p className="text-lasa-600">{contact.inquiryLine}</p>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { CONTACT } from '../constants/contact';
+import ContactActions from './ContactActions';
 import LogoWordmark from './LogoWordmark';
 
 export default function Footer({ content }) {
@@ -51,11 +52,8 @@ export default function Footer({ content }) {
               <br />
               {CONTACT.addressLine2}
             </li>
-            <li>{CONTACT.phoneLabel}</li>
             <li>
-              <a href={CONTACT.emailHref} className="hover:text-lasa-700">
-                {CONTACT.emailLabel}
-              </a>
+              <ContactActions className="flex flex-col gap-3" />
             </li>
           </ul>
         </div>

@@ -3,6 +3,18 @@ import { getContent } from '../content';
 import { NAFC, PARTNERS } from '../constants/partners';
 import SiteLayout from '../components/SiteLayout';
 
+function PersonCard({ role, name, bio }) {
+  return (
+    <article className="narrative-card rounded-3xl border border-lasa-200 bg-white p-6 sm:p-8">
+      {role ? (
+        <p className="text-sm font-semibold uppercase tracking-wide text-lasa-500">{role}</p>
+      ) : null}
+      <p className={`text-xl font-semibold text-lasa-700 ${role ? 'mt-2' : ''}`}>{name}</p>
+      {bio ? <p className="reading-copy mt-3 text-base text-lasa-600">{bio}</p> : null}
+    </article>
+  );
+}
+
 export default function TeamPage({ lang }) {
   const content = getContent(lang);
   const page = content.team;
@@ -10,22 +22,22 @@ export default function TeamPage({ lang }) {
   return (
     <SiteLayout content={content} title={page.title} lede={page.lede}>
       <section className="mx-auto w-full max-w-[90rem] space-y-10 px-5 py-12 sm:px-8 sm:py-16 lg:px-12">
-        <div className="narrative-panel rounded-3xl p-6 sm:p-8">
+        <div>
           <h2 className="reading-subtitle text-2xl font-semibold text-lasa-700">{page.boardTitle}</h2>
-          <ul className="mt-5 grid gap-2 text-base text-lasa-600 sm:grid-cols-2 sm:text-lg">
-            {page.board.map((name) => (
-              <li key={name}>{name}</li>
+          <div className="mt-5 grid gap-5 md:grid-cols-2">
+            {page.board.map((person) => (
+              <PersonCard key={person.name} name={person.name} bio={person.bio} />
             ))}
-          </ul>
+          </div>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2">
-          {page.leadership.map((person) => (
-            <article key={person.role} className="narrative-card rounded-3xl border border-lasa-200 bg-white p-6 sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-wide text-lasa-500">{person.role}</p>
-              <p className="mt-2 text-xl font-semibold text-lasa-700">{person.name}</p>
-            </article>
-          ))}
+        <div>
+          <h2 className="reading-subtitle text-2xl font-semibold text-lasa-700">{page.operationsTitle}</h2>
+          <div className="mt-5 grid gap-5 md:grid-cols-2">
+            {page.leadership.map((person) => (
+              <PersonCard key={person.role} role={person.role} name={person.name} bio={person.bio} />
+            ))}
+          </div>
         </div>
 
         <div className="narrative-panel rounded-3xl p-6 sm:p-8">
