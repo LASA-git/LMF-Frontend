@@ -12,7 +12,7 @@ export const es = {
     home: '/es',
     clinic: '/es/clinica',
     team: '/es/equipo',
-    partners: '/es/aliados',
+    partners: '/es/donar',
     contact: '/es/contacto',
     donate: '/es/donar',
     schedule: '/es/horario',
@@ -25,7 +25,6 @@ export const es = {
     { id: 'team', label: 'Nuestro equipo', to: '/es/equipo' },
     { id: 'clinic', label: 'La Clínica', to: '/es/clinica' },
     { id: 'book', label: 'Reservar ahora', to: '/es/horario' },
-    { id: 'partners', label: 'Nuestros aliados', to: '/es/aliados' },
     { id: 'donate', label: 'Involúcrate', to: '/es/donar' },
   ],
   splash: {

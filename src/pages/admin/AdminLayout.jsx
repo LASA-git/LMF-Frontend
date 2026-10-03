@@ -55,11 +55,11 @@ export default function AdminLayout() {
   }
 
   return (
-    <div className="min-h-screen bg-[linear-gradient(180deg,#E8F2FA_0%,#F5F9FD_38%,#F5F9FD_100%)]">
+    <div className="min-h-screen bg-[linear-gradient(180deg,#F8F5EC_0%,#F3EEDC_38%,#F8F5EC_100%)]">
       <header className="border-b border-lasa-200 bg-white">
         <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:px-6">
           <Link to="/admin" className="flex min-w-0 items-center gap-3">
-            <img src="/lasa-crest.png" alt="" className="h-12 w-auto" />
+            <img src="/lasa-logo.jpg" alt="" className="h-12 w-12 object-contain" />
             <LogoWordmark compact className="min-w-0" />
           </Link>
           <nav className="flex flex-wrap items-center gap-2 sm:ml-auto">

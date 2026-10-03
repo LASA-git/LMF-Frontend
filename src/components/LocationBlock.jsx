@@ -29,7 +29,7 @@ export default function LocationBlock({ content }) {
             <ContactActions className="flex flex-col gap-3" />
           </div>
         </div>
-        <div className="min-w-0 overflow-hidden rounded-3xl border border-lasa-200 bg-white shadow-[0_20px_40px_-32px_rgba(21,58,98,0.55)]">
+        <div className="min-w-0 overflow-hidden rounded-3xl border border-lasa-200 bg-white shadow-[0_20px_40px_-32px_rgba(0,36,108,0.4)]">
           <iframe
             title={location.clinicName}
             src={CONTACT.mapsEmbedUrl}

@@ -32,7 +32,7 @@ export default function LangToggle({ lang, otherLabel, otherPath, className = ''
         aria-expanded={open}
         aria-label={otherLabel}
         onClick={() => setOpen((value) => !value)}
-        className="inline-flex items-center gap-1.5 rounded-full border border-lasa-200 bg-white px-3 py-1.5 text-sm font-semibold uppercase tracking-wide text-lasa-700 hover:bg-lasa-50"
+        className="inline-flex items-center gap-1 rounded-full border border-lasa-200 bg-white px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-lasa-700 hover:bg-lasa-50 sm:gap-1.5 sm:px-3 sm:py-1.5 sm:text-sm"
       >
         {current}
         <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -47,7 +47,7 @@ export default function LangToggle({ lang, otherLabel, otherPath, className = ''
       {open ? (
         <ul
           role="listbox"
-          className="absolute right-0 z-50 mt-2 min-w-[8.5rem] overflow-hidden rounded-2xl border border-lasa-200 bg-white py-1 shadow-[0_12px_28px_-18px_rgba(21,58,98,0.55)]"
+          className="absolute right-0 z-50 mt-2 min-w-[8.5rem] overflow-hidden rounded-2xl border border-lasa-200 bg-white py-1 shadow-[0_12px_28px_-18px_rgba(0,36,108,0.45)]"
         >
           {options.map((option) => (
             <li key={option.code}>

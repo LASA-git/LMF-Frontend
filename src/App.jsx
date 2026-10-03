@@ -4,7 +4,6 @@ import RouteScrollToTop from './components/RouteScrollToTop';
 import Splash from './pages/Splash';
 import AboutPage from './pages/AboutPage';
 import TeamPage from './pages/TeamPage';
-import PartnersPage from './pages/PartnersPage';
 import ClinicPage from './pages/ClinicPage';
 import DonatePage from './pages/DonatePage';
 import SchedulePage from './pages/SchedulePage';
@@ -37,8 +36,8 @@ export default function App() {
         <Route path="/es" element={<AboutPage lang="es" />} />
         <Route path="/en/team" element={<TeamPage lang="en" />} />
         <Route path="/es/equipo" element={<TeamPage lang="es" />} />
-        <Route path="/en/partners" element={<PartnersPage lang="en" />} />
-        <Route path="/es/aliados" element={<PartnersPage lang="es" />} />
+        <Route path="/en/partners" element={<Navigate to="/en/donate" replace />} />
+        <Route path="/es/aliados" element={<Navigate to="/es/donar" replace />} />
         <Route path="/en/clinic" element={<ClinicPage lang="en" />} />
         <Route path="/es/clinica" element={<ClinicPage lang="es" />} />
         <Route path="/en/contact" element={<Navigate to="/en/donate#contact" replace />} />

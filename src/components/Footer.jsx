@@ -13,11 +13,11 @@ export default function Footer({ content }) {
         <div className="flex flex-col items-center text-center">
           <Link to={content.paths.home} className="flex flex-col items-center gap-4">
             <img
-              src="/lasa-crest.png"
-              alt="LASA Medical Foundation Inc."
-              className="h-24 w-auto sm:h-28"
+              src="/lasa-logo.jpg"
+              alt="LASA Medical Foundation"
+              className="h-28 w-28 object-contain sm:h-32 sm:w-32"
             />
-            <LogoWordmark compact wrap className="text-center" />
+            <LogoWordmark compact centered className="w-full max-w-[16rem]" />
           </Link>
         </div>
 

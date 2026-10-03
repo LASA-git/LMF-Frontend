@@ -1,39 +1,30 @@
-export default function LogoWordmark({ className = '', compact = false, wrap = false }) {
-  const lasaDark = '#153A62';
+export default function LogoWordmark({ className = '', compact = false, centered = false }) {
+  const aligned = !compact || centered;
+  const nameSize = compact
+    ? 'text-[0.58rem] sm:text-[clamp(0.72rem,2.2vw,1.05rem)]'
+    : 'text-[clamp(0.95rem,3vw,1.25rem)]';
+  const mottoSize = compact
+    ? 'text-[0.36rem] sm:text-[clamp(0.45rem,1.5vw,0.68rem)]'
+    : 'text-[clamp(0.58rem,2vw,0.8rem)]';
 
   return (
     <div className={className}>
       <div
         className={
-          compact
-            ? 'inline-flex max-w-full flex-col items-stretch'
-            : 'mx-auto inline-flex max-w-full flex-col items-stretch text-center'
+          aligned
+            ? 'mx-auto flex w-full max-w-full flex-col items-center text-center'
+            : 'flex w-full max-w-full flex-col items-start text-left'
         }
       >
         <p
-          className={`font-logo font-semibold ${
-            compact
-              ? `text-[0.8125rem] leading-[1.15] sm:text-base lg:text-lg ${wrap ? 'text-center' : 'sm:whitespace-nowrap xl:text-xl'}`
-              : 'whitespace-nowrap text-lg leading-tight sm:text-xl'
-          }`}
-          style={{ color: lasaDark }}
+          className={`whitespace-nowrap font-logo font-bold uppercase leading-[1.15] tracking-[0.04em] text-lasa-700 ${nameSize}`}
         >
-          LASA Medical Foundation Inc.
+          LASA Medical Foundation
         </p>
-        <div
-          className={`w-full ${compact ? 'mt-1 h-px' : 'mt-1.5 h-px'}`}
-          style={{ backgroundColor: lasaDark }}
-          aria-hidden="true"
-        />
         <p
-          className={`text-center font-logo font-bold uppercase tracking-[0.06em] ${
-            compact
-              ? 'mt-1 text-[0.65rem] leading-tight sm:text-xs lg:text-sm'
-              : 'mt-2 text-sm leading-tight sm:text-base'
-          }`}
-          style={{ color: lasaDark }}
+          className={`mt-1 whitespace-nowrap font-logo font-medium uppercase leading-tight tracking-[0.06em] text-lasa-gold ${mottoSize}`}
         >
-          Love All Serve All
+          Selfless Service • Compassionate Care
         </p>
       </div>
     </div>

@@ -1,7 +1,9 @@
 import { CONTACT } from '../constants/contact';
+import { PARTNERS } from '../constants/partners';
 import { getContent } from '../content';
 import ContactActions from '../components/ContactActions';
 import ContactBlock from '../components/ContactBlock';
+import PartnerCard from '../components/PartnerCard';
 import SiteLayout from '../components/SiteLayout';
 
 function Card({ title, children }) {
@@ -72,6 +74,16 @@ export default function DonatePage({ lang }) {
           <ActionButton href={CONTACT.paypalDonateUrl || undefined}>{page.donation.button}</ActionButton>
           {!CONTACT.paypalDonateUrl ? <p className="mt-3 text-sm text-lasa-500">{page.donation.note}</p> : null}
         </Card>
+
+        <section className="lg:col-span-2">
+          <h2 className="reading-subtitle text-2xl font-semibold text-lasa-700">{content.partners.title}</h2>
+          <p className="reading-copy mt-3 text-lasa-600">{content.partners.lede}</p>
+          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {PARTNERS.map((partner) => (
+              <PartnerCard key={partner.name} partner={partner} />
+            ))}
+          </div>
+        </section>
 
         <article
           id="contact"

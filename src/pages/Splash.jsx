@@ -7,17 +7,17 @@ export default function Splash() {
   const splash = en.splash;
 
   return (
-    <div className="flex min-h-dvh max-w-[100%] items-center justify-center overflow-x-clip bg-[linear-gradient(180deg,#E8F2FA_0%,#F5F9FD_38%,#F5F9FD_100%)]">
+    <div className="flex min-h-dvh max-w-[100%] items-center justify-center overflow-x-clip bg-[linear-gradient(180deg,#F8F5EC_0%,#F3EEDC_40%,#F8F5EC_100%)]">
       <main className="mx-auto w-full max-w-3xl px-4 py-10 text-center sm:px-6 sm:py-14">
-        <div className="mx-auto flex w-full max-w-[28rem] flex-col items-center rounded-2xl border border-lasa-200 bg-white p-5 shadow-[0_24px_48px_-20px_rgba(21,58,98,0.35)] sm:max-w-[32rem] sm:p-7">
+        <div className="mx-auto flex w-full max-w-[28rem] flex-col items-center rounded-2xl border border-lasa-200 bg-white p-5 shadow-[0_24px_48px_-20px_rgba(0,36,108,0.28)] sm:max-w-[32rem] sm:p-7">
           <img
-            src="/lasa-crest.png"
-            alt="LASA Medical Foundation Inc. — Love All Serve All"
-            className="h-44 w-auto sm:h-56"
+            src="/lasa-logo.jpg"
+            alt="LASA Medical Foundation — Selfless Service, Compassionate Care"
+            className="h-44 w-44 object-contain sm:h-56 sm:w-56"
           />
         </div>
 
-        <h1 className="mt-10 font-sans text-4xl text-lasa-700 sm:text-5xl">
+        <h1 className="mt-10 font-display text-4xl text-lasa-700 sm:text-5xl">
           {splash.title}
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-lasa-600 sm:text-xl">

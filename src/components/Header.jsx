@@ -36,32 +36,32 @@ export default function Header({ content }) {
 
     return `relative whitespace-nowrap px-2.5 py-2 text-[14px] font-semibold tracking-wider transition-all duration-200 2xl:px-4 2xl:text-[16px] ${
       isActive
-        ? 'font-bold text-lasa-700 after:absolute after:bottom-[-4px] after:left-1/2 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-lasa-700'
+        ? 'font-bold text-lasa-700 after:absolute after:bottom-[-4px] after:left-1/2 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-lasa-gold'
         : 'text-lasa-500 hover:text-lasa-700'
     }`;
   }
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 w-full bg-white transition-shadow duration-300 ${
-        scrolled || mobileOpen ? 'shadow-[0_4px_24px_rgba(21,58,98,0.08)]' : ''
+      className={`fixed inset-x-0 top-0 z-50 w-full border-b border-lasa-200/80 bg-white transition-shadow duration-300 ${
+        scrolled || mobileOpen ? 'shadow-[0_4px_24px_rgba(0,36,108,0.08)]' : ''
       }`}
     >
-      <div className="mx-auto flex h-[5.5rem] w-full max-w-[90rem] items-center px-4 sm:h-28 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-[4.5rem] w-full max-w-[90rem] items-center px-3 sm:h-24 sm:px-6 lg:h-28 lg:px-8">
         <Link
           to={content.paths.home}
-          className="flex min-w-0 items-center gap-3 sm:gap-4 lg:gap-5"
+          className="flex min-w-0 flex-1 items-center gap-2 sm:flex-none sm:gap-3 lg:gap-4"
           onClick={() => setMobileOpen(false)}
         >
           <img
-            src="/lasa-crest.png"
-            alt="LASA Medical Foundation Inc."
-            className="h-16 w-auto shrink-0 sm:h-[5.25rem] lg:h-24"
+            src="/lasa-logo.jpg"
+            alt="LASA Medical Foundation"
+            className="h-16 w-16 shrink-0 object-contain sm:h-[5.25rem] sm:w-[5.25rem] lg:h-[6.5rem] lg:w-[6.5rem]"
           />
-          <LogoWordmark compact className="min-w-0" />
+          <LogoWordmark compact className="min-w-0 overflow-hidden" />
         </Link>
 
-        <nav className="ml-10 hidden shrink-0 items-center gap-0.5 xl:ml-14 xl:flex 2xl:ml-16">
+        <nav className="ml-8 hidden shrink-0 items-center gap-0.5 xl:ml-16 xl:flex 2xl:ml-24">
           {content.nav.map((item) => (
             <NavLink
               key={item.id}
@@ -86,7 +86,7 @@ export default function Header({ content }) {
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen((open) => !open)}
-          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-md text-lasa-500 hover:bg-lasa-100 xl:hidden"
+          className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md text-lasa-500 hover:bg-lasa-100 xl:hidden"
         >
           <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             {mobileOpen ? (
@@ -100,7 +100,7 @@ export default function Header({ content }) {
 
       {mobileOpen && (
         <div className="border-t border-lasa-200 bg-white xl:hidden">
-          <div className="mx-auto flex max-h-[calc(100dvh-5.5rem)] max-w-[90rem] flex-col overflow-y-auto px-4 py-5 sm:px-6">
+          <div className="mx-auto flex max-h-[calc(100dvh-4.5rem)] max-w-[90rem] flex-col overflow-y-auto px-4 py-5 sm:max-h-[calc(100dvh-6rem)] sm:px-6">
             <nav className="flex flex-col gap-1">
               {content.nav.map((item) => (
                 <NavLink

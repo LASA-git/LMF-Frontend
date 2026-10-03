@@ -51,28 +51,27 @@ export default function ContactActions({
             <a
               href={CONTACT.phoneHref}
               aria-label={CONTACT.phoneLabel}
-              className={iconButtonClass}
-              onMouseEnter={() => setHint(CONTACT.phoneLabel)}
-              onMouseLeave={() => setHint('')}
-              onFocus={() => setHint(CONTACT.phoneLabel)}
-              onBlur={() => setHint('')}
+              title={CONTACT.phoneLabel}
+              className={`group relative ${iconButtonClass}`}
             >
               <PhoneIcon />
+              <span className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 hidden -translate-x-1/2 whitespace-nowrap rounded-full bg-white px-3 py-1 text-xs font-medium text-lasa-700 shadow-sm group-hover:block">
+                {CONTACT.phoneLabel}
+              </span>
             </a>
           ) : null}
           <a
             href={emailHref}
             aria-label={emailLabel}
-            className={iconButtonClass}
-            onMouseEnter={() => setHint(emailLabel)}
-            onMouseLeave={() => setHint('')}
-            onFocus={() => setHint(emailLabel)}
-            onBlur={() => setHint('')}
+            title={emailLabel}
+            className={`group relative ${iconButtonClass}`}
           >
             <EmailIcon />
+            <span className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 hidden -translate-x-1/2 whitespace-nowrap rounded-full bg-white px-3 py-1 text-xs font-medium text-lasa-700 shadow-sm group-hover:block">
+              {emailLabel}
+            </span>
           </a>
         </div>
-        <p className="mt-3 min-h-6 text-sm font-semibold text-[#153A62]">{hint}</p>
       </div>
     );
   }
@@ -108,7 +107,7 @@ export default function ContactActions({
             <span>{emailButton}</span>
           </a>
         </div>
-        <p className="mt-3 min-h-6 text-sm font-semibold text-[#153A62]">{hint}</p>
+        <p className="mt-3 min-h-6 text-sm font-semibold text-lasa-700">{hint}</p>
       </div>
     );
   }

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { getContent } from '../content';
 import { NAFC } from '../constants/partners';
-import LogoWordmark from '../components/LogoWordmark';
 import PartnerCard from '../components/PartnerCard';
 import SiteLayout from '../components/SiteLayout';
 
@@ -47,11 +46,10 @@ export default function AboutPage({ lang }) {
 
             <div className="mx-auto flex w-full max-w-sm flex-col items-center rounded-3xl border border-lasa-200 bg-white/90 px-8 py-8 shadow-xl sm:max-w-md lg:mx-0 lg:max-w-md lg:justify-self-end lg:px-10 lg:py-10">
               <img
-                src="/lasa-crest.png"
-                alt="LASA Medical Foundation Inc. — Love All Serve All"
-                className="h-auto w-56 sm:w-64 lg:w-72"
+                src="/lasa-logo.jpg"
+                alt="LASA Medical Foundation — Selfless Service, Compassionate Care"
+                className="h-auto w-56 object-contain sm:w-64 lg:w-72"
               />
-              <LogoWordmark className="mt-4 w-full max-w-[20rem]" />
             </div>
           </div>
         </div>

@@ -106,10 +106,10 @@ export default function AdminLoginPage() {
 
 function AdminShell({ children }) {
   return (
-    <div className="min-h-screen bg-[linear-gradient(180deg,#E8F2FA_0%,#F5F9FD_38%,#F5F9FD_100%)] px-4 py-10 sm:px-6">
+    <div className="min-h-screen bg-[linear-gradient(180deg,#F8F5EC_0%,#F3EEDC_38%,#F8F5EC_100%)] px-4 py-10 sm:px-6">
       <main className="mx-auto w-full max-w-md">
         <div className="mb-8 flex flex-col items-center">
-          <img src="/lasa-crest.png" alt="LASA Medical Foundation Inc." className="h-24 w-auto" />
+          <img src="/lasa-logo.jpg" alt="LASA Medical Foundation" className="h-24 w-24 object-contain" />
           <LogoWordmark className="mt-4" />
         </div>
         <div className="narrative-panel rounded-3xl p-6 sm:p-8">{children}</div>
