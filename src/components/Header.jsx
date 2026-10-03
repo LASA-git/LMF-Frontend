@@ -47,18 +47,18 @@ export default function Header({ content }) {
         scrolled || mobileOpen ? 'shadow-[0_4px_24px_rgba(0,36,108,0.08)]' : ''
       }`}
     >
-      <div className="mx-auto flex h-[4.5rem] w-full max-w-[90rem] items-center px-3 sm:h-24 sm:px-6 lg:h-28 lg:px-8">
+      <div className="mx-auto flex h-[4.5rem] w-full max-w-[90rem] items-center gap-2 px-2.5 sm:h-24 sm:gap-0 sm:px-6 lg:h-28 lg:px-8">
         <Link
           to={content.paths.home}
-          className="flex min-w-0 flex-1 items-center gap-2 sm:flex-none sm:gap-3 lg:gap-4"
+          className="flex min-w-0 flex-1 items-center gap-1.5 sm:flex-none sm:gap-3 lg:gap-4"
           onClick={() => setMobileOpen(false)}
         >
           <img
             src="/lasa-logo.jpg"
             alt="LASA Medical Foundation"
-            className="h-16 w-16 shrink-0 object-contain sm:h-[5.25rem] sm:w-[5.25rem] lg:h-[6.5rem] lg:w-[6.5rem]"
+            className="h-14 w-14 shrink-0 object-contain sm:h-[5.25rem] sm:w-[5.25rem] lg:h-[6.5rem] lg:w-[6.5rem]"
           />
-          <LogoWordmark compact className="min-w-0 overflow-hidden" />
+          <LogoWordmark compact className="min-w-0 sm:min-w-max" />
         </Link>
 
         <nav className="ml-8 hidden shrink-0 items-center gap-0.5 xl:ml-16 xl:flex 2xl:ml-24">

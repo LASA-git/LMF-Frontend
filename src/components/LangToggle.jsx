@@ -32,7 +32,7 @@ export default function LangToggle({ lang, otherLabel, otherPath, className = ''
         aria-expanded={open}
         aria-label={otherLabel}
         onClick={() => setOpen((value) => !value)}
-        className="inline-flex items-center gap-1 rounded-full border border-lasa-200 bg-white px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-lasa-700 hover:bg-lasa-50 sm:gap-1.5 sm:px-3 sm:py-1.5 sm:text-sm"
+        className="inline-flex items-center gap-0.5 rounded-full border border-lasa-200 bg-white px-2 py-1 text-xs font-semibold uppercase tracking-wide text-lasa-700 hover:bg-lasa-50 sm:gap-1.5 sm:px-3 sm:py-1.5 sm:text-sm"
       >
         {current}
         <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

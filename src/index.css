@@ -90,6 +90,40 @@ body {
   letter-spacing: 0.18em;
 }
 
+.logo-lockup {
+  min-width: max-content;
+  width: max-content;
+}
+
+
+.logo-lockup-name {
+  letter-spacing: 0.04em;
+  font-size: clamp(0.72rem, 2.2vw, 1.05rem);
+}
+
+.logo-lockup-motto {
+  letter-spacing: 0.06em;
+  font-size: clamp(0.45rem, 1.5vw, 0.68rem);
+}
+
+@media (max-width: 639px) {
+  .logo-lockup {
+    min-width: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .logo-lockup-name {
+    letter-spacing: 0.02em;
+    font-size: 0.95rem;
+  }
+
+  .logo-lockup-motto {
+    letter-spacing: 0.03em;
+    font-size: 0.6rem;
+  }
+}
+
 .reading-stack > * + * {
   margin-top: 0.8rem;
 }
