@@ -18,7 +18,7 @@ export const es = {
     schedule: '/es/horario',
     scheduleLookup: '/es/horario/consulta',
     privacy: '/es/privacidad',
-    splash: '/',
+    splash: '/es',
   },
   nav: [
     { id: 'home', label: 'Inicio', to: '/es' },

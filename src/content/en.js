@@ -18,7 +18,7 @@ export const en = {
     schedule: '/en/schedule',
     scheduleLookup: '/en/schedule/lookup',
     privacy: '/en/privacy',
-    splash: '/',
+    splash: '/en',
   },
   nav: [
     { id: 'home', label: 'Home', to: '/en' },

@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import RouteScrollToTop from './components/RouteScrollToTop';
-import Splash from './pages/Splash';
 import AboutPage from './pages/AboutPage';
 import TeamPage from './pages/TeamPage';
 import ClinicPage from './pages/ClinicPage';
@@ -31,7 +30,7 @@ export default function App() {
       <RouteScrollToTop />
       <DocumentLang />
       <Routes>
-        <Route path="/" element={<Splash />} />
+        <Route path="/" element={<Navigate to="/en" replace />} />
         <Route path="/en" element={<AboutPage lang="en" />} />
         <Route path="/es" element={<AboutPage lang="es" />} />
         <Route path="/en/team" element={<TeamPage lang="en" />} />
@@ -58,7 +57,7 @@ export default function App() {
         </Route>
         <Route path="/english" element={<Navigate to="/en" replace />} />
         <Route path="/espanol" element={<Navigate to="/es" replace />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/en" replace />} />
       </Routes>
     </BrowserRouter>
   );

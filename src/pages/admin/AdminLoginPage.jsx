@@ -114,7 +114,7 @@ function AdminShell({ children }) {
         </div>
         <div className="narrative-panel rounded-3xl p-6 sm:p-8">{children}</div>
         <p className="mt-6 text-center text-sm text-lasa-500">
-          <Link to="/" className="font-semibold text-lasa-600 hover:text-lasa-700">
+          <Link to="/en" className="font-semibold text-lasa-600 hover:text-lasa-700">
             Back to public site
           </Link>
         </p>
