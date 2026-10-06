@@ -23,6 +23,7 @@ export function getAlternateLangPath(pathname, targetLang) {
     ['/en/clinic', '/es/clinica'],
     ['/en/team', '/es/equipo'],
     ['/en/contact', '/es/contacto'],
+    ['/en/getting-involved', '/es/involucrate'],
     ['/en/donate', '/es/donar'],
     ['/en', '/es'],
     ['/en/schedule', '/es/horario'],

@@ -35,14 +35,16 @@ export default function App() {
         <Route path="/es" element={<AboutPage lang="es" />} />
         <Route path="/en/team" element={<TeamPage lang="en" />} />
         <Route path="/es/equipo" element={<TeamPage lang="es" />} />
-        <Route path="/en/partners" element={<Navigate to="/en/donate" replace />} />
-        <Route path="/es/aliados" element={<Navigate to="/es/donar" replace />} />
+        <Route path="/en/partners" element={<Navigate to="/en/getting-involved" replace />} />
+        <Route path="/es/aliados" element={<Navigate to="/es/involucrate" replace />} />
         <Route path="/en/clinic" element={<ClinicPage lang="en" />} />
         <Route path="/es/clinica" element={<ClinicPage lang="es" />} />
-        <Route path="/en/contact" element={<Navigate to="/en/donate#contact" replace />} />
-        <Route path="/es/contacto" element={<Navigate to="/es/donar#contact" replace />} />
-        <Route path="/en/donate" element={<DonatePage lang="en" />} />
-        <Route path="/es/donar" element={<DonatePage lang="es" />} />
+        <Route path="/en/contact" element={<Navigate to="/en/getting-involved#contact" replace />} />
+        <Route path="/es/contacto" element={<Navigate to="/es/involucrate#contact" replace />} />
+        <Route path="/en/getting-involved" element={<DonatePage lang="en" />} />
+        <Route path="/es/involucrate" element={<DonatePage lang="es" />} />
+        <Route path="/en/donate" element={<Navigate to="/en/getting-involved" replace />} />
+        <Route path="/es/donar" element={<Navigate to="/es/involucrate" replace />} />
         <Route path="/en/schedule" element={<SchedulePage lang="en" />} />
         <Route path="/en/schedule/lookup" element={<ScheduleLookupPage lang="en" />} />
         <Route path="/en/schedule/:eventId" element={<ScheduleEventPage lang="en" />} />

@@ -12,9 +12,9 @@ export const en = {
     home: '/en',
     clinic: '/en/clinic',
     team: '/en/team',
-    partners: '/en/donate',
+    partners: '/en/getting-involved',
     contact: '/en/contact',
-    donate: '/en/donate',
+    donate: '/en/getting-involved',
     schedule: '/en/schedule',
     scheduleLookup: '/en/schedule/lookup',
     privacy: '/en/privacy',
@@ -25,7 +25,7 @@ export const en = {
     { id: 'team', label: 'Our Team', to: '/en/team' },
     { id: 'clinic', label: 'The Clinic', to: '/en/clinic' },
     { id: 'book', label: 'Book Now', to: '/en/schedule' },
-    { id: 'donate', label: 'Getting Involved', to: '/en/donate' },
+    { id: 'donate', label: 'Getting Involved', to: '/en/getting-involved' },
   ],
   splash: {
     title: 'LASA Medical Foundation',
@@ -55,8 +55,8 @@ export const en = {
     boardTitle: 'Board Members',
     board: [
       {
-        name: 'Dr. Anasuya Gunturi, MD',
-        bio: 'A triple-boarded physician in Internal Medicine, Hematology, and Medical Oncology who serves as the Medical Director of the Cancer Center at Tufts Medicine Lowell General Hospital.',
+        name: 'Dr. Anasuya Gunturi, MD, PhD',
+        bio: 'A triple-boarded physician in Internal Medicine, Hematology, and Medical Oncology who serves as the Chief of Oncology and Medical Director of the Cancer Center at Tufts Medicine Lowell General Hospital. She is also on the Board of Trustees for Tufts Medicine Lowell General Hospital.',
       },
       {
         name: 'Dr. Suman Koganti, MD',
@@ -80,7 +80,7 @@ export const en = {
       {
         role: 'Medical Director',
         name: 'Dr. Usha Rallapalli, MD',
-        bio: 'A board-certified primary care physician affiliated with MetroWest Medical Center and UMass Memorial.',
+        bio: 'A board-certified Family physician who works at Reliant Medical, Optum Care.',
       },
       {
         role: 'Clinic Administrator',
@@ -116,6 +116,8 @@ export const en = {
       body: 'Your gift helps volunteer clinicians provide free care in Lowell.',
       button: 'Donate',
       note: 'PayPal checkout will be connected here next.',
+      disclaimer:
+        'LASA Medical Foundation, Inc. is a 501(c)(3) nonprofit public charity. Contributions are tax-deductible to the extent permitted by law.',
     },
     volunteer: {
       title: 'Volunteer',

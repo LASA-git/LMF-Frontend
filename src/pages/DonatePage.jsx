@@ -72,7 +72,8 @@ export default function DonatePage({ lang }) {
         <Card title={page.donation.title}>
           <p className="reading-copy text-lasa-600">{page.donation.body}</p>
           <ActionButton href={CONTACT.paypalDonateUrl || undefined}>{page.donation.button}</ActionButton>
-          {!CONTACT.paypalDonateUrl ? <p className="mt-3 text-sm text-lasa-500">{page.donation.note}</p> : null}
+          <p className="mt-3 text-sm leading-relaxed text-lasa-500">{page.donation.disclaimer}</p>
+          {!CONTACT.paypalDonateUrl ? <p className="mt-2 text-sm text-lasa-500">{page.donation.note}</p> : null}
         </Card>
 
         <section className="lg:col-span-2">
