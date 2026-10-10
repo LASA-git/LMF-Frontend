@@ -2,7 +2,6 @@ import { CONTACT } from '../constants/contact';
 import { PARTNERS } from '../constants/partners';
 import { getContent } from '../content';
 import ContactActions from '../components/ContactActions';
-import ContactBlock from '../components/ContactBlock';
 import PartnerCard from '../components/PartnerCard';
 import SiteLayout from '../components/SiteLayout';
 
@@ -85,16 +84,6 @@ export default function DonatePage({ lang }) {
             ))}
           </div>
         </section>
-
-        <article
-          id="contact"
-          className="narrative-panel scroll-mt-32 overflow-visible rounded-3xl p-6 sm:p-8 lg:col-span-2"
-        >
-          <h2 className="reading-subtitle text-2xl font-semibold text-lasa-700">{content.contact.title}</h2>
-          <div className="mt-4">
-            <ContactBlock content={content} />
-          </div>
-        </article>
       </section>
     </SiteLayout>
   );

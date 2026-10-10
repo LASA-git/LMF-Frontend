@@ -26,6 +26,7 @@ export const es = {
     { id: 'clinic', label: 'La Clínica', to: '/es/clinica' },
     { id: 'book', label: 'Reservar ahora', to: '/es/horario' },
     { id: 'donate', label: 'Involúcrate', to: '/es/involucrate' },
+    { id: 'contact', label: 'Contáctenos', to: '/es/contacto' },
   ],
   splash: {
     title: 'LASA Medical Foundation',

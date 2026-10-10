@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage';
 import TeamPage from './pages/TeamPage';
 import ClinicPage from './pages/ClinicPage';
 import DonatePage from './pages/DonatePage';
+import ContactPage from './pages/ContactPage';
 import SchedulePage from './pages/SchedulePage';
 import ScheduleEventPage from './pages/ScheduleEventPage';
 import ScheduleLookupPage from './pages/ScheduleLookupPage';
@@ -39,8 +40,8 @@ export default function App() {
         <Route path="/es/aliados" element={<Navigate to="/es/involucrate" replace />} />
         <Route path="/en/clinic" element={<ClinicPage lang="en" />} />
         <Route path="/es/clinica" element={<ClinicPage lang="es" />} />
-        <Route path="/en/contact" element={<Navigate to="/en/getting-involved#contact" replace />} />
-        <Route path="/es/contacto" element={<Navigate to="/es/involucrate#contact" replace />} />
+        <Route path="/en/contact" element={<ContactPage lang="en" />} />
+        <Route path="/es/contacto" element={<ContactPage lang="es" />} />
         <Route path="/en/getting-involved" element={<DonatePage lang="en" />} />
         <Route path="/es/involucrate" element={<DonatePage lang="es" />} />
         <Route path="/en/donate" element={<Navigate to="/en/getting-involved" replace />} />

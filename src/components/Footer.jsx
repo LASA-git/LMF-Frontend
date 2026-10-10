@@ -5,7 +5,7 @@ import LogoWordmark from './LogoWordmark';
 
 export default function Footer({ content }) {
   const year = new Date().getFullYear();
-  const links = content.nav.filter((item) => item.id !== 'donate');
+  const links = content.nav.filter((item) => item.id !== 'donate' && item.id !== 'contact');
 
   return (
     <footer className="mt-8 border-t border-lasa-200 bg-white/90 pb-10 pt-12 sm:pt-16">
