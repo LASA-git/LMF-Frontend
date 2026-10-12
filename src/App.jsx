@@ -10,7 +10,6 @@ import SchedulePage from './pages/SchedulePage';
 import ScheduleEventPage from './pages/ScheduleEventPage';
 import ScheduleLookupPage from './pages/ScheduleLookupPage';
 import PrivacyPage from './pages/PrivacyPage';
-import HiddenPrivacyPage from './pages/HiddenPrivacyPage';
 import AdminLoginPage from './pages/admin/AdminLoginPage';
 import AdminLayout from './pages/admin/AdminLayout';
 import AdminEventsPage from './pages/admin/AdminEventsPage';
@@ -55,9 +54,6 @@ export default function App() {
         <Route path="/es/horario/:eventId" element={<ScheduleEventPage lang="es" />} />
         <Route path="/en/privacy" element={<PrivacyPage lang="en" />} />
         <Route path="/es/privacidad" element={<PrivacyPage lang="es" />} />
-        <Route path="/hidden/privacy" element={<HiddenPrivacyPage lang="en" />} />
-        <Route path="/en/hidden/privacy" element={<HiddenPrivacyPage lang="en" />} />
-        <Route path="/es/hidden/privacidad" element={<HiddenPrivacyPage lang="es" />} />
         <Route path="/admin/login" element={<AdminLoginPage />} />
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<AdminEventsPage />} />

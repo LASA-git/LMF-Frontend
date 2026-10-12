@@ -3,7 +3,6 @@ import { CONTACT } from '../constants/contact';
 /** Aviso de privacidad adaptado para LASA Medical Foundation Inc.; sin sección de pagos. */
 export const privacyPageEs = {
   title: 'Privacidad',
-  comingSoon: 'Próximamente...',
   heading: 'Aviso de prácticas de privacidad',
   banner:
     'ESTE AVISO DESCRIBE CÓMO LASA MEDICAL FOUNDATION INC. USARÁ Y DIVULGARÁ INFORMACIÓN MÉDICA, DENTAL Y DE SALUD MENTAL, Y CÓMO USTED PUEDE OBTENER ACCESO A ESTA INFORMACIÓN. REVÍSELO CON ATENCIÓN.',
@@ -58,7 +57,7 @@ export const privacyPageEs = {
         {
           title: 'Su derecho a una contabilidad de divulgaciones de PHI',
           paragraphs: [
-            'Puede pedirnos una lista de nuestras divulgaciones de su PHI. Escríbanos para solicitar esta contabilidad. La lista incluirá divulgaciones de los últimos seis años, a menos que solicite un período más corto o hayan pasado menos de seis años desde el 14 de abril de 2003. Tiene derecho a una contabilidad de divulgaciones en cualquier período de 12 meses sin cargo. Si solicita cuentas adicionales en menos de 12 meses, podemos cobrar una tarifa. Una contabilidad no incluye ciertas divulgaciones, por ejemplo, las realizadas para llevar a cabo el tratamiento y las operaciones de atención médica; las anteriores al 14 de abril de 2003; aquellas para las que LASA Medical Foundation Inc. tenía una autorización firmada; divulgaciones de su PHI a usted; notificaciones con fines de ayuda en desastres; o divulgaciones a personas involucradas en su cuidado.',
+            'Puede pedirnos una lista de nuestras divulgaciones de su PHI. Escríbanos para solicitar esta contabilidad. La lista incluirá divulgaciones de los últimos seis años, a menos que solicite un período más corto o hayan pasado menos de seis años desde el 21 de noviembre de 2026. Tiene derecho a una contabilidad de divulgaciones en cualquier período de 12 meses sin cargo. Si solicita cuentas adicionales en menos de 12 meses, podemos cobrar una tarifa. Una contabilidad no incluye ciertas divulgaciones, por ejemplo, las realizadas para llevar a cabo el tratamiento y las operaciones de atención médica; las anteriores al 21 de noviembre de 2026; aquellas para las que LASA Medical Foundation Inc. tenía una autorización firmada; divulgaciones de su PHI a usted; notificaciones con fines de ayuda en desastres; o divulgaciones a personas involucradas en su cuidado.',
           ],
         },
         {
@@ -261,7 +260,7 @@ export const privacyPageEs = {
     {
       title: 'VIII. Fecha de vigencia de este aviso',
       paragraphs: [
-        'Este aviso fue originalmente efectivo el 14 de abril de 2003, y fue revisado y adaptado por última vez para LASA Medical Foundation Inc. el 13 de septiembre de 2026.',
+        'Este aviso es efectivo el 21 de noviembre de 2026.',
       ],
     },
   ],

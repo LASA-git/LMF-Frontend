@@ -18,7 +18,6 @@ export const es = {
     schedule: '/es/horario',
     scheduleLookup: '/es/horario/consulta',
     privacy: '/es/privacidad',
-    hiddenPrivacy: '/es/hidden/privacidad',
     splash: '/es',
   },
   nav: [

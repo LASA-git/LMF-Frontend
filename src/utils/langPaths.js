@@ -28,8 +28,6 @@ export function getAlternateLangPath(pathname, targetLang) {
     ['/en', '/es'],
     ['/en/schedule', '/es/horario'],
     ['/en/privacy', '/es/privacidad'],
-    ['/en/hidden/privacy', '/es/hidden/privacidad'],
-    ['/hidden/privacy', '/es/hidden/privacidad'],
   ];
 
   for (const [enPath, esPath] of pairs) {

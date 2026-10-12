@@ -3,7 +3,6 @@ import { CONTACT } from '../constants/contact';
 /** Adapted from Ashland Free Medical Clinic privacy notice; Payment section omitted. */
 export const privacyPageEn = {
   title: 'Privacy',
-  comingSoon: 'Coming Soon...',
   heading: 'Notice of privacy practices',
   banner:
     'THIS NOTICE DESCRIBES HOW LASA MEDICAL FOUNDATION INC. WILL USE AND DISCLOSE MEDICAL, DENTAL AND MENTAL HEALTH INFORMATION, AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW THIS NOTICE CAREFULLY.',
@@ -58,7 +57,7 @@ export const privacyPageEn = {
         {
           title: 'Your right to an accounting of disclosures of PHI',
           paragraphs: [
-            'You may ask us for a list of our disclosures of your PHI. Please write us to request this accounting. The list we give you will include disclosures made in the last six years, unless you request a shorter time or if less than six years have passed since April 14, 2003. You are entitled to one disclosure accounting in any 12-month period at no charge. If you request any additional accountings less than 12 months later, we may charge a fee. An accounting does not include certain disclosures, for example, disclosures to carry out treatment and health care operations; disclosures that occurred prior to April 14, 2003; disclosures for which LASA Medical Foundation Inc. had a signed authorization; disclosures of your PHI to you; disclosures for notifications for disaster relief purposes; or disclosures to persons involved in your care and/or acting on your behalf.',
+            'You may ask us for a list of our disclosures of your PHI. Please write us to request this accounting. The list we give you will include disclosures made in the last six years, unless you request a shorter time or if less than six years have passed since November 21, 2026. You are entitled to one disclosure accounting in any 12-month period at no charge. If you request any additional accountings less than 12 months later, we may charge a fee. An accounting does not include certain disclosures, for example, disclosures to carry out treatment and health care operations; disclosures that occurred prior to November 21, 2026; disclosures for which LASA Medical Foundation Inc. had a signed authorization; disclosures of your PHI to you; disclosures for notifications for disaster relief purposes; or disclosures to persons involved in your care and/or acting on your behalf.',
           ],
         },
         {
@@ -261,7 +260,7 @@ export const privacyPageEn = {
     {
       title: 'VIII. Effective date of this notice',
       paragraphs: [
-        'This notice was originally effective April 14, 2003, and was last reviewed and revised for LASA Medical Foundation Inc. on September 13, 2026.',
+        'This notice is effective November 21, 2026.',
       ],
     },
   ],
