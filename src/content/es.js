@@ -18,6 +18,7 @@ export const es = {
     schedule: '/es/horario',
     scheduleLookup: '/es/horario/consulta',
     privacy: '/es/privacidad',
+    hiddenPrivacy: '/es/hidden/privacidad',
     splash: '/es',
   },
   nav: [
@@ -46,7 +47,7 @@ export const es = {
     teamCta: 'Nuestro equipo',
     paragraphs: [
       'LASA Medical Foundation es una organización 501(c)(3) con sede en Massachusetts creada para brindar atención médica gratuita y de bajo costo a personas desatendidas mediante una clínica impulsada por voluntarios. Ningún servicio depende de la capacidad de pago ni del estado de seguro del paciente.',
-      'La clínica ofrece atención primaria que no es de emergencia para afecciones agudas y crónicas. Médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y miembros de la comunidad atienden cada día de clínica sin salario, para que el mayor apoyo posible llegue a los pacientes.',
+      'La clínica ofrece atención primaria que no es de emergencia para adultos con afecciones agudas y crónicas. Por ahora no atendemos a niños, y no tenemos medicamentos ni vacunas en el lugar. Médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y miembros de la comunidad atienden cada día de clínica sin salario, para que el mayor apoyo posible llegue a los pacientes.',
       'Muchos de esos voluntarios provienen de la comunidad de Lowell a la que servimos. “Amar a todos, servir a todos” es nuestro lema y la forma en que opera la clínica: las personas ofrecen su tiempo para que los vecinos tengan un lugar donde recibir atención.',
     ],
   },
@@ -100,9 +101,8 @@ export const es = {
   hours: {
     title: 'Horario',
     intro:
-      'Los horarios fijos remotos y presenciales se publicarán aquí cuando se confirmen. Los próximos días de clínica aparecen en la reserva.',
+      'Los horarios presenciales se publicarán aquí cuando se confirmen. Los próximos días de clínica aparecen en la reserva.',
     rows: [
-      { label: 'Remoto por teléfono', value: 'Por confirmar' },
       { label: 'En persona', value: 'Por confirmar' },
     ],
     scheduleIntro: 'Vea los días de clínica publicados y reserve un cupo limitado.',
@@ -139,7 +139,7 @@ export const es = {
     heroTitle: 'La Clínica',
     motto: 'Ama a todos, Sirve a todos',
     intro:
-      'Una clínica impulsada por voluntarios que ofrece atención primaria gratuita a personas sin seguro o que no pueden pagar la atención médica.',
+      'Una clínica impulsada por voluntarios que ofrece atención primaria gratuita para adultos sin seguro o que no pueden pagar la atención médica. Por ahora no atendemos a niños, y no tenemos medicamentos ni vacunas en el lugar.',
     subnav: [
       { id: 'services', label: 'Servicios' },
       { id: 'hours', label: 'Horario' },
@@ -150,7 +150,7 @@ export const es = {
       { id: 'donate', label: 'Involúcrate' },
     ],
     paragraphs: [
-      'Brindamos atención que no es de emergencia para afecciones médicas agudas y crónicas. La clínica cuenta con médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y otro personal de apoyo.',
+      'Brindamos atención que no es de emergencia para afecciones médicas agudas y crónicas en adultos. La clínica cuenta con médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y otro personal de apoyo. Por ahora no atendemos a niños, y no tenemos medicamentos ni vacunas en el lugar.',
       'Muchos de los voluntarios que trabajan en nuestra clínica provienen de la comunidad local a la que servimos. Profesionales médicos altamente calificados — médicos, enfermeras practicantes, asistentes médicos, enfermeras registradas y fisioterapeutas — ofrecen su tiempo en la Clínica.',
     ],
   },
@@ -165,7 +165,7 @@ export const es = {
   services: {
     title: 'Servicios',
     intro:
-      'Nuestros médicos voluntarios y profesionales de la salud ofrecen evaluación, tratamiento, educación y referencias para una amplia gama de afecciones médicas comunes.',
+      'Nuestros médicos voluntarios y profesionales de la salud ofrecen evaluación, tratamiento, educación y referencias para una amplia gama de afecciones médicas comunes en adultos. Por ahora no atendemos a niños, y no tenemos medicamentos ni vacunas en el lugar.',
     treatTitle: 'Afecciones que tratamos',
     treat: [
       'Presión arterial alta (hipertensión)',
@@ -184,6 +184,9 @@ export const es = {
     ],
     cannotTitle: 'Servicios fuera de nuestro alcance',
     cannot: [
+      'Atención pediátrica o servicios para niños',
+      'Medicamentos en el lugar',
+      'Vacunas en el lugar',
       'Emergencias médicas que requieren atención hospitalaria inmediata',
       'Dolor torácico agudo, falta de aire grave, síntomas de accidente cerebrovascular o hemorragia mayor',
       'Traumatismos graves o lesiones que ponen en peligro la vida',
@@ -215,9 +218,9 @@ export const es = {
   contact: {
     title: 'Contáctenos',
     emergency:
-      'Si tiene una emergencia médica o psiquiátrica, llame al 911 o, si es posible, diríjase al Departamento de Emergencias más cercano a su ubicación.',
+      'Si tiene una emergencia médica, llame al 911 o acuda al departamento de emergencias más cercano.',
     body:
-      'Puede contactarnos llamando a nuestro número de teléfono principal o enviando un correo electrónico a la dirección que aparece a continuación. Para los mensajes de voz, asegúrese de dejar un número para que le devolvamos la llamada y escriba su nombre con claridad. Para los correos electrónicos, incluya su nombre, correo electrónico, teléfono, asunto y el mensaje. Tenga en cuenta que los mensajes de voz o correos electrónicos no se revisan de inmediato. Solo se atenderán el siguiente día de consulta. Es probable que haya demoras significativas en responder a su mensaje.',
+      'Puede contactarnos llamando a nuestro número de teléfono principal o enviando un correo electrónico a la dirección que aparece a continuación. Para los mensajes de voz, asegúrese de dejar un número para que le devolvamos la llamada y escriba su nombre con claridad. Para los correos electrónicos, incluya su nombre, correo electrónico, teléfono, asunto y el mensaje. Tenga en cuenta que los mensajes de voz o correos electrónicos no se revisan de inmediato. Solo se atenderán el siguiente día de consulta.',
     emailLabel: 'Correo electrónico',
     inquiryLine: 'Escríbanos para consultas generales.',
   },

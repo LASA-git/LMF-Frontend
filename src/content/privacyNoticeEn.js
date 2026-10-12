@@ -3,6 +3,7 @@ import { CONTACT } from '../constants/contact';
 /** Adapted from Ashland Free Medical Clinic privacy notice; Payment section omitted. */
 export const privacyPageEn = {
   title: 'Privacy',
+  comingSoon: 'Coming Soon...',
   heading: 'Notice of privacy practices',
   banner:
     'THIS NOTICE DESCRIBES HOW LASA MEDICAL FOUNDATION INC. WILL USE AND DISCLOSE MEDICAL, DENTAL AND MENTAL HEALTH INFORMATION, AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW THIS NOTICE CAREFULLY.',

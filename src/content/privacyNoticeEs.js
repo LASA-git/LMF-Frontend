@@ -3,6 +3,7 @@ import { CONTACT } from '../constants/contact';
 /** Aviso de privacidad adaptado para LASA Medical Foundation Inc.; sin sección de pagos. */
 export const privacyPageEs = {
   title: 'Privacidad',
+  comingSoon: 'Próximamente...',
   heading: 'Aviso de prácticas de privacidad',
   banner:
     'ESTE AVISO DESCRIBE CÓMO LASA MEDICAL FOUNDATION INC. USARÁ Y DIVULGARÁ INFORMACIÓN MÉDICA, DENTAL Y DE SALUD MENTAL, Y CÓMO USTED PUEDE OBTENER ACCESO A ESTA INFORMACIÓN. REVÍSELO CON ATENCIÓN.',

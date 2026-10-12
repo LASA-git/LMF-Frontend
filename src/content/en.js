@@ -18,6 +18,7 @@ export const en = {
     schedule: '/en/schedule',
     scheduleLookup: '/en/schedule/lookup',
     privacy: '/en/privacy',
+    hiddenPrivacy: '/en/hidden/privacy',
     splash: '/en',
   },
   nav: [
@@ -46,7 +47,7 @@ export const en = {
     teamCta: 'Our Team',
     paragraphs: [
       'LASA Medical Foundation is a Massachusetts-based 501(c)(3) nonprofit organized to provide free and low-cost healthcare to underserved people through a volunteer-driven clinic. No service is contingent on a patient’s ability to pay or insurance status.',
-      'The clinic offers non-emergency primary care for acute and chronic conditions. Volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and community members staff each clinic day without salaries, so as much support as possible goes to patient care.',
+      'The clinic offers non-emergency primary care for adults with acute and chronic conditions. We do not treat children at this time, and we do not have medications or vaccines on site. Volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and community members staff each clinic day without salaries, so as much support as possible goes to patient care.',
       'Many of those volunteers come from the Lowell community we serve. “Love All, Serve All” is both our motto and the way the clinic operates: people give their time because they want neighbors to have a place to turn for care.',
     ],
   },
@@ -100,9 +101,8 @@ export const en = {
   hours: {
     title: 'Hours',
     intro:
-      'Standing remote and in-person hours will be posted here as they are confirmed. Specific upcoming clinic days are listed on the schedule.',
+      'In-person clinic hours will be posted here as they are confirmed. Specific upcoming clinic days are listed on the schedule.',
     rows: [
-      { label: 'Remote by phone', value: 'To be confirmed' },
       { label: 'In-person', value: 'To be confirmed' },
     ],
     scheduleIntro: 'See published clinic days and claim a limited spot.',
@@ -139,7 +139,7 @@ export const en = {
     heroTitle: 'The Clinic',
     motto: 'Love All, Serve All',
     intro:
-      'A volunteer-run clinic offering free primary care to people who are uninsured or cannot afford medical care.',
+      'A volunteer-run clinic offering free primary care for adults who are uninsured or cannot afford medical care. We do not treat children at this time, and we do not have medications or vaccines on site.',
     subnav: [
       { id: 'services', label: 'Services' },
       { id: 'hours', label: 'Hours' },
@@ -150,7 +150,7 @@ export const en = {
       { id: 'donate', label: 'Getting Involved' },
     ],
     paragraphs: [
-      'We provide non-emergency care for both acute and chronic medical conditions. The clinic is staffed by volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and other support staff.',
+      'We provide non-emergency care for both acute and chronic medical conditions in adults. The clinic is staffed by volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and other support staff. At this time we do not treat children, and we do not have medications or vaccines on site.',
       'Many of the volunteers who work at our clinic come from the local community that we serve. Highly skilled medical professionals — physicians, nurse practitioners, physician assistants, registered nurses, and physical therapists — volunteer their time at the Clinic.',
     ],
   },
@@ -165,7 +165,7 @@ export const en = {
   services: {
     title: 'Services',
     intro:
-      'Our volunteer physicians and healthcare professionals provide evaluation, treatment, education, and referral for a wide range of common medical conditions.',
+      'Our volunteer physicians and healthcare professionals provide evaluation, treatment, education, and referral for a wide range of common medical conditions in adults. We do not treat children at this time, and we do not have medications or vaccines on site.',
     treatTitle: 'Conditions We Treat',
     treat: [
       'High blood pressure (hypertension)',
@@ -184,6 +184,9 @@ export const en = {
     ],
     cannotTitle: 'Services Outside Our Scope',
     cannot: [
+      'Care for children or pediatric services',
+      'Medications on site',
+      'Vaccines on site',
       'Medical emergencies requiring immediate hospital care',
       'Acute chest pain, severe shortness of breath, stroke symptoms, or major bleeding',
       'Severe trauma or life-threatening injuries',
@@ -215,9 +218,9 @@ export const en = {
   contact: {
     title: 'Contact Us',
     emergency:
-      'If you are experiencing a medical or psychiatric emergency, please call 911 or, if possible, go to the Emergency Department nearest to your location.',
+      'If you have a medical emergency, please call 911 or go to the nearest emergency department.',
     body:
-      'You can contact us by calling our main phone number or by sending an email to the address below. For voice mails, please be sure to leave a call-back number and spell out your name clearly. For emails, please include your name, email, phone, subject, and the message. Please be advised that voice mails or emails are NOT reviewed immediately. They will be attended to only on the next clinic day. There will likely be significant delays in getting back to your message.',
+      'You can contact us by calling our main phone number or by sending an email to the address below. For voicemails, please be sure to leave a call-back number and spell out your name clearly. For emails, please include your name, email, phone, subject, and the message. Please be advised that voicemails or emails are NOT reviewed immediately. They will be attended to only on the next clinic day.',
     emailLabel: 'Email',
     inquiryLine: 'Reach out for general inquiries.',
   },
