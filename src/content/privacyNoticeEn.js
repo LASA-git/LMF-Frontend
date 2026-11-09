@@ -264,5 +264,5 @@ export const privacyPageEn = {
       ],
     },
   ],
-  back: 'Back to clinic',
+  back: 'Back to healthcare services',
 };

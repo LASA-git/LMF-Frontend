@@ -23,7 +23,7 @@ export const es = {
   nav: [
     { id: 'home', label: 'Inicio', to: '/es' },
     { id: 'team', label: 'Nuestro equipo', to: '/es/equipo' },
-    { id: 'clinic', label: 'La Clínica', to: '/es/clinica' },
+    { id: 'clinic', label: 'Servicios de salud', to: '/es/clinica' },
     { id: 'book', label: 'Reservar ahora', to: '/es/horario' },
     { id: 'donate', label: 'Involúcrate', to: '/es/involucrate' },
     { id: 'contact', label: 'Contáctenos', to: '/es/contacto' },
@@ -45,14 +45,14 @@ export const es = {
     secondaryCta: 'Involúcrate',
     teamCta: 'Nuestro equipo',
     paragraphs: [
-      'LASA Medical Foundation es una organización 501(c)(3) con sede en Massachusetts creada para brindar atención médica gratuita y de bajo costo a personas desatendidas mediante una clínica impulsada por voluntarios. Ningún servicio depende de la capacidad de pago ni del estado de seguro del paciente.',
-      'La clínica ofrece atención primaria que no es de emergencia para adultos con afecciones agudas y crónicas. Por ahora no atendemos a niños, y no tenemos medicamentos ni vacunas en el lugar. Médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y miembros de la comunidad atienden cada día de clínica sin salario, para que el mayor apoyo posible llegue a los pacientes.',
-      'Muchos de esos voluntarios provienen de la comunidad de Lowell a la que servimos. “Amar a todos, servir a todos” es nuestro lema y la forma en que opera la clínica: las personas ofrecen su tiempo para que los vecinos tengan un lugar donde recibir atención.',
+      'LASA Medical Foundation es una organización 501(c)(3) con sede en Massachusetts creada para brindar atención médica gratuita y de bajo costo a personas desatendidas mediante servicios de salud impulsados por voluntarios. Ningún servicio depende de la capacidad de pago ni del estado de seguro del paciente.',
+      'Los Servicios de Salud LMF ofrecen atención primaria que no es de emergencia para adultos con afecciones agudas y crónicas. Por ahora no atendemos a niños, y no tenemos medicamentos ni vacunas en el lugar. Médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y miembros de la comunidad atienden cada día de servicios sin salario, para que el mayor apoyo posible llegue a los pacientes.',
+      'Muchos de esos voluntarios provienen de la comunidad de Lowell a la que servimos. “Amar a todos, servir a todos” es nuestro lema y la forma en que operan nuestros servicios de salud: las personas ofrecen su tiempo para que los vecinos tengan un lugar donde recibir atención.',
     ],
   },
   team: {
     title: 'Nuestro equipo',
-    lede: 'La clínica está dirigida por una junta voluntaria, un director médico y un administrador, con clínicos visitantes en cada día de consulta.',
+    lede: 'Los Servicios de Salud LMF están dirigidos por una junta voluntaria, un director médico y un administrador, con clínicos visitantes en cada día de servicios.',
     boardTitle: 'Miembros de la Junta',
     board: [
       {
@@ -76,7 +76,7 @@ export const es = {
         bio: 'Cardiólogo certificado que ejerce en Weymouth, MA, en South Shore Cardiology y UMass Memorial Medical Center. Está afiliado a Milford Regional Medical Center y UMass Memorial Health.',
       },
     ],
-    operationsTitle: 'Operaciones de la clínica',
+    operationsTitle: 'Operaciones de servicios de salud',
     leadership: [
       {
         role: 'Directora médica',
@@ -84,7 +84,7 @@ export const es = {
         bio: 'Médica de familia certificada. Trabaja en Reliant Medical, Optum Care.',
       },
       {
-        role: 'Administrador de la clínica',
+        role: 'Administrador de servicios de salud',
         name: 'Vijay Sarathy',
         bio: 'Ejecutivo corporativo con amplia trayectoria que actualmente se desempeña como asesor sénior en McKinsey & Company.',
       },
@@ -93,23 +93,23 @@ export const es = {
   },
   partners: {
     title: 'Nuestros aliados',
-    lede: 'Agradecemos a nuestros aliados por apoyar las operaciones de la clínica.',
+    lede: 'Agradecemos a nuestros aliados por apoyar las operaciones de servicios de salud.',
     memberTitle: 'Membresía',
     memberIntro: 'Somos miembros de la National Association of Free & Charitable Clinics.',
   },
   hours: {
     title: 'Horario',
     intro:
-      'Los horarios presenciales se publicarán aquí cuando se confirmen. Los próximos días de clínica aparecen en la reserva.',
+      'Los horarios presenciales se publicarán aquí cuando se confirmen. Los próximos días de servicios aparecen en la reserva.',
     rows: [
       { label: 'En persona', value: 'Por confirmar' },
     ],
-    scheduleIntro: 'Vea los días de clínica publicados y reserve un cupo limitado.',
-    scheduleCta: 'Reservar un día de clínica',
+    scheduleIntro: 'Vea los días de servicios publicados y reserve un cupo limitado.',
+    scheduleCta: 'Reservar un día de servicios',
   },
   donate: {
     title: 'Involúcrate',
-    lede: 'Apoye la clínica con un donativo, su tiempo, suministros o una alianza comunitaria.',
+    lede: 'Apoye los Servicios de Salud LMF con un donativo, su tiempo, suministros o una alianza comunitaria.',
     button: 'Involúcrate',
     donation: {
       title: 'Hacer un donativo',
@@ -121,24 +121,24 @@ export const es = {
     },
     volunteer: {
       title: 'Ser voluntario',
-      body: 'Únase a clínicos y miembros de la comunidad en la clínica médica gratuita.',
+      body: 'Únase a clínicos y miembros de la comunidad en los Servicios de Salud LMF.',
       button: 'Voluntariado',
       note: 'Pronto se conectará aquí un formulario de voluntariado.',
     },
     supplies: {
       title: 'Donar suministros médicos',
-      body: 'Para donar suministros médicos, comuníquese con el administrador de la clínica.',
+      body: 'Para donar suministros médicos, comuníquese con el administrador de servicios de salud.',
     },
     partner: {
       title: 'Ser aliado comunitario',
-      body: 'Para ser aliado comunitario, comuníquese con el administrador de la clínica.',
+      body: 'Para ser aliado comunitario, comuníquese con el administrador de servicios de salud.',
     },
   },
   clinic: {
-    heroTitle: 'La Clínica',
+    heroTitle: 'Servicios de Salud LMF',
     motto: 'Ama a todos, Sirve a todos',
     intro:
-      'Una clínica impulsada por voluntarios que ofrece atención primaria gratuita para adultos sin seguro o que no pueden pagar la atención médica. Por ahora no atendemos a niños, y no tenemos medicamentos ni vacunas en el lugar.',
+      'Servicios de salud impulsados por voluntarios que ofrecen atención primaria gratuita para adultos sin seguro o que no pueden pagar la atención médica. Por ahora no atendemos a niños, y no tenemos medicamentos ni vacunas en el lugar.',
     subnav: [
       { id: 'services', label: 'Servicios' },
       { id: 'hours', label: 'Horario' },
@@ -149,14 +149,14 @@ export const es = {
       { id: 'donate', label: 'Involúcrate' },
     ],
     paragraphs: [
-      'Brindamos atención que no es de emergencia para afecciones médicas agudas y crónicas en adultos. La clínica cuenta con médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y otro personal de apoyo. Por ahora no atendemos a niños, y no tenemos medicamentos ni vacunas en el lugar.',
-      'Muchos de los voluntarios que trabajan en nuestra clínica provienen de la comunidad local a la que servimos. Profesionales médicos altamente calificados — médicos, enfermeras practicantes, asistentes médicos, enfermeras registradas y fisioterapeutas — ofrecen su tiempo en la Clínica.',
+      'Brindamos atención que no es de emergencia para afecciones médicas agudas y crónicas en adultos. Los Servicios de Salud LMF cuentan con médicos voluntarios, enfermeras practicantes, asistentes médicos, enfermeras registradas, fisioterapeutas y otro personal de apoyo. Por ahora no atendemos a niños, y no tenemos medicamentos ni vacunas en el lugar.',
+      'Muchos de los voluntarios que trabajan en nuestros servicios de salud provienen de la comunidad local a la que servimos. Profesionales médicos altamente calificados — médicos, enfermeras practicantes, asistentes médicos, enfermeras registradas y fisioterapeutas — ofrecen su tiempo en los Servicios de Salud LMF.',
     ],
   },
   operate: {
-    title: 'Cómo operamos la Clínica',
+    title: 'Cómo operamos los Servicios de Salud LMF',
     paragraphs: [
-      'Gran parte de la asistencia que necesitamos para operar la Clínica la brindan los médicos, las enfermeras practicantes, los asistentes médicos, las enfermeras tituladas, los fisioterapeutas y todo el resto del personal de apoyo, que ofrecen su tiempo como voluntarios para atender a los pacientes que acuden a nuestra clínica. Sabemos que la Clínica contará con el apoyo de personas que por su propia voluntad se movilizan para brindar asistencia.',
+      'Gran parte de la asistencia que necesitamos para operar los Servicios de Salud LMF la brindan los médicos, las enfermeras practicantes, los asistentes médicos, las enfermeras tituladas, los fisioterapeutas y todo el resto del personal de apoyo, que ofrecen su tiempo como voluntarios para atender a los pacientes que acuden a nosotros. Sabemos que los Servicios de Salud LMF contarán con el apoyo de personas que por su propia voluntad se movilizan para brindar asistencia.',
       'Agradecemos toda la generosidad de todos nuestros voluntarios, así como de los numerosos donantes privados e institucionales que hacen posible este trabajo.',
       'Si desea ayudar a LASA Medical Foundation Inc. de alguna manera, puede contactarnos en info@lasamedical.org.',
     ],
@@ -194,11 +194,11 @@ export const es = {
       'Emergencias psiquiátricas agudas graves, incluido el riesgo inmediato de daño a sí mismo o a otros',
       'Manejo de sustancias controladas o programas crónicos de opioides / manejo del dolor',
       'Atención obstétrica de emergencia o parto',
-      'Procedimientos dentales de emergencia más allá de los servicios que ofrece específicamente la clínica',
-      'Pruebas diagnósticas especializadas o tratamientos que no están disponibles en nuestra clínica',
+      'Procedimientos dentales de emergencia más allá de los servicios que ofrecen específicamente los Servicios de Salud LMF',
+      'Pruebas diagnósticas especializadas o tratamientos que no están disponibles a través de nuestros servicios de salud',
       'Afecciones que requieren monitoreo continuo, equipo especializado o servicios hospitalarios',
     ],
-    note: 'Si tiene una emergencia médica, llame al 911 o acuda al departamento de emergencias más cercano. El personal de la clínica puede orientar a los pacientes hacia los recursos médicos adecuados cuando una afección está fuera del alcance de nuestros servicios.',
+    note: 'Si tiene una emergencia médica, llame al 911 o acuda al departamento de emergencias más cercano. Nuestro personal puede orientar a los pacientes hacia los recursos médicos adecuados cuando una afección está fuera del alcance de nuestros servicios de salud.',
   },
   location: {
     title: 'Ubicación',
@@ -237,16 +237,16 @@ export const es = {
     title: 'Horario',
     comingSoon: 'Próximamente...',
     intro:
-      'Los próximos días de clínica aparecen a continuación. El cupo es limitado. Al reservar se guarda un lugar mientras verifica su correo.',
-    empty: 'Aún no hay días de clínica publicados.',
+      'Los próximos días de servicios aparecen a continuación. El cupo es limitado. Al reservar se guarda un lugar mientras verifica su correo.',
+    empty: 'Aún no hay días de servicios publicados.',
     emptyNote: 'Vuelva a consultar más tarde, o contáctenos para conocer las fechas y horarios más recientes.',
     error: 'No se pudo cargar el horario. Inténtelo de nuevo en un momento.',
-    back: 'Volver a la clínica',
-    backToList: 'Todos los días de clínica',
+    back: 'Volver a servicios de salud',
+    backToList: 'Todos los días de servicios',
     lookupCta: 'Consultar una reserva',
     spots: '{n} de {total} cupos disponibles',
-    full: 'Este día de clínica está completo',
-    alreadyBooked: 'Este correo ya tiene una reserva para este día de clínica.',
+    full: 'Este día de servicios está completo',
+    alreadyBooked: 'Este correo ya tiene una reserva para este día de servicios.',
     details: 'Ver detalles',
     bookTitle: 'Reservar un cupo',
     emailLabel: 'Correo electrónico',
@@ -269,7 +269,7 @@ export const es = {
     emailFailed:
       'Su reserva está confirmada, pero no se pudo enviar el correo. Guarde este código.',
     holdNote: 'Esta reserva temporal vence a las {time}. Complete los pasos para conservar el cupo.',
-    notFound: 'Este día de clínica no está disponible.',
+    notFound: 'Este día de servicios no está disponible.',
     lookupTitle: 'Consultar su reserva',
     lookupIntro: 'Ingrese el código de confirmación y el correo usado para reservar.',
     codeLookupLabel: 'Código de confirmación',
@@ -278,11 +278,11 @@ export const es = {
     lookupMissing: 'No se encontró una reserva confirmada coincidente.',
     statusLabel: 'Estado',
     patientLabel: 'Nombre',
-    eventLabel: 'Día de clínica',
+    eventLabel: 'Día de servicios',
   },
   footer: {
     linksTitle: 'Enlaces',
-    donateIntro: 'Done, sea voluntario, aporte suministros o aliése con la clínica.',
+    donateIntro: 'Done, sea voluntario, aporte suministros o aliése con los Servicios de Salud LMF.',
     legal:
       'LASA Medical Foundation es una organización sin fines de lucro 501(c)(3) reconocida a nivel federal. EIN: 42-2270643',
   },

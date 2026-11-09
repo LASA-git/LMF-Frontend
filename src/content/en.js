@@ -23,7 +23,7 @@ export const en = {
   nav: [
     { id: 'home', label: 'Home', to: '/en' },
     { id: 'team', label: 'Our Team', to: '/en/team' },
-    { id: 'clinic', label: 'The Clinic', to: '/en/clinic' },
+    { id: 'clinic', label: 'Healthcare Services', to: '/en/clinic' },
     { id: 'book', label: 'Book Now', to: '/en/schedule' },
     { id: 'donate', label: 'Getting Involved', to: '/en/getting-involved' },
     { id: 'contact', label: 'Contact Us', to: '/en/contact' },
@@ -45,14 +45,14 @@ export const en = {
     secondaryCta: 'Getting Involved',
     teamCta: 'Our Team',
     paragraphs: [
-      'LASA Medical Foundation is a Massachusetts-based 501(c)(3) nonprofit organized to provide free and low-cost healthcare to underserved people through a volunteer-driven clinic. No service is contingent on a patient’s ability to pay or insurance status.',
-      'The clinic offers non-emergency primary care for adults with acute and chronic conditions. We do not treat children at this time, and we do not have medications or vaccines on site. Volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and community members staff each clinic day without salaries, so as much support as possible goes to patient care.',
-      'Many of those volunteers come from the Lowell community we serve. “Love All, Serve All” is both our motto and the way the clinic operates: people give their time because they want neighbors to have a place to turn for care.',
+      'LASA Medical Foundation is a Massachusetts-based 501(c)(3) nonprofit organized to provide free and low-cost healthcare to underserved people through volunteer-driven healthcare services. No service is contingent on a patient’s ability to pay or insurance status.',
+      'LMF Healthcare Services offers non-emergency primary care for adults with acute and chronic conditions. We do not treat children at this time, and we do not have medications or vaccines on site. Volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and community members staff each service day without salaries, so as much support as possible goes to patient care.',
+      'Many of those volunteers come from the Lowell community we serve. “Love All, Serve All” is both our motto and the way our healthcare services operate: people give their time because they want neighbors to have a place to turn for care.',
     ],
   },
   team: {
     title: 'Our Team',
-    lede: 'The clinic is led by a volunteer board, medical director, and administrator, with visiting clinicians on each clinic day.',
+    lede: 'LMF Healthcare Services is led by a volunteer board, medical director, and administrator, with visiting clinicians on each service day.',
     boardTitle: 'Board Members',
     board: [
       {
@@ -76,7 +76,7 @@ export const en = {
         bio: 'A board-certified cardiologist practicing in Weymouth, MA at South Shore Cardiology and UMass Memorial Medical Center. He is affiliated with Milford Regional Medical Center and UMass Memorial Health.',
       },
     ],
-    operationsTitle: 'Clinic Operations',
+    operationsTitle: 'Healthcare Services Operations',
     leadership: [
       {
         role: 'Medical Director',
@@ -84,7 +84,7 @@ export const en = {
         bio: 'A board-certified Family physician who works at Reliant Medical, Optum Care.',
       },
       {
-        role: 'Clinic Administrator',
+        role: 'Healthcare Services Administrator',
         name: 'Vijay Sarathy',
         bio: 'A seasoned corporate executive who currently serves as a Senior Advisor with McKinsey & Company.',
       },
@@ -93,23 +93,23 @@ export const en = {
   },
   partners: {
     title: 'Our Partners',
-    lede: 'We thank our partners for supporting clinic operations.',
+    lede: 'We thank our partners for supporting healthcare services operations.',
     memberTitle: 'Membership',
     memberIntro: 'We are a member of the National Association of Free & Charitable Clinics.',
   },
   hours: {
     title: 'Hours',
     intro:
-      'In-person clinic hours will be posted here as they are confirmed. Specific upcoming clinic days are listed on the schedule.',
+      'In-person hours will be posted here as they are confirmed. Specific upcoming service days are listed on the schedule.',
     rows: [
       { label: 'In-person', value: 'To be confirmed' },
     ],
-    scheduleIntro: 'See published clinic days and claim a limited spot.',
-    scheduleCta: 'Book a clinic day',
+    scheduleIntro: 'See published service days and claim a limited spot.',
+    scheduleCta: 'Book a service day',
   },
   donate: {
     title: 'Getting Involved',
-    lede: 'Support the clinic through a gift, your time, supplies, or a community partnership.',
+    lede: 'Support LMF Healthcare Services through a gift, your time, supplies, or a community partnership.',
     button: 'Getting Involved',
     donation: {
       title: 'Make a Donation',
@@ -121,24 +121,24 @@ export const en = {
     },
     volunteer: {
       title: 'Volunteer',
-      body: 'Join volunteer clinicians and community members at the free medical clinic.',
+      body: 'Join volunteer clinicians and community members at LMF Healthcare Services.',
       button: 'Volunteer',
       note: 'A volunteer form will be connected here soon.',
     },
     supplies: {
       title: 'Donate Medical Supplies',
-      body: 'To donate medical supplies, contact the Clinic Administrator.',
+      body: 'To donate medical supplies, contact the Healthcare Services Administrator.',
     },
     partner: {
       title: 'Become a Community Partner',
-      body: 'To become a community partner, contact the Clinic Administrator.',
+      body: 'To become a community partner, contact the Healthcare Services Administrator.',
     },
   },
   clinic: {
-    heroTitle: 'The Clinic',
+    heroTitle: 'LMF Healthcare Services',
     motto: 'Love All, Serve All',
     intro:
-      'A volunteer-run clinic offering free primary care for adults who are uninsured or cannot afford medical care. We do not treat children at this time, and we do not have medications or vaccines on site.',
+      'Volunteer-run healthcare services offering free primary care for adults who are uninsured or cannot afford medical care. We do not treat children at this time, and we do not have medications or vaccines on site.',
     subnav: [
       { id: 'services', label: 'Services' },
       { id: 'hours', label: 'Hours' },
@@ -149,14 +149,14 @@ export const en = {
       { id: 'donate', label: 'Getting Involved' },
     ],
     paragraphs: [
-      'We provide non-emergency care for both acute and chronic medical conditions in adults. The clinic is staffed by volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and other support staff. At this time we do not treat children, and we do not have medications or vaccines on site.',
-      'Many of the volunteers who work at our clinic come from the local community that we serve. Highly skilled medical professionals — physicians, nurse practitioners, physician assistants, registered nurses, and physical therapists — volunteer their time at the Clinic.',
+      'We provide non-emergency care for both acute and chronic medical conditions in adults. LMF Healthcare Services is staffed by volunteer physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and other support staff. At this time we do not treat children, and we do not have medications or vaccines on site.',
+      'Many of the volunteers who work with our healthcare services come from the local community that we serve. Highly skilled medical professionals — physicians, nurse practitioners, physician assistants, registered nurses, and physical therapists — volunteer their time with LMF Healthcare Services.',
     ],
   },
   operate: {
-    title: 'How we operate the Clinic',
+    title: 'How we operate LMF Healthcare Services',
     paragraphs: [
-      'Much of the assistance we need to operate the Clinic is provided by the physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and all the other support staff who volunteer their time to serve the patients who come to our clinic. We know that the Clinic will be supported by people who of their own accord are moved to provide assistance.',
+      'Much of the assistance we need to operate LMF Healthcare Services is provided by the physicians, nurse practitioners, physician assistants, registered nurses, physical therapists, and all the other support staff who volunteer their time to serve the patients who come to us. We know that LMF Healthcare Services will be supported by people who of their own accord are moved to provide assistance.',
       'We appreciate all the generosity of our volunteers as well as the many private and institutional donors who make this work possible.',
       'If you would like to help the LASA Medical Foundation Inc. in some way, you can contact us at info@lasamedical.org.',
     ],
@@ -194,11 +194,11 @@ export const en = {
       'Acute severe psychiatric emergencies, including immediate risk of harm to self or others',
       'Controlled-substance management or chronic opioid / pain-management programs',
       'Emergency obstetric care or delivery',
-      'Emergency dental procedures beyond the services specifically offered at the clinic',
-      'Specialized diagnostic testing or treatment that is not available through our clinic',
+      'Emergency dental procedures beyond the services specifically offered through LMF Healthcare Services',
+      'Specialized diagnostic testing or treatment that is not available through our healthcare services',
       'Conditions requiring continuous monitoring, specialized equipment, or inpatient services',
     ],
-    note: 'If you have a medical emergency, please call 911 or go to the nearest emergency department. Our clinic staff can help direct patients to appropriate medical resources when a condition is outside the scope of our services.',
+    note: 'If you have a medical emergency, please call 911 or go to the nearest emergency department. Our staff can help direct patients to appropriate medical resources when a condition is outside the scope of our healthcare services.',
   },
   location: {
     title: 'Location',
@@ -219,7 +219,7 @@ export const en = {
     emergency:
       'If you have a medical emergency, please call 911 or go to the nearest emergency department.',
     body:
-      'You can contact us by calling our main phone number or by sending an email to the address below. For voicemails, please be sure to leave a call-back number and spell out your name clearly. For emails, please include your name, email, phone, subject, and the message. Please be advised that voicemails or emails are NOT reviewed immediately. They will be attended to only on the next clinic day.',
+      'You can contact us by calling our main phone number or by sending an email to the address below. For voicemails, please be sure to leave a call-back number and spell out your name clearly. For emails, please include your name, email, phone, subject, and the message. Please be advised that voicemails or emails are NOT reviewed immediately. They will be attended to only on the next service day.',
     emailLabel: 'Email',
     inquiryLine: 'Reach out for general inquiries.',
   },
@@ -237,16 +237,16 @@ export const en = {
     title: 'Schedule',
     comingSoon: 'Coming Soon...',
     intro:
-      'Upcoming clinic days are listed below. Capacity is limited. Claiming a spot holds it while you verify your email.',
-    empty: 'No upcoming clinic days are published yet.',
-    emptyNote: 'Please check back later, or contact us for the latest clinic dates and hours.',
+      'Upcoming service days are listed below. Capacity is limited. Claiming a spot holds it while you verify your email.',
+    empty: 'No upcoming service days are published yet.',
+    emptyNote: 'Please check back later, or contact us for the latest service dates and hours.',
     error: 'The schedule could not be loaded. Please try again shortly.',
-    back: 'Back to the clinic',
-    backToList: 'All clinic days',
+    back: 'Back to healthcare services',
+    backToList: 'All service days',
     lookupCta: 'Check a booking',
     spots: '{n} of {total} spots left',
-    full: 'This clinic day is fully booked',
-    alreadyBooked: 'This email already has a booking for this clinic day.',
+    full: 'This service day is fully booked',
+    alreadyBooked: 'This email already has a booking for this service day.',
     details: 'View details',
     bookTitle: 'Claim a spot',
     emailLabel: 'Email',
@@ -260,7 +260,7 @@ export const en = {
     nameLabel: 'Full name',
     phoneLabel: 'Phone',
     consentLabel:
-      'I consent to LASA Medical Foundation storing this contact information to complete my clinic booking.',
+      'I consent to LASA Medical Foundation storing this contact information to complete my booking.',
     confirmSpot: 'Confirm booking',
     confirming: 'Confirming…',
     successTitle: 'Your spot is confirmed',
@@ -268,7 +268,7 @@ export const en = {
     emailSent: 'A confirmation email is on the way.',
     emailFailed: 'Your booking is confirmed, but the confirmation email could not be sent. Save this code.',
     holdNote: 'This hold expires at {time}. Finish the steps below to keep the spot.',
-    notFound: 'This clinic day is not available.',
+    notFound: 'This service day is not available.',
     lookupTitle: 'Check your booking',
     lookupIntro: 'Enter the confirmation code and the email used to book.',
     codeLookupLabel: 'Confirmation code',
@@ -277,11 +277,11 @@ export const en = {
     lookupMissing: 'No matching confirmed booking was found.',
     statusLabel: 'Status',
     patientLabel: 'Name',
-    eventLabel: 'Clinic day',
+    eventLabel: 'Service day',
   },
   footer: {
     linksTitle: 'Quick Links',
-    donateIntro: 'Give, volunteer, donate supplies, or partner with the clinic.',
+    donateIntro: 'Give, volunteer, donate supplies, or partner with LMF Healthcare Services.',
     legal:
       'LASA Medical Foundation is a federally recognized 501(c)(3) non-profit organization. EIN: 42-2270643',
   },

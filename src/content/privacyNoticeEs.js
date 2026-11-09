@@ -264,5 +264,5 @@ export const privacyPageEs = {
       ],
     },
   ],
-  back: 'Volver a la clínica',
+  back: 'Volver a servicios de salud',
 };
